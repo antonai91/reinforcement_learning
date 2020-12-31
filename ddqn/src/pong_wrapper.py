@@ -8,7 +8,7 @@ class PongWrapper(object):
     Wrapper for the environment provided by Openai Gym
     """
 
-    def __init__(self, env_name, no_op_steps=10, history_length=4):
+    def __init__(self, env_name: str, no_op_steps: int = 10, history_length: int = 4):
         self.env = gym.make(env_name)
         self.no_op_steps = no_op_steps
         self.history_length = 4 # number of frames to put together (we need dynamic to see where the ball is going)
@@ -16,7 +16,7 @@ class PongWrapper(object):
         self.state = None
         self.last_lives = 0
 
-    def reset(self, evaluation=False):
+    def reset(self, evaluation: bool = False):
         """Resets the environment
 
         Arguments:
@@ -34,7 +34,7 @@ class PongWrapper(object):
         # For the initial state, we stack the first frame four times
         self.state = np.repeat(process_image(self.frame), self.history_length, axis=2)
 
-    def step(self, action, render_mode=None):
+    def step(self, action: int, render_mode=None):
         """
         Arguments:
             action: An integer describe action to take
