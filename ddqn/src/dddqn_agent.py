@@ -4,7 +4,7 @@ import os
 import numpy as np
 import tensorflow as tf
 
-class dddqn_agent(object):
+class DDDQN_AGENT(object):
     def __init__(self,
                  dqn,
                  target_dqn,
@@ -31,7 +31,6 @@ class dddqn_agent(object):
         self.batch_size = batch_size
 
         self.replay_buffer = replay_buffer
-        self.use_per = use_per
 
         # Epsilon information
         self.eps_initial = eps_initial
@@ -86,12 +85,12 @@ class dddqn_agent(object):
         """
         self.replay_buffer.add_experience(action, frame, reward, terminal, clip_reward)
 
-    def learn(self, batch_size, gamma, frame_number, priority_scale=1.0):
+    def learn(self, batch_size, gamma):
         """
         Sample a batch and use it to improve the DQN
         """
 
-        states, actions, rewards, new_states, terminal_flags = self.replay_buffer.get_minibatch(batch_size=self.batch_size, priority_scale=priority_scale)
+        states, actions, rewards, new_states, terminal_flags = self.replay_buffer.get_minibatch(batch_size=self.batch_size)
 
         # Main DQN estimates best action in new states
         arg_q_max = self.DQN.predict(new_states).argmax(axis=1)
@@ -107,7 +106,7 @@ class dddqn_agent(object):
         with tf.GradientTape() as tape:
             q_values = self.DQN(states)
 
-            one_hot_actions = tf.keras.utils.to_categorical(actions, self.n_actions, dtype=np.float32)  # using tf.one_hot causes strange errors
+            one_hot_actions = tf.keras.utils.to_categorical(actions, self.n_actions, dtype=np.float32)
             Q = tf.reduce_sum(tf.multiply(q_values, one_hot_actions), axis=1)
 
             error = Q - target_q
@@ -133,8 +132,8 @@ class dddqn_agent(object):
         # Save replay buffer
         self.replay_buffer.save(folder_name + '/replay-buffer')
 
-        # Save meta
-        with open(folder_name + '/meta.json', 'w+') as f:
+        # Save info
+        with open(folder_name + 'info.json', 'w+') as f:
             f.write(json.dumps({**{'buff_count': self.replay_buffer.count, 'buff_curr': self.replay_buffer.current}, **kwargs}))  # save replay_buffer information and any other information
 
     def load(self, folder_name, load_replay_buffer=True):
@@ -153,13 +152,13 @@ class dddqn_agent(object):
         if load_replay_buffer:
             self.replay_buffer.load(folder_name + '/replay-buffer')
 
-        # Load meta
-        with open(folder_name + '/meta.json', 'r') as f:
-            meta = json.load(f)
+        # Load info
+        with open(folder_name + '/info.json', 'r') as f:
+            info = json.load(f)
 
         if load_replay_buffer:
-            self.replay_buffer.count = meta['buff_count']
-            self.replay_buffer.current = meta['buff_curr']
+            self.replay_buffer.count = info['buff_count']
+            self.replay_buffer.current = info['buff_curr']
 
-        del meta['buff_count'], meta['buff_curr']  # we don't want to return this information
-        return meta
+        del info['buff_count'], info['buff_curr']  # we don't want to return this information
+        return info

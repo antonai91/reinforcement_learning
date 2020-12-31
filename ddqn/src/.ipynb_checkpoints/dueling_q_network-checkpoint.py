@@ -5,7 +5,7 @@ from tensorflow.keras.layers import (Add, Conv2D, Dense, Flatten, Input,
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam, RMSprop # we'll use Adam instead of RMSprop
 
-def build_q_network(n_actions, learning_rate=0.00001, input_shape=(84, 84), history_length=4, hidden=1024):
+def build_q_network(n_actions, learning_rate=0.00001, input_shape=(84, 84), history_length=4):
     """
     Builds a dueling DQN as a Keras model
 
@@ -14,7 +14,6 @@ def build_q_network(n_actions, learning_rate=0.00001, input_shape=(84, 84), hist
         learning_rate: Learning rate
         input_shape: Shape of the preprocessed image
         history_length: Number of historical frames to stack togheter
-        hidden: Integer, Number of filters in the final convolutional layer. 
 
     Returns:
         A compiled Keras model
@@ -25,7 +24,7 @@ def build_q_network(n_actions, learning_rate=0.00001, input_shape=(84, 84), hist
     x = Conv2D(32, (8, 8), strides=4, kernel_initializer=VarianceScaling(scale=2.), activation='relu', use_bias=False)(x)
     x = Conv2D(64, (4, 4), strides=2, kernel_initializer=VarianceScaling(scale=2.), activation='relu', use_bias=False)(x)
     x = Conv2D(64, (3, 3), strides=1, kernel_initializer=VarianceScaling(scale=2.), activation='relu', use_bias=False)(x)
-    x = Conv2D(hidden, (7, 7), strides=1, kernel_initializer=VarianceScaling(scale=2.), activation='relu', use_bias=False)(x)
+    x = Conv2D(1024, (7, 7), strides=1, kernel_initializer=VarianceScaling(scale=2.), activation='relu', use_bias=False)(x)
 
     # Split into value and advantage streams
     val_stream, adv_stream = Lambda(lambda w: tf.split(w, 2, 3))(x)  # custom splitting layer
