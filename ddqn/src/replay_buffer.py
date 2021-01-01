@@ -28,7 +28,7 @@ class ReplayBuffer(object):
 
         self.reward_type = reward_type
 
-    def add_experience(self, action, frame, reward, terminal, clip_reward=True):
+    def add_experience(self, action, frame, reward, terminal, clip_reward=True, reward_type="integer"):
         """Saves a transition to the replay buffer
 
         Arguments:

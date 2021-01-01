@@ -50,9 +50,9 @@ class DDDQN_AGENT(object):
         self.DQN = dqn
         self.target_dqn = target_dqn
 
-    def exploration_exploitation_scheduler(self, frame_number, state, evaluation=False):
+    def get_action(self, frame_number, state, evaluation=False):
         """
-        Get the appropriate epsilon value from a given frame number and return the action to take
+        Get the appropriate epsilon value from a given frame number and return the action to take (ExplorationExploitationScheduler)
         """
         # Calculate epsilon based on the frame number
         

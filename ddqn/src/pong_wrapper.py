@@ -44,7 +44,6 @@ class PongWrapper(object):
             processed_image: The processed new frame as a result of that action
             reward: The reward for taking that action
             terminal: Whether the game has ended
-            new_frame: The raw new frame as a result of that action
         """
         new_frame, reward, terminal, info = self.env.step(action)
 
