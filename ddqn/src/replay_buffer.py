@@ -72,7 +72,7 @@ class ReplayBuffer(object):
         indices = []
         for i in range(batch_size):
             while True:
-                # Get a random number from history_length to maximum frame written with probabilities based on priority weights
+                # Get a random number from history_length to maximum frame
                 index = random.randint(self.history_length, self.count - 1)
 
                 # We check that all frames are from same episode with the two following if statements.  If either are True, the index is invalid.
