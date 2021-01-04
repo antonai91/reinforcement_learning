@@ -1,0 +1,46 @@
+2021-01-03 17:58:39,725 INFO    MainThread:159034 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-03 17:58:39,725 INFO    MainThread:159034 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-01-03 17:58:39,725 INFO    MainThread:159034 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-03 17:58:39,725 INFO    MainThread:159034 [wandb_init.py:_log_setup():303] Logging user logs to /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_175839-2mg1r4ni/logs/debug.log
+2021-01-03 17:58:39,726 INFO    MainThread:159034 [wandb_init.py:_log_setup():304] Logging internal logs to /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_175839-2mg1r4ni/logs/debug-internal.log
+2021-01-03 17:58:41,070 INFO    MainThread:159034 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-03 17:58:41,070 INFO    MainThread:159034 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.REDIRECT
+2021-01-03 17:58:41,073 INFO    MainThread:159034 [wandb_run.py:_redirect():1107] Redirecting console.
+2021-01-03 17:58:41,073 INFO    MainThread:159034 [redirect.py:install():204] install start
+2021-01-03 17:58:41,074 INFO    MainThread:159034 [redirect.py:install():219] install stop
+2021-01-03 17:58:41,074 INFO    MainThread:159034 [redirect.py:install():204] install start
+2021-01-03 17:58:41,074 INFO    MainThread:159034 [redirect.py:install():219] install stop
+2021-01-03 17:58:41,074 INFO    MainThread:159034 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-01-04 08:21:18,183 ERROR   stderr    :159034 [redirect.py:_pipe_relay():130] problem in pipe relay
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/wandb/sdk/lib/redirect.py", line 128, in _pipe_relay
+    cb(name, data)
+  File "/usr/local/lib/python3.6/dist-packages/wandb/sdk/wandb_run.py", line 602, in _console_callback
+    self._backend.interface.publish_output(name, data)
+  File "/usr/local/lib/python3.6/dist-packages/wandb/sdk/interface/interface.py", line 151, in publish_output
+    self._publish_output(o)
+  File "/usr/local/lib/python3.6/dist-packages/wandb/sdk/interface/interface.py", line 156, in _publish_output
+    self._publish(rec)
+  File "/usr/local/lib/python3.6/dist-packages/wandb/sdk/interface/interface.py", line 439, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2021-01-04 08:21:18,260 INFO    MainThread:159034 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 255
+2021-01-04 08:21:18,280 INFO    MainThread:159034 [wandb_run.py:_restore():1179] restore
+2021-01-04 08:21:18,280 INFO    MainThread:159034 [redirect.py:uninstall():223] uninstall start
+2021-01-04 08:21:18,280 INFO    MainThread:159034 [redirect.py:_stop():278] _stop: stdout
+2021-01-04 08:21:18,281 INFO    MainThread:159034 [redirect.py:_stop():284] _stop closed: stdout
+2021-01-04 08:21:18,281 INFO    stdout    :159034 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2021-01-04 08:21:18,281 INFO    stdout    :159034 [redirect.py:_pipe_relay():136] relay done done: stdout
+2021-01-04 08:21:18,281 INFO    MainThread:159034 [redirect.py:_stop():290] _stop joined: stdout
+2021-01-04 08:21:18,281 INFO    MainThread:159034 [redirect.py:_stop():292] _stop rd closed: stdout
+2021-01-04 08:21:18,281 INFO    MainThread:159034 [redirect.py:uninstall():227] uninstall done
+2021-01-04 08:21:18,281 INFO    MainThread:159034 [redirect.py:uninstall():223] uninstall start
+2021-01-04 08:21:18,282 INFO    MainThread:159034 [redirect.py:_stop():278] _stop: stderr
+2021-01-04 08:21:18,282 INFO    MainThread:159034 [redirect.py:_stop():284] _stop closed: stderr
+2021-01-04 08:21:18,282 INFO    stderr    :159034 [redirect.py:_pipe_relay():120] relay done saw last write: stderr
+2021-01-04 08:21:18,282 INFO    stderr    :159034 [redirect.py:_pipe_relay():136] relay done done: stderr
+2021-01-04 08:21:18,283 INFO    MainThread:159034 [redirect.py:_stop():290] _stop joined: stderr
+2021-01-04 08:21:18,283 INFO    MainThread:159034 [redirect.py:_stop():292] _stop rd closed: stderr
+2021-01-04 08:21:18,283 INFO    MainThread:159034 [redirect.py:uninstall():227] uninstall done
+2021-01-04 08:21:18,283 INFO    MainThread:159034 [wandb_run.py:_restore():1179] restore
+2021-01-04 08:21:23,119 INFO    MainThread:159034 [internal.py:handle_exit():138] Internal process exited

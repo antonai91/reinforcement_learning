@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-58-generic-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.6.9",
+    "heartbeatAt": "2021-01-04T08:23:02.618085",
+    "startedAt": "2021-01-04T08:23:01.297996",
+    "docker": null,
+    "gpu": "GeForce GTX 1050 Ti",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "ddqn/src/main.py",
+    "program": "main.py",
+    "git": {
+        "remote": "https://github.com/antonai91/reinforcement_learning",
+        "commit": "0e6b9bb9d804c5d9f06bb7326255b759fee05458"
+    },
+    "email": null,
+    "root": "/home/anton/Projects/reinforcement_learning",
+    "host": "1b76bfc79376",
+    "username": "root",
+    "executable": "/usr/local/bin/python"
+}

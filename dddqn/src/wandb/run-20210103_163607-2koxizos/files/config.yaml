@@ -1,0 +1,22 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.12
+    framework: tensorflow
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.6.9
+architecture:
+  desc: null
+  value: DDDQN
+batch_size:
+  desc: null
+  value: 32
+infra:
+  desc: null
+  value: Ubuntu
+learning_rate:
+  desc: null
+  value: 0.00025

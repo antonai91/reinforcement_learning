@@ -1,0 +1,54 @@
+The environment has the following 6 actions: ['NOOP', 'FIRE', 'RIGHT', 'LEFT', 'RIGHTFIRE', 'LEFTFIRE']
+2021-01-04 10:00:08.192235: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-01-04 10:00:08.231078: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-04 10:00:08.231702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1760] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.455GHz coreCount: 6 deviceMemorySize: 3.94GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-01-04 10:00:08.231733: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-01-04 10:00:08.237565: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-01-04 10:00:08.237697: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-01-04 10:00:08.239498: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-01-04 10:00:08.239894: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-01-04 10:00:08.243760: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-01-04 10:00:08.244733: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-01-04 10:00:08.244937: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-01-04 10:00:08.245138: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-04 10:00:08.245832: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-04 10:00:08.246411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1902] Adding visible gpu devices: 0
+2021-01-04 10:00:08.247411: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-04 10:00:08.248002: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1760] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.455GHz coreCount: 6 deviceMemorySize: 3.94GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-01-04 10:00:08.248042: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-01-04 10:00:08.248083: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-01-04 10:00:08.248103: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-01-04 10:00:08.248123: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-01-04 10:00:08.248142: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-01-04 10:00:08.248163: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-01-04 10:00:08.248182: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-01-04 10:00:08.248202: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-01-04 10:00:08.248288: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-04 10:00:08.248879: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-04 10:00:08.249314: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1902] Adding visible gpu devices: 0
+2021-01-04 10:00:08.249344: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-01-04 10:04:22.792362: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1300] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-01-04 10:04:22.792410: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1306]      0 
+2021-01-04 10:04:22.792420: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1319] 0:   N 
+2021-01-04 10:04:22.792692: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-04 10:04:22.793131: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-04 10:04:22.793537: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-04 10:04:22.793885: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1446] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3143 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+Loading model and info from the folder  ../model/save_agent_202101040929_00093744
+Loaded in 0.3 seconds
+93744/30000000
+2021-01-04 10:04:23.551979: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:127] None of the MLIR optimization passes are enabled (registered 2)
+2021-01-04 10:04:23.571502: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 4089850000 Hz
+2021-01-04 10:04:23.766728: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-01-04 10:04:24.465678: I tensorflow/stream_executor/cuda/cuda_dnn.cc:334] Loaded cuDNN version 8004
+2021-01-04 10:04:26.890936: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-01-04 10:04:27.595356: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+193925/30000000
+294068/30000000
+394653/30000000
+495655/30000000
+596173/30000000

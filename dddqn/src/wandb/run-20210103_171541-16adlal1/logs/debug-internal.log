@@ -1,0 +1,1612 @@
+2021-01-03 17:15:42,072 INFO    MainThread:80120 [internal.py:wandb_internal():63] W&B internal server running at pid: 80120
+2021-01-03 17:15:42,075 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: check_version
+2021-01-03 17:15:42,076 INFO    WriterThread:80120 [datastore.py:open_for_write():76] open: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/run-16adlal1.wandb
+2021-01-03 17:15:42,079 DEBUG   SenderThread:80120 [sender.py:send():90] send: header
+2021-01-03 17:15:42,079 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:15:42,079 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: check_version
+2021-01-03 17:15:42,083 DEBUG   Thread-4  :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): pypi.org:443
+2021-01-03 17:15:42,165 DEBUG   Thread-4  :80120 [connectionpool.py:_make_request():461] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2021-01-03 17:15:42,195 DEBUG   SenderThread:80120 [sender.py:send():90] send: run
+2021-01-03 17:15:42,200 DEBUG   SenderThread:80120 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-01-03 17:15:42,215 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:15:42,469 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:15:42,479 INFO    SenderThread:80120 [dir_watcher.py:__init__():165] watching files in: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files
+2021-01-03 17:15:42,479 INFO    SenderThread:80120 [sender.py:_start_run_threads():490] run started: 16adlal1 with start time 1609694141
+2021-01-03 17:15:42,479 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: run_start
+2021-01-03 17:15:42,479 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:15:42,481 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:15:42,497 DEBUG   HandlerThread:80120 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-01-03 17:15:42,507 DEBUG   HandlerThread:80120 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=None)
+2021-01-03 17:15:42,560 DEBUG   SenderThread:80120 [sender.py:send():90] send: files
+2021-01-03 17:15:42,561 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2021-01-03 17:15:42,570 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:15:42,570 DEBUG   Thread-11 :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:15:42,571 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:15:42,571 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:15:42,576 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:15:42,754 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:15:42,772 DEBUG   Thread-11 :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:15:42,777 DEBUG   Thread-11 :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-03 17:15:43,368 DEBUG   Thread-11 :80120 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_pong/16adlal1/wandb-metadata.json?Expires=1609780542&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=fvlLlkBc%2FWQMvTRD%2FquwsnYqfeW2ToXezjXWRwsCNFjwQhxGvz6%2BhLNf4gOeox0U21SsFCEa5rTY3MpPJgnu%2F6jqdA5dgGnF%2BZ6VcKGePFmdJd5Ea16Si28Ge9KHSQmg7PLKYpG2htA4Ur74A8aGMvUT1XPh3VX%2Bxz6kd61sQrcAy75rUsQ%2FmVv3L0pOaqCa8j3HcTlTBdwjpF9WtLc7DH3SLF71pXAUnSWrPGBzKz3xOKHxZPz2okpfD13L466cfqUMpPz3Q%2F%2BJ0llGHxfr2v9Su6%2BlX73t%2BovvxiUGxNtqygtjyYBu18PhKbMpGHkY7dhJyww1KS%2F%2B%2BodX5aTw3A%3D%3D HTTP/1.1" 200 0
+2021-01-03 17:15:43,370 INFO    Thread-11 :80120 [upload_job.py:push():131] Uploaded file /tmp/tmpgqhtxea6wandb/3o0urkxz-wandb-metadata.json
+2021-01-03 17:15:43,481 INFO    Thread-8  :80120 [dir_watcher.py:_on_file_created():213] file/dir created: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/wandb-metadata.json
+2021-01-03 17:15:43,481 INFO    Thread-8  :80120 [dir_watcher.py:_on_file_created():213] file/dir created: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/requirements.txt
+2021-01-03 17:15:43,482 INFO    Thread-8  :80120 [dir_watcher.py:_on_file_created():213] file/dir created: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/output.log
+2021-01-03 17:15:44,869 DEBUG   Thread-5  :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:15:45,108 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:15:45,824 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:15:48,018 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:15:50,252 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:15:50,446 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:15:54,682 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:15:54,864 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:15:59,108 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:15:59,332 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:16:03,532 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:03,731 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:16:07,960 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:08,156 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:16:12,382 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:12,613 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:16:16,808 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:17,008 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:16:21,237 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:21,444 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:16:25,664 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:25,853 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:16:30,092 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:30,298 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:16:34,520 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:34,725 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:16:38,948 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:39,139 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:16:43,376 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:47,803 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:52,231 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:16:52,426 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:16:56,659 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:01,091 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:05,519 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:05,723 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:17:09,946 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:14,373 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:18,802 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:18,990 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:17:23,226 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:27,654 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:32,082 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:32,270 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:17:36,510 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:40,936 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:45,367 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:45,739 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:17:49,795 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:54,224 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:58,652 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:17:58,862 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:18:03,081 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:07,510 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:11,932 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:12,104 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:18:16,363 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:20,788 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:25,213 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:25,407 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:18:29,640 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:34,069 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:38,497 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:38,691 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:18:42,925 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:47,352 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:51,778 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:18:51,965 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:18:56,206 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:00,635 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:05,069 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:05,281 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:19:09,498 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:13,927 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:18,356 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:18,549 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:19:22,786 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:27,215 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:31,643 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:31,843 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:19:36,074 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:40,501 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:44,927 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:45,118 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:19:49,355 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:53,784 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:58,212 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:19:58,425 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:20:02,640 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:07,069 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:11,492 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:11,700 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:20:15,919 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:20,346 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:24,770 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:24,951 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:20:29,202 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:33,632 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:38,060 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:38,256 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:20:42,486 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:46,916 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:51,344 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:20:55,774 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:00,200 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:04,629 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:09,057 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:09,257 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:21:13,485 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:17,911 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:22,339 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:26,768 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:31,196 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:35,623 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:40,051 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:40,281 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:21:44,475 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:48,903 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:53,333 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:21:57,759 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:02,185 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:06,607 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:11,028 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:11,221 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:22:15,458 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:17,236 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:22:17,237 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:22:17,237 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:22:17,241 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:22:17,470 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:22:17,718 INFO    Thread-8  :80120 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/output.log
+2021-01-03 17:22:19,416 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:19,416 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:19,419 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:19,884 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:21,008 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:21,008 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:21,009 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:22,946 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:22,946 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:22,947 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:24,308 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:24,937 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:24,937 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:24,940 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:26,491 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:26,492 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:26,493 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:28,159 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:28,159 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:28,160 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:28,735 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:30,508 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:30,508 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:30,508 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:32,294 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:32,294 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:32,295 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:32,475 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:22:32,475 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:22:32,475 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:22:32,479 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:22:32,680 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:22:33,161 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:34,125 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:34,126 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:34,126 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:35,946 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:35,946 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:35,949 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:37,590 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:38,230 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:38,230 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:38,231 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:39,915 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:39,916 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:39,917 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:41,644 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:41,645 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:41,648 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:41,842 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:22:42,018 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:43,832 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:43,833 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:43,833 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:45,916 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:45,916 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:45,917 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:46,444 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:47,685 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:22:47,685 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:22:47,685 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:22:47,690 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:22:47,891 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:22:47,894 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:47,895 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:47,896 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:49,679 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:49,679 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:49,680 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:50,875 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:51,366 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:51,366 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:51,367 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:53,426 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:53,426 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:53,427 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:55,252 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:55,252 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:55,253 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:55,305 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:22:57,018 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:57,018 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:57,019 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:59,114 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:22:59,115 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:22:59,117 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:22:59,731 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:01,242 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:01,243 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:01,243 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:02,824 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:02,824 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:02,825 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:02,896 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:23:02,897 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:23:02,897 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:23:02,902 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:23:03,086 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:23:04,160 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:04,861 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:04,861 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:04,862 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:06,571 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:06,572 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:06,573 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:08,591 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:08,624 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:08,625 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:08,625 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:10,679 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:10,679 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:10,680 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:12,736 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:12,736 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:12,739 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:12,906 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:23:13,020 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:14,838 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:14,839 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:14,839 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:16,943 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:16,944 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:16,945 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:17,450 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:18,091 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:23:18,092 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:23:18,092 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:23:18,097 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:23:18,298 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:23:18,638 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:18,639 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:18,639 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:20,296 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:20,296 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:20,296 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:21,881 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:22,438 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:22,439 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:22,439 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:24,457 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:24,457 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:24,458 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:26,311 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:26,541 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:26,542 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:26,542 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:29,107 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:29,107 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:29,108 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:30,739 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:30,864 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:30,864 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:30,864 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:33,067 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:33,067 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:33,068 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:33,302 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:23:33,303 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:23:33,303 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:23:33,307 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:23:33,524 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:23:34,834 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:34,834 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:34,835 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:35,170 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:36,979 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:36,980 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:36,981 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:38,834 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:38,834 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:38,835 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:39,602 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:40,928 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:40,928 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:40,929 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:43,003 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:43,004 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:43,008 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:43,188 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:23:44,033 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:44,613 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:44,613 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:44,614 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:46,732 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:46,733 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:46,733 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:48,464 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:48,528 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:23:48,529 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:23:48,529 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:23:48,534 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:23:48,730 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:23:48,853 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:48,853 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:48,854 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:51,185 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:51,185 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:51,186 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:52,894 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:53,394 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:53,395 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:53,396 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:54,959 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:54,959 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:54,959 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:56,840 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:56,840 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:56,841 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:23:57,324 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:23:58,965 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:23:58,965 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:23:58,966 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:24:01,752 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:01,792 INFO    Thread-8  :80120 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/output.log
+2021-01-03 17:24:02,792 INFO    Thread-8  :80120 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/output.log
+2021-01-03 17:24:03,736 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:24:03,736 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:24:03,736 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:24:03,740 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:24:03,793 INFO    Thread-8  :80120 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/output.log
+2021-01-03 17:24:03,947 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:24:05,548 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:24:05,549 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:24:05,549 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:24:06,179 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:10,608 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:15,039 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:15,235 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:24:18,951 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:24:18,952 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:24:18,952 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:24:18,957 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:24:19,159 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:24:19,470 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:23,897 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:28,324 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:32,751 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:34,164 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:24:34,164 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:24:34,164 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:24:34,167 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:24:34,372 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:24:35,685 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:24:35,685 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:24:35,685 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:24:37,177 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:41,601 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:46,027 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:46,234 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:24:49,377 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:24:49,378 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:24:49,378 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:24:49,381 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:24:49,584 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:24:50,454 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:54,880 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:24:59,307 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:03,744 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:04,589 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:25:04,589 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:25:04,590 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:25:04,594 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:25:04,811 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:25:07,077 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:25:07,078 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:25:07,078 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:25:08,170 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:12,597 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:17,026 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:17,216 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:25:19,816 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:25:19,816 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:25:19,816 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:25:19,821 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:25:20,026 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:25:21,454 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:25,882 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:30,306 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:34,306 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:25:34,306 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:25:34,309 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:25:34,730 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:35,033 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:25:35,034 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:25:35,034 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:25:35,038 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:25:35,242 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:25:39,156 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:43,583 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:48,012 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:48,216 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:25:50,246 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:25:50,247 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:25:50,247 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:25:50,251 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:25:50,433 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:25:52,439 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:25:56,864 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:01,289 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:03,246 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:26:03,246 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:26:03,247 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:26:05,438 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:26:05,438 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:26:05,438 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:26:05,444 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:26:05,642 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:26:05,718 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:10,145 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:14,572 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:18,999 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:19,192 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:26:20,648 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:26:20,648 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:26:20,649 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:26:20,652 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:26:20,856 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:26:23,426 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:27,852 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:27,991 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:26:27,992 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:26:27,992 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:26:32,281 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:35,863 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:26:35,863 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:26:35,863 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:26:35,868 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:26:36,067 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:26:36,710 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:41,138 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:45,562 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:49,990 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:50,187 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:26:51,071 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:26:51,072 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:26:51,072 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:26:51,075 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:26:51,280 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:26:54,313 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:26:54,313 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:26:54,314 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:26:54,418 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:26:58,846 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:03,272 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:06,285 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:27:06,286 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:27:06,286 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:27:06,291 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:27:06,521 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:27:07,699 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:12,125 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:16,551 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:20,976 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:21,175 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:27:21,527 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:27:21,527 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:27:21,527 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:27:21,530 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:27:21,820 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:27:21,823 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:27:21,824 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:27:21,824 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:27:25,402 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:29,831 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:34,257 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:36,825 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:27:36,826 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:27:36,826 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:27:36,831 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:27:37,064 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:27:38,680 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:43,108 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:47,537 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:51,961 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:27:52,070 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:27:52,070 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:27:52,070 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:27:52,075 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:27:52,175 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:27:52,299 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:27:55,219 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:27:55,219 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:27:55,220 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:27:56,389 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:00,816 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:05,243 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:07,305 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:28:07,308 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:28:07,308 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:28:07,313 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:28:07,534 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:28:09,670 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:14,097 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:18,525 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:19,180 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:28:19,180 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:28:19,182 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:28:22,539 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:28:22,539 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:28:22,539 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:28:22,544 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:28:22,756 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:28:22,952 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:23,124 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:28:27,380 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:31,810 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:36,237 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:37,762 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:28:37,762 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:28:37,762 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:28:37,766 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:28:37,968 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:28:40,667 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:45,096 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:48,503 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:28:48,503 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:28:48,504 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:28:49,523 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:52,972 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:28:52,973 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:28:52,973 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:28:52,977 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:28:53,181 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:28:53,951 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:28:54,137 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:28:58,376 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:02,802 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:07,230 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:08,185 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:29:08,186 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:29:08,187 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:29:08,192 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:29:08,400 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:29:11,659 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:15,760 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:29:15,760 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:29:15,761 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:29:16,089 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:20,516 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:23,404 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:29:23,405 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:29:23,405 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:29:23,410 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:29:23,610 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:29:24,942 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:25,135 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:29:29,370 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:33,796 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:38,225 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:38,615 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:29:38,616 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:29:38,616 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:29:38,621 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:29:38,814 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:29:40,223 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:29:40,223 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:29:40,224 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:29:42,650 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:47,077 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:51,503 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:53,819 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:29:53,819 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:29:53,820 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:29:53,825 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:29:54,017 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:29:55,931 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:29:56,114 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:30:00,360 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:04,789 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:09,023 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:30:09,023 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:30:09,023 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:30:09,027 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:30:09,230 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:30:09,232 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:11,047 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:30:11,047 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:30:11,048 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:30:13,643 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:18,069 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:22,497 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:24,234 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:30:24,235 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:30:24,235 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:30:24,239 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:30:24,430 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:30:26,924 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:27,092 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:30:31,350 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:35,776 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:37,331 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:30:37,331 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:30:37,332 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:30:39,434 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:30:39,434 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:30:39,434 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:30:39,439 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:30:39,647 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:30:40,206 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:44,634 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:49,059 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:53,486 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:54,652 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:30:54,652 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:30:54,652 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:30:54,657 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:30:54,861 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:30:57,914 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:30:58,105 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:31:02,348 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:06,774 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:07,057 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:31:07,058 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:31:07,059 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:31:09,866 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:31:09,866 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:31:09,866 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:31:09,871 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:31:10,072 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:31:11,199 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:15,624 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:20,054 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:24,484 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:25,076 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:31:25,077 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:31:25,077 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:31:25,081 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:31:25,267 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:31:28,910 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:29,087 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:31:33,336 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:37,609 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:31:37,609 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:31:37,610 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:31:37,763 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:40,272 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:31:40,273 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:31:40,273 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:31:40,278 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:31:40,486 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:31:42,194 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:46,620 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:51,044 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:55,470 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:31:55,491 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:31:55,492 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:31:55,492 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:31:55,495 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:31:55,695 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:31:59,894 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:00,277 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:32:04,320 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:06,051 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:32:06,051 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:32:06,051 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:32:08,749 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:10,702 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:32:10,702 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:32:10,703 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:32:10,707 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:32:10,909 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:32:13,175 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:17,604 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:22,029 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:25,914 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:32:25,914 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:32:25,915 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:32:25,920 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:32:26,142 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:32:26,457 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:30,883 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:31,080 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:32:35,311 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:37,055 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:32:37,055 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:32:37,056 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:32:39,738 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:41,147 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:32:41,148 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:32:41,148 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:32:41,153 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:32:41,358 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:32:44,166 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:48,592 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:53,018 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:32:56,362 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:32:56,363 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:32:56,363 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:32:56,367 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:32:56,576 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:32:57,442 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:01,869 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:02,061 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:33:06,298 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:06,924 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:33:06,924 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:33:06,927 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:33:10,726 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:11,581 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:33:11,582 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:33:11,582 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:33:11,585 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:33:11,789 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:33:15,154 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:19,581 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:24,008 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:26,794 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:33:26,794 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:33:26,794 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:33:26,799 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:33:27,002 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:33:28,437 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:32,863 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:33,051 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:33:37,290 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:40,799 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:33:40,799 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:33:40,800 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:33:41,719 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:42,007 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:33:42,008 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:33:42,008 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:33:42,013 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:33:42,212 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:33:46,145 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:50,574 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:54,999 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:33:57,216 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:33:57,217 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:33:57,217 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:33:57,221 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:33:57,422 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:33:59,428 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:03,854 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:04,030 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:34:08,284 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:10,498 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:34:10,498 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:34:10,499 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:34:12,427 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:34:12,427 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:34:12,427 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:34:12,430 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:34:12,634 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:34:12,711 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:17,138 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:21,567 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:25,991 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:27,643 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:34:27,643 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:34:27,643 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:34:27,648 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:34:27,857 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:34:30,417 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:34,842 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:35,031 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:34:39,270 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:40,183 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:34:40,184 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:34:40,185 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:34:42,862 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:34:42,863 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:34:42,863 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:34:42,868 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:34:43,047 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:34:43,696 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:48,125 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:52,551 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:56,976 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:34:58,054 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:34:58,054 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:34:58,054 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:34:58,058 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:34:58,254 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:35:01,402 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:05,828 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:06,024 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:35:06,363 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:35:06,363 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:35:06,364 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:35:10,254 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:13,260 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:35:13,260 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:35:13,261 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:35:13,265 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:35:13,470 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:35:14,682 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:19,108 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:23,533 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:27,959 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:28,475 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:35:28,475 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:35:28,475 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:35:28,479 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:35:28,705 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:35:32,388 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:34,627 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:35:34,627 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:35:34,627 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:35:36,817 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:37,014 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:35:41,247 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:43,711 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:35:43,711 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:35:43,711 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:35:43,716 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:35:43,944 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:35:45,675 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:50,102 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:54,531 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:35:58,950 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:35:58,950 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:35:58,950 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:35:58,955 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:35:59,168 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:35:59,171 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:00,999 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:36:00,999 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:36:00,999 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:36:03,389 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:07,817 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:07,996 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:36:12,242 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:14,173 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:36:14,173 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:36:14,173 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:36:14,176 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:36:14,381 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:36:16,669 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:21,097 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:25,522 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:29,387 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:36:29,387 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:36:29,387 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:36:29,392 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:36:29,591 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:36:29,949 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:34,376 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:34,615 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:36:34,616 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:36:34,617 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:36:38,805 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:39,011 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:36:43,229 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:44,595 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:36:44,596 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:36:44,596 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:36:44,600 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:36:44,793 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:36:47,656 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:52,082 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:56,511 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:36:59,800 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:36:59,800 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:36:59,801 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:36:59,803 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:36:59,995 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:37:00,940 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:01,107 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:37:01,108 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:37:01,108 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:37:05,367 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:09,797 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:09,978 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:37:14,223 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:15,000 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:37:15,000 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:37:15,001 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:37:15,006 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:37:15,193 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:37:18,649 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:23,076 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:27,503 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:30,198 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:37:30,198 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:37:30,198 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:37:30,201 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:37:30,423 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:37:30,494 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:37:30,494 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:37:30,495 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:37:31,929 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:36,356 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:40,785 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:41,170 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:37:45,211 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:45,430 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:37:45,431 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:37:45,431 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:37:45,436 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:37:45,634 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:37:49,637 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:54,063 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:37:58,491 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:00,601 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:38:00,602 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:38:00,603 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:38:00,640 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:38:00,640 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:38:00,640 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:38:00,645 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:38:00,845 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:38:02,921 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:07,347 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:11,774 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:11,965 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:38:15,850 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:38:15,850 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:38:15,850 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:38:15,855 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:38:16,060 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:38:16,200 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:20,624 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:25,054 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:28,184 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:38:28,184 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:38:28,185 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:38:29,482 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:31,065 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:38:31,065 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:38:31,066 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:38:31,071 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:38:31,264 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:38:33,910 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:38,335 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:42,761 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:42,963 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:38:46,268 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:38:46,268 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:38:46,268 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:38:46,272 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:38:46,481 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:38:47,187 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:51,614 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:56,040 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:38:58,663 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:38:58,663 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:38:58,664 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:39:00,465 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:01,486 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:39:01,486 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:39:01,487 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:39:01,492 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:39:01,672 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:39:04,893 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:09,320 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:13,747 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:13,923 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:39:16,680 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:39:16,680 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:39:16,680 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:39:16,685 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:39:16,884 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:39:18,173 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:22,601 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:27,026 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:31,454 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:31,888 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:39:31,889 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:39:31,889 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:39:31,892 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:39:32,101 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:39:34,761 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:39:34,761 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:39:34,762 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:39:35,884 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:40,314 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:44,739 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:44,941 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:39:47,106 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:39:47,106 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:39:47,107 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:39:47,110 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:39:47,294 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:39:49,165 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:53,591 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:39:58,016 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:01,633 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:40:01,633 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:40:01,634 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:40:02,298 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:40:02,299 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:40:02,299 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:40:02,303 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:40:02,498 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:40:02,502 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:06,866 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:11,295 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:15,722 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:15,917 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:40:17,504 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:40:17,505 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:40:17,505 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:40:17,508 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:40:17,711 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:40:20,147 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:24,575 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:28,999 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:30,076 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:40:30,077 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:40:30,079 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:40:32,716 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:40:32,717 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:40:32,717 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:40:32,721 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:40:32,956 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:40:33,425 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:37,851 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:42,278 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:46,705 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:46,899 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:40:47,960 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:40:47,961 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:40:47,961 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:40:47,966 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:40:48,171 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:40:51,130 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:55,555 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:40:59,981 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:02,530 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:41:02,530 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:41:02,531 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:41:03,175 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:41:03,176 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:41:03,176 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:41:03,179 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:41:03,385 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:41:04,415 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:08,840 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:13,266 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:17,691 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:17,883 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:41:18,391 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:41:18,391 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:41:18,391 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:41:18,395 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:41:18,594 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:41:22,133 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:26,557 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:30,984 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:33,514 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:41:33,515 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:41:33,516 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:41:33,598 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:41:33,599 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:41:33,599 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:41:33,603 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:41:33,811 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:41:35,409 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:39,837 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:44,268 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:48,693 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:48,816 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:41:48,816 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:41:48,816 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:41:48,819 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:41:48,897 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:41:49,015 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:41:53,119 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:41:57,544 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:00,257 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:42:00,258 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:42:00,259 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:42:01,972 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:04,020 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:42:04,020 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:42:04,020 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:42:04,023 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:42:04,232 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:42:06,398 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:10,826 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:15,254 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:19,238 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:42:19,239 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:42:19,239 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:42:19,243 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:42:19,455 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:42:19,684 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:19,861 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:42:24,113 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:28,538 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:29,720 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:42:29,721 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:42:29,722 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:42:32,963 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:34,460 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:42:34,460 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:42:34,460 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:42:34,463 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:42:34,671 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:42:37,389 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:41,816 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:46,244 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:49,675 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:42:49,676 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:42:49,676 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:42:49,680 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:42:49,883 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:42:50,674 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:50,855 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:42:55,099 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:42:57,568 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:42:57,568 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:42:57,569 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:42:59,526 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:03,953 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:04,888 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:43:04,889 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:43:04,889 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:43:04,893 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:43:05,096 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:43:08,379 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:12,806 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:17,233 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:20,101 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:43:20,102 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:43:20,104 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:43:20,108 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:43:20,319 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:43:21,659 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:21,872 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:43:24,816 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:43:24,816 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:43:24,817 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:43:26,082 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:30,511 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:34,936 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:35,324 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:43:35,324 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:43:35,324 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:43:35,329 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:43:35,512 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:43:39,363 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:43,792 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:48,219 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:50,518 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:43:50,518 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:43:50,518 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:43:50,524 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:43:50,714 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:43:52,645 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:43:52,847 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:43:53,624 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:43:53,625 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:43:53,625 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:43:57,070 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:01,495 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:05,718 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:44:05,718 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:44:05,718 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:44:05,723 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:44:05,956 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:44:05,960 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:10,348 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:14,775 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:19,200 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:20,962 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:44:20,963 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:44:20,963 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:44:20,967 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:44:21,194 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:44:23,628 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:23,829 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:44:23,909 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:44:23,909 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:44:23,909 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:44:28,056 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:32,483 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:36,199 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:44:36,200 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:44:36,200 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:44:36,205 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:44:36,425 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:44:36,913 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:41,337 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:45,765 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:50,190 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:51,431 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:44:51,431 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:44:51,433 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:44:51,437 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:44:51,658 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:44:54,619 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:44:54,824 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:44:57,999 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:44:58,000 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:44:58,001 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:44:59,046 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:03,474 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:06,690 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:45:06,690 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:45:06,691 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:45:06,695 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:45:06,901 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:45:07,899 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:12,327 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:16,754 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:21,181 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:21,905 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:45:21,906 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:45:21,906 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:45:21,911 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:45:22,118 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:45:25,607 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:25,799 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:45:29,391 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:45:29,391 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:45:29,392 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:45:30,034 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:34,462 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:37,123 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:45:37,123 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:45:37,124 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:45:37,127 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:45:37,326 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:45:38,888 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:43,315 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:47,743 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:52,170 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:52,332 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:45:52,333 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:45:52,333 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:45:52,337 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:45:52,542 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:45:56,596 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:45:56,813 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:45:59,040 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:45:59,041 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:45:59,041 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:46:01,022 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:05,448 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:07,547 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:46:07,547 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:46:07,548 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:46:07,553 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:46:07,762 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:46:09,873 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:14,300 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:18,730 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:22,766 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:46:22,767 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:46:22,767 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:46:22,771 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:46:22,986 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:46:23,157 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:27,583 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:27,776 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:46:32,011 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:33,229 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:46:33,229 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:46:33,230 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:46:36,438 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:37,989 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:46:37,990 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:46:37,990 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:46:37,993 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:46:38,201 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:46:40,866 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:45,293 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:49,719 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:53,206 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:46:53,206 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:46:53,206 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:46:53,210 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:46:53,413 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:46:54,146 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:58,575 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:46:58,769 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:47:00,209 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:47:00,209 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:47:00,209 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:47:03,002 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:07,430 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:08,419 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:47:08,419 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:47:08,419 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:47:08,424 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:47:08,629 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:47:11,859 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:16,284 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:20,711 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:23,634 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:47:23,634 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:47:23,634 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:47:23,639 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:47:23,845 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:47:25,138 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:26,258 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:47:26,259 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:47:26,260 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:47:29,564 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:29,755 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:47:33,991 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:38,419 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:38,850 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:47:38,850 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:47:38,850 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:47:38,855 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:47:39,079 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:47:42,844 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:47,272 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:51,698 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:54,084 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:47:54,084 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:47:54,084 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:47:54,089 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:47:54,290 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:47:56,123 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:47:59,960 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:47:59,961 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:47:59,964 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:48:00,164 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:48:00,550 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:04,977 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:09,294 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:48:09,294 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:48:09,294 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:48:09,299 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:48:09,509 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:48:09,512 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:13,831 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:18,259 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:22,685 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:24,515 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:48:24,515 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:48:24,515 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:48:24,519 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:48:24,724 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:48:27,111 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:29,595 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:48:29,595 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:48:29,595 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:48:31,538 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:31,736 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:48:35,965 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:39,730 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:48:39,730 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:48:39,731 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:48:39,735 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:48:39,938 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:48:40,392 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:44,823 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:49,247 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:53,673 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:48:54,943 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:48:54,943 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:48:54,943 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:48:54,947 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:48:55,152 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:48:55,394 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:48:55,394 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:48:55,395 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:48:58,100 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:02,529 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:02,713 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:49:06,957 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:10,157 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:49:10,158 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:49:10,158 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:49:10,163 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:49:10,363 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:49:11,385 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:15,810 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:20,239 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:24,665 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:25,369 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:49:25,369 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:49:25,369 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:49:25,374 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:49:25,592 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:49:29,090 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:29,501 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:49:29,502 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:49:29,502 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:49:33,518 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:33,712 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:49:37,945 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:40,597 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:49:40,597 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:49:40,597 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:49:40,599 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:49:40,797 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:49:42,368 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:46,795 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:51,220 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:55,646 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:49:55,802 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:49:55,803 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:49:55,803 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:49:55,808 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:49:56,010 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:50:00,070 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:00,649 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:50:00,649 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:50:00,652 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:50:04,498 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:04,700 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:50:08,923 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:11,017 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:50:11,017 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:50:11,017 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:50:11,022 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:50:11,230 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:50:13,351 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:17,778 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:22,204 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:26,236 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:50:26,237 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:50:26,237 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:50:26,242 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:50:26,442 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:50:26,630 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:31,059 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:33,209 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:50:33,210 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:50:33,210 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:50:35,482 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:35,678 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:50:39,908 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:41,446 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:50:41,447 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:50:41,447 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:50:41,452 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:50:41,661 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:50:44,332 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:48,755 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:53,182 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:50:56,666 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: status
+2021-01-03 17:50:56,666 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:50:56,666 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: status
+2021-01-03 17:50:56,671 DEBUG   SenderThread:80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:50:56,918 DEBUG   SenderThread:80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:50:57,608 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:51:00,376 DEBUG   SenderThread:80120 [sender.py:send():90] send: history
+2021-01-03 17:51:00,377 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:51:00,377 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: poll_exit
+2021-01-03 17:51:00,378 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:51:00,378 DEBUG   SenderThread:80120 [sender.py:send():90] send: exit
+2021-01-03 17:51:00,378 INFO    SenderThread:80120 [sender.py:send_exit():168] handling exit code: 1
+2021-01-03 17:51:00,379 INFO    SenderThread:80120 [sender.py:send_exit():176] send defer
+2021-01-03 17:51:00,379 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:00,379 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: poll_exit
+2021-01-03 17:51:00,379 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: defer
+2021-01-03 17:51:00,379 INFO    HandlerThread:80120 [handler.py:handle_request_defer():69] handle defer: 0
+2021-01-03 17:51:00,380 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:00,380 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: defer
+2021-01-03 17:51:00,380 INFO    SenderThread:80120 [sender.py:send_request_defer():185] handle sender defer: 0
+2021-01-03 17:51:00,380 INFO    SenderThread:80120 [sender.py:send_request_defer():221] send defer: 1
+2021-01-03 17:51:00,380 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: defer
+2021-01-03 17:51:00,380 INFO    HandlerThread:80120 [handler.py:handle_request_defer():69] handle defer: 1
+2021-01-03 17:51:00,426 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:00,426 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: defer
+2021-01-03 17:51:00,427 INFO    SenderThread:80120 [sender.py:send_request_defer():185] handle sender defer: 1
+2021-01-03 17:51:00,427 INFO    SenderThread:80120 [sender.py:send_request_defer():221] send defer: 2
+2021-01-03 17:51:00,427 DEBUG   SenderThread:80120 [sender.py:send():90] send: stats
+2021-01-03 17:51:00,428 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: defer
+2021-01-03 17:51:00,428 INFO    HandlerThread:80120 [handler.py:handle_request_defer():69] handle defer: 2
+2021-01-03 17:51:00,428 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:00,429 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: defer
+2021-01-03 17:51:00,429 INFO    SenderThread:80120 [sender.py:send_request_defer():185] handle sender defer: 2
+2021-01-03 17:51:00,429 INFO    SenderThread:80120 [sender.py:send_request_defer():221] send defer: 3
+2021-01-03 17:51:00,429 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: defer
+2021-01-03 17:51:00,430 INFO    HandlerThread:80120 [handler.py:handle_request_defer():69] handle defer: 3
+2021-01-03 17:51:00,430 DEBUG   SenderThread:80120 [sender.py:send():90] send: summary
+2021-01-03 17:51:00,431 INFO    SenderThread:80120 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-03 17:51:00,431 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:00,431 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: defer
+2021-01-03 17:51:00,431 INFO    SenderThread:80120 [sender.py:send_request_defer():185] handle sender defer: 3
+2021-01-03 17:51:00,432 INFO    SenderThread:80120 [sender.py:send_request_defer():221] send defer: 4
+2021-01-03 17:51:00,432 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: defer
+2021-01-03 17:51:00,432 INFO    HandlerThread:80120 [handler.py:handle_request_defer():69] handle defer: 4
+2021-01-03 17:51:00,433 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:00,433 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: defer
+2021-01-03 17:51:00,433 INFO    SenderThread:80120 [sender.py:send_request_defer():185] handle sender defer: 4
+2021-01-03 17:51:00,433 INFO    SenderThread:80120 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-01-03 17:51:00,726 INFO    SenderThread:80120 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/output.log
+2021-01-03 17:51:00,726 INFO    SenderThread:80120 [dir_watcher.py:finish():309] scan: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files
+2021-01-03 17:51:00,726 INFO    SenderThread:80120 [dir_watcher.py:finish():315] scan save: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/wandb-metadata.json wandb-metadata.json
+2021-01-03 17:51:00,727 INFO    SenderThread:80120 [dir_watcher.py:finish():315] scan save: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/config.yaml config.yaml
+2021-01-03 17:51:00,727 INFO    SenderThread:80120 [dir_watcher.py:finish():315] scan save: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/requirements.txt requirements.txt
+2021-01-03 17:51:00,735 DEBUG   Thread-12 :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:51:00,736 INFO    SenderThread:80120 [dir_watcher.py:finish():315] scan save: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/wandb-summary.json wandb-summary.json
+2021-01-03 17:51:00,737 INFO    SenderThread:80120 [dir_watcher.py:finish():315] scan save: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/output.log output.log
+2021-01-03 17:51:00,744 DEBUG   Thread-13 :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:51:00,744 INFO    SenderThread:80120 [sender.py:send_request_defer():221] send defer: 5
+2021-01-03 17:51:00,752 DEBUG   Thread-14 :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:51:00,753 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: defer
+2021-01-03 17:51:00,753 INFO    HandlerThread:80120 [handler.py:handle_request_defer():69] handle defer: 5
+2021-01-03 17:51:00,761 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:00,761 DEBUG   Thread-15 :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-03 17:51:00,762 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: defer
+2021-01-03 17:51:00,762 INFO    SenderThread:80120 [sender.py:send_request_defer():185] handle sender defer: 5
+2021-01-03 17:51:00,762 INFO    SenderThread:80120 [file_pusher.py:finish():169] shutting down file pusher
+2021-01-03 17:51:00,762 INFO    SenderThread:80120 [sender.py:send_request_defer():221] send defer: 6
+2021-01-03 17:51:00,763 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: defer
+2021-01-03 17:51:00,763 INFO    HandlerThread:80120 [handler.py:handle_request_defer():69] handle defer: 6
+2021-01-03 17:51:00,763 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:00,763 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: defer
+2021-01-03 17:51:00,763 INFO    SenderThread:80120 [sender.py:send_request_defer():185] handle sender defer: 6
+2021-01-03 17:51:00,954 DEBUG   Thread-14 :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:51:00,956 DEBUG   Thread-15 :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:51:00,958 DEBUG   Thread-12 :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:51:00,970 DEBUG   Thread-15 :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-03 17:51:00,977 DEBUG   Thread-12 :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-03 17:51:00,978 DEBUG   Thread-14 :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-03 17:51:00,991 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:51:01,156 DEBUG   Thread-5  :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong/16adlal1/file_stream HTTP/1.1" 200 None
+2021-01-03 17:51:01,160 INFO    SenderThread:80120 [sender.py:send_request_defer():221] send defer: 7
+2021-01-03 17:51:01,160 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: defer
+2021-01-03 17:51:01,161 INFO    HandlerThread:80120 [handler.py:handle_request_defer():69] handle defer: 7
+2021-01-03 17:51:01,161 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:01,161 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: defer
+2021-01-03 17:51:01,161 INFO    SenderThread:80120 [sender.py:send_request_defer():185] handle sender defer: 7
+2021-01-03 17:51:01,161 INFO    SenderThread:80120 [sender.py:send_request_defer():221] send defer: 8
+2021-01-03 17:51:01,162 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: defer
+2021-01-03 17:51:01,162 DEBUG   SenderThread:80120 [sender.py:send():90] send: final
+2021-01-03 17:51:01,163 INFO    HandlerThread:80120 [handler.py:handle_request_defer():69] handle defer: 8
+2021-01-03 17:51:01,163 DEBUG   SenderThread:80120 [sender.py:send():90] send: footer
+2021-01-03 17:51:01,163 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:01,163 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: defer
+2021-01-03 17:51:01,163 INFO    SenderThread:80120 [sender.py:send_request_defer():185] handle sender defer: 8
+2021-01-03 17:51:01,359 DEBUG   Thread-15 :80120 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_pong/16adlal1/output.log?Expires=1609782660&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=AYejbbbTJ0hHF%2F%2FUPeEBp9U4Tjw9bUtc67SP%2B3lGXPsV%2FjwZubDMpgB6CuyaEfcob7LLnlhJt9N5ucCAEjXcMTwIxbrv1TfSo6Scd1UlEgQL90nJ0MAeyI2bZvZTuMASmusrxbxJzaEBPc4QmBSIdqRE2Xdy836BzhaHMSgoe9wD34hldw7i6RMsQKAlGaLPwWhJWjX1UdbU3lN6LtSl4Tpax%2F0W6M2qqF1H%2Fj7n%2F2HANwYHjp7iEuKWCFQgJU1P37f%2FXnd61umb4aU0CVBX8kKmMoxMFEczCrMiYNl4bdW5aAr4ch4q9h0t%2BUrE3mfksT0ncqEe9jGosRgHipNW1A%3D%3D HTTP/1.1" 200 0
+2021-01-03 17:51:01,360 DEBUG   Thread-12 :80120 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_pong/16adlal1/config.yaml?Expires=1609782660&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=FV%2FiVKmlDiSTu1i%2FRHzDcaeYUF5MAtg%2F0qggf%2FDRH5Kj87kZeRHtVNLUhYWXWkZPXdVGNVW9P93BFBcpMwS7Ocn%2BURlC5Z6ZJvFztmvLlVfcyftrlbxd2D%2B6L1r3NUSNuOaLACm6JigtPEtfpSrjME6Q0mVfeGeNx0Pb7Y%2FU6cfEH3T25bsFK%2F2M5Y487iB4hFlUVzbFIXtoEKZ8Qp4jg38UA9qf0Am9fvjn83%2FlGfCIeivJ5HsQMtQKdEc%2FMaYQ6RuZbBd9xV3RQw7yg09BKzzw6l2NpN%2BdyZeT6yi5QEEJcipHLMo5loarETcOslAkVMW8gICKOcou%2FKBZWBH%2BoQ%3D%3D HTTP/1.1" 200 0
+2021-01-03 17:51:01,363 INFO    Thread-15 :80120 [upload_job.py:push():131] Uploaded file /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/output.log
+2021-01-03 17:51:01,365 INFO    Thread-12 :80120 [upload_job.py:push():131] Uploaded file /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/config.yaml
+2021-01-03 17:51:01,396 DEBUG   Thread-14 :80120 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_pong/16adlal1/wandb-summary.json?Expires=1609782660&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=gX6pjSX8jgX3%2B%2Fp0479LT4IgcHos7epAxKBRF3PorKgMgxuJRRoAx71aCn99tsvpyuwPJQsbeWRxL3V9Ci35aTVOCBW%2F%2Fkh%2BDd7QdHrVjdmrRlFXUO%2FB7%2BpmC4i%2BPG%2F1y0s7%2FLGd3TxP2z1QofdN%2BkUJDYkrDegbixNEHTtVBqKfGkwif4dRaUuyJTDbiatVtxHXbpAvZZf7nOe124f%2Fhhkv6XarPcMLGKWgxFgs1D4nYIqhI0TG4noMyQu09rEGxMroYWHcGERqQd57YJqSywx%2FhyMg7El8DUCLYR7thBUb1zsMHKd5dLmftHO4TJ0W6kTwAGweYqgDZ4zHbE4eXA%3D%3D HTTP/1.1" 200 0
+2021-01-03 17:51:01,399 INFO    Thread-14 :80120 [upload_job.py:push():131] Uploaded file /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/wandb-summary.json
+2021-01-03 17:51:01,743 DEBUG   Thread-13 :80120 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-03 17:51:01,750 DEBUG   Thread-13 :80120 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-03 17:51:02,378 DEBUG   Thread-13 :80120 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_pong/16adlal1/requirements.txt?Expires=1609782661&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=DQLB5Itu158z6lJg%2F3MtsL5tPvkuAt%2FF%2BXI4vO0J8VzXx0XX%2Bfhb2OJxkM7xomBuwhnQSHdiJHLCGUC2FXVWCmWehBddAPnelRUsPWZ%2F6xbZm3lB%2BE5gS%2FTKUipH06XTBKUSRGfwWrw6ZlEfxwseI%2FMtbfg2AjabIAiSldvGymyWzGbUDLaOK23VjPzehx4JhDYkgBUFvKZDtRBP9JQGzAO08zUreDOxv1MpVxvrtPEk6D12iLjoXMs2%2FSLm7vmZA%2Bld%2FwhCGm1wVb6UAVU%2BLUb1UwyV9sEHjyiH9Plv3QsxZ9O9WpVqEfum3q4QyYIH96iwhfK%2FsxD8yN9EOv44iw%3D%3D HTTP/1.1" 200 0
+2021-01-03 17:51:02,381 INFO    Thread-13 :80120 [upload_job.py:push():131] Uploaded file /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/files/requirements.txt
+2021-01-03 17:51:02,384 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: poll_exit
+2021-01-03 17:51:02,384 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:02,385 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: poll_exit
+2021-01-03 17:51:04,389 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: poll_exit
+2021-01-03 17:51:04,390 DEBUG   SenderThread:80120 [sender.py:send():90] send: request
+2021-01-03 17:51:04,390 DEBUG   SenderThread:80120 [sender.py:send_request():99] send_request: poll_exit
+2021-01-03 17:51:04,390 INFO    SenderThread:80120 [file_pusher.py:join():174] waiting for file pusher
+2021-01-03 17:51:04,392 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: get_summary
+2021-01-03 17:51:04,394 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: sampled_history
+2021-01-03 17:51:04,399 DEBUG   HandlerThread:80120 [handler.py:handle_request():55] handle_request: shutdown
+2021-01-03 17:51:04,399 INFO    HandlerThread:80120 [handler.py:finish():271] shutting down handler
+2021-01-03 17:51:05,163 INFO    WriterThread:80120 [datastore.py:close():257] close: /home/anton/Projects/reinforcement_learning/ddqn/src/wandb/run-20210103_171541-16adlal1/run-16adlal1.wandb
+2021-01-03 17:51:05,390 INFO    SenderThread:80120 [sender.py:finish():642] shutting down sender
+2021-01-03 17:51:05,391 INFO    SenderThread:80120 [file_pusher.py:finish():169] shutting down file pusher
+2021-01-03 17:51:05,391 INFO    SenderThread:80120 [file_pusher.py:join():174] waiting for file pusher
+2021-01-03 17:51:05,392 INFO    MainThread:80120 [internal.py:handle_exit():138] Internal process exited

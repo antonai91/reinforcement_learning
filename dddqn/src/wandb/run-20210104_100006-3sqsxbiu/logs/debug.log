@@ -1,0 +1,13 @@
+2021-01-04 10:00:06,591 INFO    MainThread:174 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-04 10:00:06,592 INFO    MainThread:174 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-01-04 10:00:06,592 INFO    MainThread:174 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-04 10:00:06,592 INFO    MainThread:174 [wandb_init.py:_log_setup():303] Logging user logs to /home/anton/Projects/reinforcement_learning/dddqn/src/wandb/run-20210104_100006-3sqsxbiu/logs/debug.log
+2021-01-04 10:00:06,592 INFO    MainThread:174 [wandb_init.py:_log_setup():304] Logging internal logs to /home/anton/Projects/reinforcement_learning/dddqn/src/wandb/run-20210104_100006-3sqsxbiu/logs/debug-internal.log
+2021-01-04 10:00:07,857 INFO    MainThread:174 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-04 10:00:07,857 INFO    MainThread:174 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.REDIRECT
+2021-01-04 10:00:07,860 INFO    MainThread:174 [wandb_run.py:_redirect():1107] Redirecting console.
+2021-01-04 10:00:07,860 INFO    MainThread:174 [redirect.py:install():204] install start
+2021-01-04 10:00:07,860 INFO    MainThread:174 [redirect.py:install():219] install stop
+2021-01-04 10:00:07,861 INFO    MainThread:174 [redirect.py:install():204] install start
+2021-01-04 10:00:07,861 INFO    MainThread:174 [redirect.py:install():219] install stop
+2021-01-04 10:00:07,861 INFO    MainThread:174 [wandb_run.py:_redirect():1151] Redirects installed.
