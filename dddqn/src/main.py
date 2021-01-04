@@ -21,17 +21,11 @@ config = dict (
   infra = "Ubuntu"
 )
 
-
 wandb.init(
   project="tensorflow2_pong",
   tags=["DDDQN", "CNN", "RL"],
   config=config,
 )
-
-#import tensorflow as tf
-#print(tf.config.list_physical_devices('GPU'))
-
-#print(tf.test.is_gpu_available( cuda_only=False, min_cuda_compute_capability=None))
 
 pong_wrapper = PongWrapper(ENV_NAME, NO_OP_STEPS)
 print("The environment has the following {} actions: {}".format(pong_wrapper.env.action_space.n, pong_wrapper.env.unwrapped.get_action_meanings()))
