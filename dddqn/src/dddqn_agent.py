@@ -160,5 +160,5 @@ class DDDQN_AGENT(object):
             self.replay_buffer.count = info['buff_count']
             self.replay_buffer.current = info['buff_curr']
 
-        del info['buff_count'], info['buff_curr']  # we don't want to return this information
+        del info['buff_count'], info['buff_curr']  # just needed for the replay_buffer
         return info

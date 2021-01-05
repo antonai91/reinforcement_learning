@@ -58,7 +58,6 @@ else:
 def main():
     global frame_number, rewards, loss_list
     while frame_number < MAX_FRAMES:
-        print(str(frame_number) + "/" + str(MAX_FRAMES))
         epoch_frame = 0
         while epoch_frame < EVAL_FREQUENCY:
             start_time = time.time()
