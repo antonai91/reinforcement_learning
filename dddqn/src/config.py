@@ -4,7 +4,7 @@
 ENV_NAME = 'PongDeterministic-v4'
 NO_OP_STEPS = 20 # in evaluation mode, number of 1 (fire) action to add randomness
 
-PATH_LOAD_MODEL = "../model/save_agent_202101040929_00093744"
+PATH_LOAD_MODEL = "../model/save_agent_202101050927_01353984"
 PATH_SAVE_MODEL = "../model"
 LOAD_REPLAY_BUFFER = False
 
