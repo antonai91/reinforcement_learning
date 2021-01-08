@@ -8,29 +8,23 @@ class PongWrapper(object):
     Wrapper for the environment provided by Openai Gym
     """
 
-    def __init__(self, env_name: str, no_op_steps: int = 10, history_length: int = 4):
+    def __init__(self, env_name: str, history_length: int = 4):
         self.env = gym.make(env_name)
-        self.no_op_steps = no_op_steps
         self.history_length = 4 # number of frames to put together (we need dynamic to see where the ball is going)
 
         self.state = None
-        
-    def reset(self, evaluation: bool = False):
-        """Resets the environment
 
-        Arguments:
-            evaluation: Set to True when we are in evaluation mode, in this case the agent takes a random number of no-op steps if True.
+    def reset(self):
+        """
+        Resets the environment
         """
 
         self.frame = self.env.reset()
-        
-        # If in evaluation model, take a random number of no-op steps
-        if evaluation:
-            for _ in range(random.randint(0, self.no_op_steps)):
-                self.env.step(1)
 
         # For the initial state, we stack the first frame four times
         self.state = np.repeat(process_image(self.frame), self.history_length, axis=2)
+        
+        return self.state
 
     def step(self, action: int, render_mode=None):
         """
