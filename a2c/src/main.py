@@ -17,7 +17,7 @@ wandb.init(
 
 pw = PongWrapper(ENV_NAME)
 model = Model(num_actions=pw.env.action_space.n, hidden=HIDDEN)
-agent = A2CAgent(model, load_path=PATH_LOAD_MODEL)
+agent = A2CAgent(model, save_path=PATH_SAVE_MODEL, load_path=PATH_LOAD_MODEL)
 
 def main():
     rewards_history = agent.train(pw)

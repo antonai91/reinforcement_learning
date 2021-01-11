@@ -4,9 +4,10 @@ import tensorflow as tf
 import numpy as np
 import time
 import wandb
+import os
 
 class A2CAgent:
-    def __init__(self, model, save_path=None, load_path=None, lr=1e-4, gamma=0.99, value_c=0.5, entropy_c=1e-4):
+    def __init__(self, model, save_path=None, load_path=None, lr=7e-3, gamma=0.99, value_c=0.5, entropy_c=1e-4):
         # `gamma` is the discount factor
         self.gamma = gamma
         # Coefficients are used for the loss terms.
@@ -50,6 +51,9 @@ class A2CAgent:
                     next_obs = wrapper.reset()
                     wandb.log({'Game number': len(ep_rewards) - 1, '# Update': update, '% Update': round(update / updates, 2), 
                                 "Reward": round(ep_rewards[-2], 2), "Time taken": round(time.time() - start_time, 2)})
+
+            if ep_rewards[-1] > -5:
+                self.learning_rate = 0.00025
                         
 
             _, next_value = self.model.action_value(next_obs[None, :])
@@ -62,7 +66,7 @@ class A2CAgent:
             # Note: no need to mess around with gradients, Keras API handles it.
             losses = self.model.train_on_batch(observations, [acts_and_advs, returns])
             
-            if update % 10000 == 0 and self.save_path is not None:
+            if update % 500 == 0 and self.save_path is not None:
                 self.save_model(f'{self.save_path}/save_agent_{time.strftime("%Y%m%d%H%M") + "_" + str(update).zfill(8)}')
 
         return ep_rewards
@@ -115,7 +119,6 @@ class A2CAgent:
         # Here signs are flipped because the optimizer minimizes.
         return policy_loss - self.entropy_c * entropy_loss
     
-    # To-do
     def save_model(self, folder_path):
         if not os.path.isdir(folder_path):
             os.makedirs(folder_path)
