@@ -21,6 +21,7 @@ agent = A2CAgent(model, save_path=PATH_SAVE_MODEL, load_path=PATH_LOAD_MODEL)
 
 def main():
     rewards_history = agent.train(pw)
+
 if __name__ == "__main__":
     try:
         main()

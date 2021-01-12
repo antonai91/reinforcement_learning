@@ -7,7 +7,7 @@ HIDDEN = 1024
 
 PATH_SAVE_MODEL = "../model"
 
-PATH_LOAD_MODEL = "../model/save_agent_202101092027"
+PATH_LOAD_MODEL = "../model/save_agent_202101121017_00080000"
 
 CONFIG_WANDB = dict (
   learning_rate = 0.007,
