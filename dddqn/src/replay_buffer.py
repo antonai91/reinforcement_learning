@@ -18,6 +18,7 @@ class ReplayBuffer(object):
         self.history_length = history_length
         self.count = 0  # total index of memory written to, always less than self.size
         self.current = 0  # index to write to
+        self.reward_type = reward_type
 
         # Pre-allocate memory
         self.actions = np.empty(self.size, dtype=np.int32)
@@ -25,8 +26,6 @@ class ReplayBuffer(object):
         self.frames = np.empty((self.size, self.input_shape[0], self.input_shape[1]), dtype=np.uint8)
         self.terminal_flags = np.empty(self.size, dtype=np.bool)
         self.priorities = np.zeros(self.size, dtype=np.float32)
-
-        self.reward_type = reward_type
 
     def add_experience(self, action, frame, reward, terminal, clip_reward=True, reward_type="integer"):
         """Saves a transition to the replay buffer
@@ -75,7 +74,7 @@ class ReplayBuffer(object):
                 # Get a random number from history_length to maximum frame
                 index = random.randint(self.history_length, self.count - 1)
 
-                # We check that all frames are from same episode with the two following if statements.  If either are True, the index is invalid.
+                # We check that all frames are from same episode with the two following if statements.
                 if index >= self.current and index - self.history_length <= self.current:
                     continue
                 if self.terminal_flags[index - self.history_length:index].any():
