@@ -10,7 +10,7 @@ class PongWrapper(object):
 
     def __init__(self, env_name: str, history_length: int = 4):
         self.env = gym.make(env_name)
-        self.history_length = 4 # number of frames to put together (we need dynamic to see where the ball is going)
+        self.history_length = history_length # number of frames to put together (we need dynamic to see where the ball is going)
 
         self.state = None
 

@@ -15,12 +15,12 @@ wandb.init(
   config=CONFIG_WANDB,
 )
 
-pw = PongWrapper(ENV_NAME)
+pw = PongWrapper(ENV_NAME, history_length=4)
 model = Model(num_actions=pw.env.action_space.n, hidden=HIDDEN)
 agent = A2CAgent(model, save_path=PATH_SAVE_MODEL, load_path=PATH_LOAD_MODEL)
 
 def main():
-    rewards_history = agent.train(pw)
+    rewards_history = agent.train(pw, input_shape=(84, 84, 4))
 
 if __name__ == "__main__":
     try:

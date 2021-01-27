@@ -10,7 +10,7 @@ PATH_SAVE_MODEL = "../model"
 PATH_LOAD_MODEL = "../model/save_agent_202101121017_00080000"
 
 CONFIG_WANDB = dict (
-  learning_rate = 0.007,
+  learning_rate = 1e-3,
   batch_size = 64,
   architecture = "a2c",
   infra = "Ubuntu"
