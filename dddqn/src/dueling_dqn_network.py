@@ -37,7 +37,7 @@ def build_q_network(n_actions, learning_rate=0.00001, input_shape=(84, 84), hist
     adv = Dense(n_actions, kernel_initializer=VarianceScaling(scale=2.))(adv_stream)
 
     # Combine streams into Q-Values
-    reduce_mean = Lambda(lambda w: tf.reduce_mean(w, axis=1, keepdims=True))  # custom layer for reduce mean
+    reduce_mean = Lambda(lambda w: tf.reduce_mean(w, axis=1, keepdims=True))  # custom layer to reduce mean
 
     q_vals = Add()([val, Subtract()([adv, reduce_mean(adv)])])
 
