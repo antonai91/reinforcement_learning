@@ -1,0 +1,82 @@
+2021-01-29 12:22:15,661 INFO    MainThread:4699 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-29 12:22:15,661 INFO    MainThread:4699 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn,fork,forkserver
+2021-01-29 12:22:15,661 INFO    MainThread:4699 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-29 12:22:15,661 INFO    MainThread:4699 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7febbd059130>
+2021-01-29 12:22:15,662 INFO    MainThread:4699 [wandb_init.py:_log_setup():303] Logging user logs to /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_122215-13oj0i91/logs/debug.log
+2021-01-29 12:22:15,662 INFO    MainThread:4699 [wandb_init.py:_log_setup():304] Logging internal logs to /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_122215-13oj0i91/logs/debug-internal.log
+2021-01-29 12:22:15,663 INFO    MainThread:4699 [wandb_run.py:finish():914] finishing run anton-ai/tensorflow2_pong_a2c/320anns6
+2021-01-29 12:22:15,663 INFO    MainThread:4699 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2021-01-29 12:22:15,663 INFO    MainThread:4699 [wandb_run.py:_restore():1179] restore
+2021-01-29 12:22:15,667 INFO    MainThread:4699 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "5880956f04584348a356d92309755649"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 819
+      total_bytes: 819
+    }
+  }
+}
+
+2021-01-29 12:22:17,677 INFO    MainThread:4699 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "9420f0f839a34492b72b4d3eeb3b9f94"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 4
+    }
+    pusher_stats {
+      uploaded_bytes: 3476
+      total_bytes: 3476
+    }
+  }
+}
+
+2021-01-29 12:22:18,777 INFO    MainThread:4699 [wandb_run.py:_show_files():1536] logging synced files
+2021-01-29 12:22:20,280 INFO    MainThread:4699 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-29 12:22:20,281 INFO    MainThread:4699 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-01-29 12:22:20,281 INFO    MainThread:4699 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-01-29 12:22:20,281 INFO    MainThread:4699 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-01-29 12:22:20,421 INFO    MainThread:4699 [wandb_init.py:_pause_backend():224] pausing backend
+2021-01-29 12:22:20,421 INFO    MainThread:4699 [wandb_init.py:_pause_backend():224] pausing backend
+2021-01-29 12:22:20,426 INFO    MainThread:4699 [wandb_init.py:_resume_backend():229] resuming backend
+2021-01-29 12:22:20,428 INFO    MainThread:4699 [wandb_init.py:_resume_backend():229] resuming backend
+2021-01-29 12:22:31,458 INFO    MainThread:4699 [wandb_init.py:_pause_backend():224] pausing backend
+2021-01-29 12:22:31,458 INFO    MainThread:4699 [wandb_init.py:_pause_backend():224] pausing backend
+2021-01-29 12:22:43,720 INFO    MainThread:4699 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2021-01-29 12:22:43,720 INFO    MainThread:4699 [wandb_run.py:_restore():1179] restore
+2021-01-29 12:22:43,725 INFO    MainThread:4699 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "f483c33ac9ce45a0b261786c6defc8f5"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 819
+      total_bytes: 819
+    }
+  }
+}
+
+2021-01-29 12:22:45,734 INFO    MainThread:4699 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "d58a81d20c404eb6aa102fde35c85c2d"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4386
+      total_bytes: 4386
+    }
+  }
+}
+
+2021-01-29 12:22:46,869 INFO    MainThread:4699 [wandb_run.py:_show_files():1536] logging synced files
+2021-01-29 12:22:46,875 INFO    MainThread:4699 [internal.py:handle_exit():138] Internal process exited

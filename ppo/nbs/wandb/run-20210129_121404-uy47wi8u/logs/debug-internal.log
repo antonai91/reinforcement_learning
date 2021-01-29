@@ -1,0 +1,390 @@
+2021-01-29 12:14:05,909 INFO    MainThread:4494 [internal.py:wandb_internal():63] W&B internal server running at pid: 4494
+2021-01-29 12:14:05,910 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: check_version
+2021-01-29 12:14:05,911 INFO    WriterThread:4494 [datastore.py:open_for_write():76] open: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/run-uy47wi8u.wandb
+2021-01-29 12:14:05,912 DEBUG   SenderThread:4494 [sender.py:send():90] send: header
+2021-01-29 12:14:05,912 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:14:05,912 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: check_version
+2021-01-29 12:14:05,915 DEBUG   Thread-4  :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2021-01-29 12:14:06,060 DEBUG   Thread-4  :4494 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 53088
+2021-01-29 12:14:06,101 DEBUG   SenderThread:4494 [sender.py:send():90] send: run
+2021-01-29 12:14:06,106 DEBUG   SenderThread:4494 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-01-29 12:14:06,131 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:14:06,338 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:14:06,349 INFO    SenderThread:4494 [dir_watcher.py:__init__():165] watching files in: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files
+2021-01-29 12:14:06,349 INFO    SenderThread:4494 [sender.py:_start_run_threads():487] run started: uy47wi8u with start time 1611918844
+2021-01-29 12:14:06,350 DEBUG   SenderThread:4494 [sender.py:send():90] send: summary
+2021-01-29 12:14:06,350 INFO    SenderThread:4494 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-29 12:14:06,351 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: run_start
+2021-01-29 12:14:06,365 DEBUG   HandlerThread:4494 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-01-29 12:14:06,380 DEBUG   HandlerThread:4494 [cmd.py:execute():718] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=None)
+2021-01-29 12:14:06,466 DEBUG   SenderThread:4494 [sender.py:send():90] send: files
+2021-01-29 12:14:06,466 INFO    SenderThread:4494 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2021-01-29 12:14:06,474 DEBUG   Thread-11 :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:14:06,479 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:14:06,479 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:14:06,479 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:14:06,483 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:14:06,653 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:14:06,661 DEBUG   Thread-11 :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:14:06,678 DEBUG   Thread-11 :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-29 12:14:07,059 DEBUG   Thread-11 :4494 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_pong_ppo/uy47wi8u/wandb-metadata.json?Expires=1612005246&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=JOizRMeftN69qjGwnThWwkMBet31PetiNIaMXhNtnWjI4MyV6JIIEIo%2Flii3jRAKWeerMlc1%2FQjY3r%2BU7HWTpABfkivX%2B7l8dVmpJGeVLbPi4FbM%2FYUEdLKmz0EEjHCt4h8UOz%2FxkIQNw3RbQSkuS3%2B0gxepxaFqsH11wnvX5sXrjeIjseZOHLHayimEzWnoSOZOArYOosQ4OKGOtxEMS7O%2BqyQXBCXjVdEpr1H73Upjm8lU5ndVLo2bn%2BJa79%2FQKNNldUK8QnTuGxhbGNCxW2V25rc9pPA86QfaaGDM3XF5ZPSohXH6p0I9vfqVoWmrYWkDWK3GvHYsyheMLb4Xfw%3D%3D HTTP/1.1" 200 0
+2021-01-29 12:14:07,061 INFO    Thread-11 :4494 [upload_job.py:push():131] Uploaded file /var/folders/7n/jknlm6395y18hp3nghbc11880000gn/T/tmp5k6ba83zwandb/1gbm2y0i-wandb-metadata.json
+2021-01-29 12:14:07,352 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:07,353 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/wandb-metadata.json
+2021-01-29 12:14:07,353 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/requirements.txt
+2021-01-29 12:14:08,354 DEBUG   Thread-5  :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:14:08,356 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:08,598 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:09,357 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:09,746 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:10,362 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:11,364 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:11,952 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:12,365 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:13,366 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:14,233 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:14,371 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:14,501 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:15,372 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:16,376 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:17,253 DEBUG   SenderThread:4494 [sender.py:send():90] send: history
+2021-01-29 12:14:17,253 DEBUG   SenderThread:4494 [sender.py:send():90] send: summary
+2021-01-29 12:14:17,254 INFO    SenderThread:4494 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-29 12:14:17,381 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:17,461 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:18,382 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:18,706 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:19,386 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:20,389 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:20,897 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:21,392 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:21,667 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:14:21,668 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:14:21,668 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:14:21,671 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:14:21,856 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:14:22,396 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:23,202 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:23,374 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:23,398 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:24,399 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:25,402 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:26,405 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:26,805 DEBUG   SenderThread:4494 [sender.py:send():90] send: history
+2021-01-29 12:14:26,805 DEBUG   SenderThread:4494 [sender.py:send():90] send: summary
+2021-01-29 12:14:26,806 INFO    SenderThread:4494 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-29 12:14:26,977 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:27,407 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:27,707 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:28,409 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:29,413 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:29,913 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:30,415 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:31,416 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:32,207 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:32,386 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:32,419 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:33,423 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:34,426 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:35,433 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:36,433 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:36,713 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:36,861 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:14:36,861 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:14:36,861 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:14:36,864 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:14:36,880 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:37,020 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:14:37,434 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:37,536 DEBUG   SenderThread:4494 [sender.py:send():90] send: history
+2021-01-29 12:14:37,536 DEBUG   SenderThread:4494 [sender.py:send():90] send: summary
+2021-01-29 12:14:37,537 INFO    SenderThread:4494 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-29 12:14:38,437 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:39,439 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:39,739 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:40,442 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:41,219 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:41,448 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:42,450 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:43,395 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:43,453 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:44,455 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:45,459 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:45,739 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:45,921 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:46,461 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:47,464 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:47,727 DEBUG   SenderThread:4494 [sender.py:send():90] send: history
+2021-01-29 12:14:47,727 DEBUG   SenderThread:4494 [sender.py:send():90] send: summary
+2021-01-29 12:14:47,728 INFO    SenderThread:4494 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-29 12:14:48,467 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:49,468 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:49,927 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:50,231 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:50,469 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:51,472 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:52,027 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:14:52,027 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:14:52,027 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:14:52,030 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:14:52,195 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:14:52,422 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:52,473 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:53,474 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:54,475 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:54,727 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:54,945 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:55,480 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:56,486 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:57,487 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:58,063 DEBUG   SenderThread:4494 [sender.py:send():90] send: history
+2021-01-29 12:14:58,063 DEBUG   SenderThread:4494 [sender.py:send():90] send: summary
+2021-01-29 12:14:58,064 INFO    SenderThread:4494 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-29 12:14:58,244 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:14:58,489 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:14:59,227 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:14:59,494 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:00,498 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:01,408 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:15:01,498 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:02,500 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:03,504 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:03,731 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:03,932 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:15:04,507 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:05,512 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:06,513 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:06,939 DEBUG   SenderThread:4494 [sender.py:send():90] send: history
+2021-01-29 12:15:06,954 DEBUG   SenderThread:4494 [sender.py:send():90] send: summary
+2021-01-29 12:15:06,954 INFO    SenderThread:4494 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-29 12:15:07,200 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:15:07,202 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:15:07,202 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:15:07,205 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:15:07,370 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:15:07,518 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:08,208 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:08,520 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:09,522 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:10,523 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:11,525 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:12,530 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:12,712 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:13,535 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:14,539 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:15,207 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:15:15,542 INFO    Thread-8  :4494 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:15:17,218 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:21,719 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:22,375 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:15:22,376 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:15:22,376 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:15:22,381 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:15:22,554 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:15:26,241 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:26,409 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:15:30,747 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:35,244 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:37,565 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:15:37,566 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:15:37,566 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:15:37,571 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:15:37,741 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:15:39,765 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:39,938 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:15:44,268 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:48,783 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:52,746 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:15:52,747 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:15:52,747 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:15:52,752 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:15:52,926 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:15:53,285 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:15:53,461 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:15:57,795 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:02,289 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:06,793 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:06,969 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:16:07,937 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:16:07,937 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:16:07,937 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:16:07,942 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:16:08,107 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:16:11,313 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:15,828 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:20,364 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:20,544 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:16:23,113 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:16:23,114 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:16:23,114 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:16:23,118 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:16:23,295 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:16:24,868 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:29,397 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:33,894 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:34,065 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:16:38,304 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:16:38,305 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:16:38,305 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:16:38,308 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:16:38,473 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:16:38,477 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:42,918 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:47,414 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:47,593 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:16:51,891 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:16:53,480 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:16:53,480 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:16:53,480 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:16:53,483 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:16:53,650 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:16:56,392 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:00,911 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:01,096 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:17:05,409 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:08,658 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:17:08,659 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:17:08,659 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:17:08,663 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:17:08,845 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:17:09,910 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:14,422 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:14,614 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:17:18,932 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:23,448 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:23,851 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:17:23,852 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:17:23,852 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:17:23,859 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:17:24,036 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:17:27,949 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:28,124 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:17:32,431 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:36,928 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:39,044 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:17:39,044 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:17:39,045 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:17:39,050 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:17:39,214 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:17:41,419 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:41,613 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:17:45,912 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:50,431 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:54,221 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: status
+2021-01-29 12:17:54,222 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:17:54,222 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: status
+2021-01-29 12:17:54,226 DEBUG   SenderThread:4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:17:54,400 DEBUG   SenderThread:4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:17:54,935 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:17:55,125 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:17:59,449 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:18:03,961 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:18:08,470 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:18:08,653 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:18:09,012 DEBUG   SenderThread:4494 [sender.py:send():90] send: exit
+2021-01-29 12:18:09,013 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: poll_exit
+2021-01-29 12:18:09,013 INFO    SenderThread:4494 [sender.py:send_exit():168] handling exit code: 0
+2021-01-29 12:18:09,013 INFO    SenderThread:4494 [sender.py:send_exit():176] send defer
+2021-01-29 12:18:09,013 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:18:09,013 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: poll_exit
+2021-01-29 12:18:09,014 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: defer
+2021-01-29 12:18:09,014 INFO    HandlerThread:4494 [handler.py:handle_request_defer():69] handle defer: 0
+2021-01-29 12:18:09,014 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:18:09,015 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: defer
+2021-01-29 12:18:09,015 INFO    SenderThread:4494 [sender.py:send_request_defer():185] handle sender defer: 0
+2021-01-29 12:18:09,015 INFO    SenderThread:4494 [sender.py:send_request_defer():221] send defer: 1
+2021-01-29 12:18:09,015 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: defer
+2021-01-29 12:18:09,015 INFO    HandlerThread:4494 [handler.py:handle_request_defer():69] handle defer: 1
+2021-01-29 12:18:09,083 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:18:09,083 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: defer
+2021-01-29 12:18:09,084 INFO    SenderThread:4494 [sender.py:send_request_defer():185] handle sender defer: 1
+2021-01-29 12:18:09,084 INFO    SenderThread:4494 [sender.py:send_request_defer():221] send defer: 2
+2021-01-29 12:18:09,084 DEBUG   SenderThread:4494 [sender.py:send():90] send: stats
+2021-01-29 12:18:09,084 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: defer
+2021-01-29 12:18:09,085 INFO    HandlerThread:4494 [handler.py:handle_request_defer():69] handle defer: 2
+2021-01-29 12:18:09,086 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:18:09,086 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: defer
+2021-01-29 12:18:09,086 INFO    SenderThread:4494 [sender.py:send_request_defer():185] handle sender defer: 2
+2021-01-29 12:18:09,086 INFO    SenderThread:4494 [sender.py:send_request_defer():221] send defer: 3
+2021-01-29 12:18:09,086 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: defer
+2021-01-29 12:18:09,087 INFO    HandlerThread:4494 [handler.py:handle_request_defer():69] handle defer: 3
+2021-01-29 12:18:09,087 DEBUG   SenderThread:4494 [sender.py:send():90] send: summary
+2021-01-29 12:18:09,088 INFO    SenderThread:4494 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-29 12:18:09,089 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:18:09,089 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: defer
+2021-01-29 12:18:09,089 INFO    SenderThread:4494 [sender.py:send_request_defer():185] handle sender defer: 3
+2021-01-29 12:18:09,089 INFO    SenderThread:4494 [sender.py:send_request_defer():221] send defer: 4
+2021-01-29 12:18:09,090 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: defer
+2021-01-29 12:18:09,090 INFO    HandlerThread:4494 [handler.py:handle_request_defer():69] handle defer: 4
+2021-01-29 12:18:09,090 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:18:09,090 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: defer
+2021-01-29 12:18:09,090 INFO    SenderThread:4494 [sender.py:send_request_defer():185] handle sender defer: 4
+2021-01-29 12:18:09,091 INFO    SenderThread:4494 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-01-29 12:18:09,985 INFO    SenderThread:4494 [dir_watcher.py:finish():309] scan: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files
+2021-01-29 12:18:09,986 INFO    SenderThread:4494 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/requirements.txt requirements.txt
+2021-01-29 12:18:09,986 INFO    SenderThread:4494 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log output.log
+2021-01-29 12:18:09,991 INFO    SenderThread:4494 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/config.yaml config.yaml
+2021-01-29 12:18:09,995 INFO    SenderThread:4494 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/wandb-summary.json wandb-summary.json
+2021-01-29 12:18:09,996 INFO    SenderThread:4494 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/wandb-metadata.json wandb-metadata.json
+2021-01-29 12:18:09,996 INFO    SenderThread:4494 [sender.py:send_request_defer():221] send defer: 5
+2021-01-29 12:18:09,999 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: defer
+2021-01-29 12:18:09,999 INFO    HandlerThread:4494 [handler.py:handle_request_defer():69] handle defer: 5
+2021-01-29 12:18:09,999 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:18:09,999 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: defer
+2021-01-29 12:18:09,999 INFO    SenderThread:4494 [sender.py:send_request_defer():185] handle sender defer: 5
+2021-01-29 12:18:10,001 DEBUG   Thread-12 :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:18:10,001 INFO    SenderThread:4494 [file_pusher.py:finish():169] shutting down file pusher
+2021-01-29 12:18:10,002 DEBUG   Thread-13 :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:18:10,002 INFO    SenderThread:4494 [sender.py:send_request_defer():221] send defer: 6
+2021-01-29 12:18:10,003 DEBUG   Thread-14 :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:18:10,004 DEBUG   Thread-15 :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-29 12:18:10,005 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: defer
+2021-01-29 12:18:10,005 INFO    HandlerThread:4494 [handler.py:handle_request_defer():69] handle defer: 6
+2021-01-29 12:18:10,005 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:18:10,005 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: defer
+2021-01-29 12:18:10,005 INFO    SenderThread:4494 [sender.py:send_request_defer():185] handle sender defer: 6
+2021-01-29 12:18:10,183 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:18:10,191 DEBUG   Thread-12 :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:18:10,202 DEBUG   Thread-12 :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-29 12:18:10,203 DEBUG   Thread-14 :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:18:10,208 DEBUG   Thread-15 :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:18:10,209 DEBUG   Thread-13 :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-29 12:18:10,215 DEBUG   Thread-14 :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-29 12:18:10,220 DEBUG   Thread-15 :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-29 12:18:10,221 DEBUG   Thread-13 :4494 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-29 12:18:10,341 DEBUG   Thread-5  :4494 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_pong_ppo/uy47wi8u/file_stream HTTP/1.1" 200 None
+2021-01-29 12:18:10,350 INFO    SenderThread:4494 [sender.py:send_request_defer():221] send defer: 7
+2021-01-29 12:18:10,350 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: defer
+2021-01-29 12:18:10,351 INFO    HandlerThread:4494 [handler.py:handle_request_defer():69] handle defer: 7
+2021-01-29 12:18:10,351 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:18:10,351 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: defer
+2021-01-29 12:18:10,351 INFO    SenderThread:4494 [sender.py:send_request_defer():185] handle sender defer: 7
+2021-01-29 12:18:10,351 INFO    SenderThread:4494 [sender.py:send_request_defer():221] send defer: 8
+2021-01-29 12:18:10,352 DEBUG   SenderThread:4494 [sender.py:send():90] send: final
+2021-01-29 12:18:10,352 DEBUG   SenderThread:4494 [sender.py:send():90] send: footer
+2021-01-29 12:18:10,353 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: defer
+2021-01-29 12:18:10,353 INFO    HandlerThread:4494 [handler.py:handle_request_defer():69] handle defer: 8
+2021-01-29 12:18:10,353 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:18:10,353 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: defer
+2021-01-29 12:18:10,353 INFO    SenderThread:4494 [sender.py:send_request_defer():185] handle sender defer: 8
+2021-01-29 12:18:10,535 DEBUG   Thread-12 :4494 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_pong_ppo/uy47wi8u/requirements.txt?Expires=1612005490&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=eNseV5yPIgKAK%2Ba%2Fj2C%2BmqV3B5NpU2M49hkMNezfmuo76xasozXOkp9mq2JgsK0kVJ%2FK1AGeK5Hw9UxOVx4BADEBDJJ6dxZtyq3P9pKletSBxNGWKMB%2FFrradf4VhM8v2CHPQM%2FeJWzlIyywFbgJA7qkOlGAk7BPSSgqmAg8eZVnJiIWKiCjQXO3fSNIIEcs83rZCLMHpmz%2F1BYdcxfLKo899k41nA9njmGpQuJ%2BTbGZpYyluF7fU79eW8qkWux0eGnqH5%2BU3Z2lG0o19IZU3p%2FtmfmhZZla3jwdk%2FZGY3iXnipP%2BtAo77DadhjH7t93B0jz%2B9ouwDAia47rsHbsag%3D%3D HTTP/1.1" 200 0
+2021-01-29 12:18:10,539 INFO    Thread-12 :4494 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/requirements.txt
+2021-01-29 12:18:10,543 DEBUG   Thread-15 :4494 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_pong_ppo/uy47wi8u/wandb-summary.json?Expires=1612005490&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=QnMzjGa3OeS6ulzCOzkGMJy10P%2Bxl%2BFByNBPfGe1fMJC8HdAa%2FteygZTEyRq2rriygmKhN8F46uSGbyk7G7z%2BmaxbfDuMVr%2Ff816i0y6912wfAt1uP1%2BcqSIdwdfdwBkHCEXgU2FeQADia%2BjegGVFjf98rAmns2QO4lY6d8uudWfil5CZpGrqByGtKOwyJShH1mAaAZDV3hBM5lXhibz8yoCM5xWpu%2BhxsfS52Ov0%2BswMdNHcwxnbkDSncHuKPjFwzThyMaNCfc9189WFLHuZzmPXbtHnvYmjccaptRJETQVrdcoC3LAfLpoWcLR0HxESuI3X1PYnm5sH3nJ%2F2PXfA%3D%3D HTTP/1.1" 200 0
+2021-01-29 12:18:10,547 INFO    Thread-15 :4494 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/wandb-summary.json
+2021-01-29 12:18:10,553 DEBUG   Thread-14 :4494 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_pong_ppo/uy47wi8u/config.yaml?Expires=1612005490&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=L9UzwnBfv25i8iluMCNhEJMeCoK1ZVHJ6v8jv40%2BGsLe%2F%2BU5UbVlM97fyZZXYtH87p3C92JKVUOUSrNBlLH7E9s8uqLXjGCD9jBMFz%2FVTzznz9K7%2BUs9iaXKcTKzw5WrKkixfEK66P6ZhSvYAI6GgAIRtTkJYuiKL9KwATxmemNTemRI%2B8pRrHP2vYJ8avJ0vk0hAJBQlEyMM9rAyHYJJUDfRQ%2FgmH%2FwMnGZgLY7XIFdVkz6XsOXFRn7wDiBz9Uk4Vt%2B0eNbJLY4zM0JI6rSEMXn3Jujz7Fgjp400OI4ykaMEEc0a%2Bom5zEO1FnrSWEvQ5IfKA2lGvoWynDo9x8ktg%3D%3D HTTP/1.1" 200 0
+2021-01-29 12:18:10,556 INFO    Thread-14 :4494 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/config.yaml
+2021-01-29 12:18:10,563 DEBUG   Thread-13 :4494 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_pong_ppo/uy47wi8u/output.log?Expires=1612005490&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=gMYZCT1yez4o5eqnVrokmqiA3JTcMMWDF2sGb982S4cYtmUJX4JAtQZyTOn9G3wrMK24ryvVB%2FJYPnh7TAswvcy7elQIJ1nkdmbWmHMSUaTJdZ%2FHDdD7PHSAayC8%2By%2FR8jgbb1vPvoPtwkt8ZtGssVZx9FeIJD%2Bd566olNuqz3NqWeeV83eVOEjHcZbzYtflaFMvwU5X9I36ldPYZNxwKBvudVvIgz8Vn5u9NXfLFJVQ82Di4Q%2BejDNxUelFN0u8RR7KagiOJ9bugyQnyZQpkEI%2BZ6dtDrogLvszSE7m51MR%2FC3h67a6vNNUUlM7CfS7Sfw8lulUa0hfo36OqiDLVA%3D%3D HTTP/1.1" 200 0
+2021-01-29 12:18:10,567 INFO    Thread-13 :4494 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/files/output.log
+2021-01-29 12:18:11,029 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: poll_exit
+2021-01-29 12:18:11,030 DEBUG   SenderThread:4494 [sender.py:send():90] send: request
+2021-01-29 12:18:11,030 DEBUG   SenderThread:4494 [sender.py:send_request():99] send_request: poll_exit
+2021-01-29 12:18:11,030 INFO    SenderThread:4494 [file_pusher.py:join():174] waiting for file pusher
+2021-01-29 12:18:11,034 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: get_summary
+2021-01-29 12:18:11,036 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: sampled_history
+2021-01-29 12:18:11,040 DEBUG   HandlerThread:4494 [handler.py:handle_request():55] handle_request: shutdown
+2021-01-29 12:18:11,041 INFO    HandlerThread:4494 [handler.py:finish():271] shutting down handler
+2021-01-29 12:18:11,353 INFO    WriterThread:4494 [datastore.py:close():257] close: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/run-uy47wi8u.wandb
+2021-01-29 12:18:12,033 INFO    SenderThread:4494 [sender.py:finish():642] shutting down sender
+2021-01-29 12:18:12,033 INFO    SenderThread:4494 [file_pusher.py:finish():169] shutting down file pusher
+2021-01-29 12:18:12,033 INFO    SenderThread:4494 [file_pusher.py:join():174] waiting for file pusher
+2021-01-29 12:18:12,036 INFO    MainThread:4494 [internal.py:handle_exit():138] Internal process exited

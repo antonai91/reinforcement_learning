@@ -1,0 +1,64 @@
+2021-01-29 12:13:37,989 INFO    MainThread:4471 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-29 12:13:37,989 INFO    MainThread:4471 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn,fork,forkserver
+2021-01-29 12:13:37,989 INFO    MainThread:4471 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-29 12:13:37,989 INFO    MainThread:4471 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fa5d20a7520>
+2021-01-29 12:13:37,990 INFO    MainThread:4471 [wandb_init.py:_log_setup():303] Logging user logs to /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121337-hop6x08z/logs/debug.log
+2021-01-29 12:13:37,990 INFO    MainThread:4471 [wandb_init.py:_log_setup():304] Logging internal logs to /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121337-hop6x08z/logs/debug-internal.log
+2021-01-29 12:13:39,139 ERROR   MainThread:4471 [wandb_init.py:init():601] error
+Traceback (most recent call last):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 575, in init
+    run = wi.init()
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 411, in init
+    ret = backend.interface.communicate_run(run, timeout=30)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 541, in communicate_run
+    run = self._make_run(run_obj)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 182, in _make_run
+    run._make_proto_run(proto_run)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 315, in _make_proto_run
+    run.job_type = self._job_type
+TypeError: {'learning_rate': 0.0001, 'batch_size': 64, 'architecture': 'ppo', 'infra': 'Ubuntu'} has type dict, but expected one of: bytes, unicode
+2021-01-29 12:14:04,824 INFO    MainThread:4471 [wandb_settings.py:_apply_source_login():607] setting login settings: {}
+2021-01-29 12:14:04,833 INFO    MainThread:4471 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-29 12:14:04,833 INFO    MainThread:4471 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn,fork,forkserver
+2021-01-29 12:14:04,833 INFO    MainThread:4471 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-29 12:14:04,834 INFO    MainThread:4471 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fa5d20a7520>
+2021-01-29 12:14:04,834 INFO    MainThread:4471 [wandb_init.py:_log_setup():303] Logging user logs to /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/logs/debug.log
+2021-01-29 12:14:04,834 INFO    MainThread:4471 [wandb_init.py:_log_setup():304] Logging internal logs to /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121404-uy47wi8u/logs/debug-internal.log
+2021-01-29 12:14:06,479 INFO    MainThread:4471 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-29 12:14:06,480 INFO    MainThread:4471 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-01-29 12:14:06,482 INFO    MainThread:4471 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-01-29 12:14:06,483 INFO    MainThread:4471 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-01-29 12:18:08,996 INFO    MainThread:4471 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2021-01-29 12:18:09,006 INFO    MainThread:4471 [wandb_run.py:_restore():1179] restore
+2021-01-29 12:18:09,014 INFO    MainThread:4471 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "1b504ff18d47462a91aacbb7b8a52d76"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 819
+      total_bytes: 819
+    }
+  }
+}
+
+2021-01-29 12:18:11,031 INFO    MainThread:4471 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "b7b9fe9a55b7431dba46310afdeac5c3"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 9700
+      total_bytes: 9700
+    }
+  }
+}
+
+2021-01-29 12:18:12,173 INFO    MainThread:4471 [wandb_run.py:_show_summary():1469] rendering summary
+2021-01-29 12:18:12,174 INFO    MainThread:4471 [wandb_run.py:_show_history():1507] rendering history
+2021-01-29 12:18:12,176 INFO    MainThread:4471 [wandb_run.py:_show_files():1536] logging synced files

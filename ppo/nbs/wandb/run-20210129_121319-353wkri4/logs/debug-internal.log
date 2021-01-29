@@ -1,0 +1,15 @@
+2021-01-29 12:13:21,049 INFO    MainThread:4467 [internal.py:wandb_internal():63] W&B internal server running at pid: 4467
+2021-01-29 12:13:21,052 DEBUG   HandlerThread:4467 [handler.py:handle_request():55] handle_request: check_version
+2021-01-29 12:13:21,052 INFO    WriterThread:4467 [datastore.py:open_for_write():76] open: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121319-353wkri4/run-353wkri4.wandb
+2021-01-29 12:13:21,054 DEBUG   SenderThread:4467 [sender.py:send():90] send: header
+2021-01-29 12:13:21,054 DEBUG   SenderThread:4467 [sender.py:send():90] send: request
+2021-01-29 12:13:21,054 DEBUG   SenderThread:4467 [sender.py:send_request():99] send_request: check_version
+2021-01-29 12:13:22,068 DEBUG   Thread-4  :4467 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2021-01-29 12:13:22,201 DEBUG   Thread-4  :4467 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 53088
+2021-01-29 12:13:29,325 WARNING MainThread:4467 [internal.py:wandb_internal():117] Internal process interrupt: 1
+2021-01-29 12:13:29,479 WARNING MainThread:4467 [internal.py:wandb_internal():117] Internal process interrupt: 2
+2021-01-29 12:13:29,479 ERROR   MainThread:4467 [internal.py:wandb_internal():120] Internal process interrupted.
+2021-01-29 12:13:30,080 INFO    WriterThread:4467 [datastore.py:close():257] close: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121319-353wkri4/run-353wkri4.wandb
+2021-01-29 12:13:30,081 INFO    HandlerThread:4467 [handler.py:finish():271] shutting down handler
+2021-01-29 12:13:30,286 INFO    SenderThread:4467 [sender.py:finish():642] shutting down sender
+2021-01-29 12:13:30,287 INFO    MainThread:4467 [internal.py:handle_exit():138] Internal process exited
