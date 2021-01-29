@@ -53,9 +53,9 @@ class A2CAgent:
                                 "Reward": round(ep_rewards[-2], 2), "Time taken": round(time.time() - start_time, 2)})
 
             if ep_rewards[-1] > 10:
-                self.learning_rate = 0.00001
-                print("changing learning rate to {}".format(0.00001))
-                        
+                self.learning_rate = 1e-5
+            else:
+                self.learning_rate = 1e-4
 
             _, next_value = self.model.action_value(next_obs[None, :])
 
