@@ -1,0 +1,8 @@
+2021-01-29 12:13:38,914 INFO    MainThread:4480 [internal.py:wandb_internal():63] W&B internal server running at pid: 4480
+2021-01-29 12:13:38,916 DEBUG   HandlerThread:4480 [handler.py:handle_request():55] handle_request: check_version
+2021-01-29 12:13:38,916 INFO    WriterThread:4480 [datastore.py:open_for_write():76] open: /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_121337-hop6x08z/run-hop6x08z.wandb
+2021-01-29 12:13:38,917 DEBUG   SenderThread:4480 [sender.py:send():90] send: header
+2021-01-29 12:13:38,917 DEBUG   SenderThread:4480 [sender.py:send():90] send: request
+2021-01-29 12:13:38,917 DEBUG   SenderThread:4480 [sender.py:send_request():99] send_request: check_version
+2021-01-29 12:13:38,921 DEBUG   Thread-4  :4480 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2021-01-29 12:13:39,079 DEBUG   Thread-4  :4480 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 53088

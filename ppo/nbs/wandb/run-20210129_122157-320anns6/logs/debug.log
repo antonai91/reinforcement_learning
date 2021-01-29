@@ -1,0 +1,53 @@
+2021-01-29 12:21:57,173 INFO    MainThread:4699 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-29 12:21:57,174 INFO    MainThread:4699 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn,fork,forkserver
+2021-01-29 12:21:57,174 INFO    MainThread:4699 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-29 12:21:57,174 INFO    MainThread:4699 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7febbd059130>
+2021-01-29 12:21:57,174 INFO    MainThread:4699 [wandb_init.py:_log_setup():303] Logging user logs to /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_122157-320anns6/logs/debug.log
+2021-01-29 12:21:57,174 INFO    MainThread:4699 [wandb_init.py:_log_setup():304] Logging internal logs to /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_122157-320anns6/logs/debug-internal.log
+2021-01-29 12:21:57,175 INFO    MainThread:4699 [wandb_run.py:finish():914] finishing run anton-ai/tensorflow2_pong_a2c/2kkpr069
+2021-01-29 12:21:57,176 INFO    MainThread:4699 [wandb_init.py:_jupyter_teardown():234] cleaning up jupyter logic
+2021-01-29 12:21:57,176 INFO    MainThread:4699 [jupyter.py:save_history():208] not saving jupyter history
+2021-01-29 12:21:57,176 INFO    MainThread:4699 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2021-01-29 12:21:57,176 INFO    MainThread:4699 [wandb_run.py:_restore():1179] restore
+2021-01-29 12:21:57,180 INFO    MainThread:4699 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "17b3946baca143adabfadac7cc478dec"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 819
+      total_bytes: 819
+    }
+  }
+}
+
+2021-01-29 12:21:59,190 INFO    MainThread:4699 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "4f7158d6997e45428002f58aa099af91"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 4
+    }
+    pusher_stats {
+      uploaded_bytes: 3476
+      total_bytes: 3476
+    }
+  }
+}
+
+2021-01-29 12:22:00,294 INFO    MainThread:4699 [wandb_run.py:_show_files():1536] logging synced files
+2021-01-29 12:22:01,844 INFO    MainThread:4699 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-29 12:22:01,845 INFO    MainThread:4699 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-01-29 12:22:01,845 INFO    MainThread:4699 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-01-29 12:22:01,845 INFO    MainThread:4699 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-01-29 12:22:15,657 INFO    MainThread:4699 [wandb_init.py:_jupyter_setup():255] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7febc4110f10>
+2021-01-29 12:22:15,661 INFO    MainThread:4699 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-29 12:22:15,661 INFO    MainThread:4699 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn,fork,forkserver
+2021-01-29 12:22:15,661 INFO    MainThread:4699 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-29 12:22:15,661 INFO    MainThread:4699 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7febbd059130>
+2021-01-29 12:22:15,662 INFO    MainThread:4699 [wandb_init.py:_log_setup():303] Logging user logs to /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_122215-13oj0i91/logs/debug.log
+2021-01-29 12:22:15,662 INFO    MainThread:4699 [wandb_init.py:_log_setup():304] Logging internal logs to /Users/anton/Projects/reinforcement_learning/ppo/nbs/wandb/run-20210129_122215-13oj0i91/logs/debug-internal.log
+2021-01-29 12:22:15,663 INFO    MainThread:4699 [wandb_run.py:finish():914] finishing run anton-ai/tensorflow2_pong_a2c/320anns6
