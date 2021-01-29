@@ -1,3 +1,26 @@
+import sys
+sys.path.append("../src/")
+import wandb
+import os
+from config import *
+from pong_wrapper import *
+from process_image import *
+from utilities import *
+from ppo_network import *
+from ppo_agent import *
+
+wandb.init(
+  project="tensorflow2_pong_a2c",
+  tags=["a2c", "CNN", "RL"],
+  config=CONFIG_WANDB,
+)
+
+pw = PongWrapper(ENV_NAME, history_length=4)
+model = PpoNetwork()
+ppo_agent = PpoAgent(model)
+
+def main():
+    rewards_history = ppo_agent.train(pw)
 
 if __name__ == "__main__":
     try:
