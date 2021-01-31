@@ -33,13 +33,6 @@ class PpoAgent():
             print("loading model in {}".format(load_path))
             self.load_model(load_path)
             print("model loaded")
-        
-        """
-        if load_path is not None:
-            print("loading model in {}".format(load_path))
-            self.load_model(load_path)
-            print("model loaded")
-        """
     
     def logit_loss(self, old_policy, new_policy, actions_oh, advs):
         advs = tf.stop_gradient(advs)
@@ -52,7 +45,7 @@ class PpoAgent():
         ratio = tf.math.exp(log_p - old_log_p)
         clipped_ratio = tf.clip_by_value(
             ratio, 1 - self.clip_ratio, 1 + self.clip_ratio)
-        surrogate = -tf.minimum(ratio * advs, self.clip_ratio * advs)
+        surrogate = -tf.minimum(ratio * advs, clipped_ratio * advs)
         return tf.reduce_mean(surrogate) - self.entropy_c * categorical_crossentropy(new_policy, new_policy)
     
     def value_loss(self, returns, values):
@@ -120,7 +113,10 @@ class PpoAgent():
             grads = tape.gradient(loss, self.model.trainable_variables)
             self.opt.apply_gradients(zip(grads, self.model.trainable_variables))
             
-            if (update + 1) % 5000 == 0 and self.save_path is not None:
+            wandb.log({"logit_loss": tf.math.reduce_mean(logit_loss).numpy(), "value_loss": tf.math.reduce_mean(value_loss).numpy(), 
+                       "loss": tf.math.reduce_mean(loss).numpy()})
+            
+            if (update + 1) % 10000 == 0 and self.save_path is not None:
                 print("Saving model in {}".format(self.save_path))
                 self.save_model(f'{self.save_path}/save_agent_{time.strftime("%Y%m%d%H%M") + "_" + str(update).zfill(8)}')
                 print("model saved")

@@ -10,7 +10,7 @@ from ppo_network import *
 from ppo_agent import *
 
 wandb.init(
-  project="tensorflow2_pong_a2c",
+  project="tensorflow2_pong_ppo",
   tags=["a2c", "CNN", "RL"],
   config=CONFIG_WANDB,
 )
