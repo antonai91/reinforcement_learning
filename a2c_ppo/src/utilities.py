@@ -12,4 +12,3 @@ def embed_mp4(filename):
   </video>'''.format(b64.decode())
 
   return IPython.display.HTML(tag)
-

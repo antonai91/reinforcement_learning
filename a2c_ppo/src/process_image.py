@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-
 # This function can resize to any shape, but was built to resize to 84x84
 def process_image(image, shape=(84, 84)):
     """Preprocesses a 210x160x3 frame to 84x84x1 grayscale
@@ -20,4 +19,3 @@ def process_image(image, shape=(84, 84)):
     image = image.reshape((*shape, 1))
 
     return image
-
