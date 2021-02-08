@@ -6,10 +6,10 @@ from tensorflow.keras.layers import Input, Dense, Lambda, Concatenate
 from tensorflow.keras.initializers import random_normal
 
 class Actor(tf.keras.Model):
-    def __init__(self, action_dim, action_upper_bound, hidden_0=ACTOR_HIDDEN_0, hidden_1=ACTOR_HIDDEN_1):
+    def __init__(self, action_dim, action_bound, hidden_0=ACTOR_HIDDEN_0, hidden_1=ACTOR_HIDDEN_1):
         super().__init__()
         self.action_dim = action_dim
-        self.action_upper_bound = action_upper_bound
+        self.action_bound = action_bound
         self.hidden_0 = hidden_0
         self.hidden_1 = hidden_1
 
@@ -22,7 +22,7 @@ class Actor(tf.keras.Model):
         x = tf.convert_to_tensor(inputs)
         x = self.dense_0(x)
         x = self.dense_1(x)
-        return self.action(x) * self.action_upper_bound
+        return self.action(x) * self.action_bound
     
 class Critic(tf.keras.Model):
     def __init__(self, action_dim, hidden_0=CRITIC_HIDDEN_0, hidden_1=CRITIC_HIDDEN_1, hidden_2=CRITIC_HIDDEN_2, hidden_3=CRITIC_HIDDEN_3):
