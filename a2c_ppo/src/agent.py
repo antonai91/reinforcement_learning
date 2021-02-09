@@ -6,6 +6,7 @@ import tensorflow.keras.optimizers as opt
 import tensorflow as tf
 import numpy as np
 import time
+from tqdm import tqdm
 import wandb
 import os
 
@@ -48,7 +49,7 @@ class Agent:
         # Training loop: collect samples, send to optimizer, repeat updates times.
         ep_rewards = [0.0]
         next_obs = wrapper.reset()
-        for update in range(self.updates):
+        for update in tqdm(range(self.updates)):
             start_time = time.time()
             for step in range(self.batch_size):
                 observations[step] = next_obs.copy()
@@ -66,6 +67,7 @@ class Agent:
 
             returns, advs = self._returns_advantages(rewards, dones, values, next_value, self.std_adv)
 
+
             # Performs a full training step on the collected batch.
             # Note: no need to mess around with gradients, Keras API handles it.
             with tf.GradientTape() as tape:
@@ -80,6 +82,11 @@ class Agent:
                 loss = logit_loss + value_loss
             grads = tape.gradient(loss, self.model.trainable_variables)
             self.opt.apply_gradients(zip(grads, self.model.trainable_variables))
+
+            if update % 5000 == 0 and self.save_path is not None:
+                print("Saving model in {}".format(self.save_path))
+                self.save_model(f'{self.save_path}/save_agent_{time.strftime("%Y%m%d%H%M") + "_" + str(update).zfill(8)}/model.tf')
+                print("model saved")
                 
 
         return ep_rewards
@@ -172,11 +179,11 @@ class Agent:
     def save_model(self, folder_path):
         if not os.path.isdir(folder_path):
             os.makedirs(folder_path)
-        self.model.save_weights(folder_path )
+        self.model.save(folder_path, save_format="tf")
                               
     
     def load_model(self, folder_path):
-        self.model.load_weights(folder_path)
+        self.model = tf.keras.models.load_model(folder_path) 
         
     def logits_action_value(self, obs):
         # Executes `call()` under the hood.

@@ -10,7 +10,7 @@ from network import *
 from agent import *
 
 wandb.init(
-  project="tensorflow2_pong_a2c",
+  project="tensorflow2_pong_{}".format(AGENT.lower()),
   tags=[AGENT.lower(), "CNN", "RL", "atari_pong"],
   config=CONFIG_WANDB,
 )
@@ -29,8 +29,8 @@ if __name__ == "__main__":
         # Save the model, I need this in order to save the networks, frame number, rewards and losses. 
         # if I want to stop the script and restart without training from the beginning
         if PATH_SAVE_MODEL is None:
-            print("Setting path to ../model/{}/".format(AGENT.lower())
-            PATH_SAVE_MODEL = "../model/{}/".format(AGENT.lower())
+            print("Setting path to ../model/{}".format(AGENT.lower()))
+            PATH_SAVE_MODEL = "../model/{}".format(AGENT.lower())
         print('Saving the model in ' + f'{PATH_SAVE_MODEL}/save_agent_{time.strftime("%Y%m%d%H%M")}')
-        agent.save_model(f'{PATH_SAVE_MODEL}/save_agent_{time.strftime("%Y%m%d%H%M")}')
+        agent.save_model(f'{PATH_SAVE_MODEL}/save_agent_{time.strftime("%Y%m%d%H%M")}/model.tf')
         print('Saved.')
