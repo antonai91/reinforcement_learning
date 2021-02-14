@@ -104,7 +104,7 @@ class Agent:
 
     def learn(self):
         if self.replay_buffer.check_buffer_size() == False:
-            return None
+            return
 
         state, action, reward, new_state, done = self.replay_buffer.get_minibatch()
 

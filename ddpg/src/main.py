@@ -31,7 +31,7 @@ env = gym.make(ENV_NAME)
 agent = Agent(env)
 
 scores = []
-evaluation = False
+evaluation = True
 
 if PATH_LOAD is not None:
     print("loading weights")
@@ -42,7 +42,7 @@ if PATH_LOAD is not None:
     agent.target_critic(observation[None, :], action)
     agent.load()
     print(agent.replay_buffer.buffer_counter)
-    print(agent.replay_buffer.n_episodes)
+    print(agent.replay_buffer.n_games)
     print(agent.noise)
 
 for _ in tqdm(range(MAX_GAMES)):
@@ -62,15 +62,16 @@ for _ in tqdm(range(MAX_GAMES)):
     
     scores.append(score)
     
+
     wandb.log({'Game number': agent.replay_buffer.n_games, '# Episodes': agent.replay_buffer.buffer_counter, 
                "Average reward": round(np.mean(scores[-10:]), 2), \
                       "Time taken": round(time.time() - start_time, 2)})
 
     if (_ + 1) % EVALUATION_FREQUENCY == 0:
-        states = env.reset()
         evaluation = True
-        score = 0
+        states = env.reset()
         done = False
+        score = 0
         while not done:
             action = agent.get_action(states, evaluation)
             new_states, reward, done, info = env.step(action)

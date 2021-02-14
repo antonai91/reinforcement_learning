@@ -6,20 +6,20 @@ import os
 #******************************
 
 #ENV_NAME = 'BipedalWalkerHardcore-v3'
-ENV_NAME = 'LunarLanderContinuous-v2'
-#ENV_NAME = 'Pendulum-v0'
+#ENV_NAME = 'LunarLanderContinuous-v2'
+ENV_NAME = 'Pendulum-v0'
 
 
 PATH_SAVE = "../model/"
 PATH_LOAD = None
-#PATH_LOAD = "../model/save_agent_202102121653"
+#PATH_LOAD = "../model/save_agent_202102130731"
 
 #******************************
 #****** Replay Buffer *********
 #******************************
 
 BATCH_SIZE = 64
-MIN_SIZE_BUFFER = 200 # Minimum size of the buffer to start learning, until then random actions
+MIN_SIZE_BUFFER = 100 # Minimum size of the buffer to start learning, until then random actions
 BUFFER_CAPACITY = 1000000
 
 #******************************
@@ -55,5 +55,5 @@ DT=1e-1
 #******************************
 
 MAX_GAMES = 250
-EVALUATION_FREQUENCY = 10
+EVALUATION_FREQUENCY = 100
 SAVE_FREQUENCY = 200

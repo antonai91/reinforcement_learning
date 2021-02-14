@@ -1,0 +1,24 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-02-14T20:58:29.077635",
+    "startedAt": "2021-02-14T20:58:27.807199",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/Users/anton/Library/Jupyter/runtime/kernel-32c4a68f-4bda-43b3-a2fa-911bc31bb229.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/antonai91/reinforcement_learning.git",
+        "commit": "286e8d17eb90cdf31d807b8d2d3dea82c8369455"
+    },
+    "email": "antonio.lisi91@gmail.com",
+    "root": "/Users/anton/Projects/reinforcement_learning",
+    "host": "Antonios-MBP.lan",
+    "username": "anton",
+    "executable": "/Users/anton/.conda/envs/reinforcement_learning/bin/python"
+}

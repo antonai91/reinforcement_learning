@@ -6,7 +6,6 @@ from config import *
 
 class ReplayBuffer():
     def __init__(self, env, buffer_capacity=BUFFER_CAPACITY, batch_size=BATCH_SIZE, min_size_buffer=MIN_SIZE_BUFFER):
-        self.env = env
         self.buffer_capacity = buffer_capacity
         self.batch_size = batch_size
         self.min_size_buffer = min_size_buffer
