@@ -50,7 +50,7 @@ class ReplayBuffer():
         
         batch_index = np.random.choice(buffer_range, self.batch_size, replace=False)
 
-        # Convert to tensors
+        # Take indices
         state = self.states[batch_index]
         action = self.actions[batch_index]
         reward = self.rewards[batch_index]
