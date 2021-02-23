@@ -1,0 +1,4 @@
+current_dir=/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/pybullet_envs/bullet
+urdf_root=/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/pybullet_data
+/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))

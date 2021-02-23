@@ -1,0 +1,94 @@
+2021-02-18 10:42:52,579 INFO    MainThread:2358 [internal.py:wandb_internal():63] W&B internal server running at pid: 2358
+2021-02-18 10:42:52,580 DEBUG   HandlerThread:2358 [handler.py:handle_request():55] handle_request: check_version
+2021-02-18 10:42:52,580 INFO    WriterThread:2358 [datastore.py:open_for_write():76] open: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/run-39wqme1u.wandb
+2021-02-18 10:42:52,581 DEBUG   SenderThread:2358 [sender.py:send():90] send: header
+2021-02-18 10:42:52,581 DEBUG   SenderThread:2358 [sender.py:send():90] send: request
+2021-02-18 10:42:52,581 DEBUG   SenderThread:2358 [sender.py:send_request():99] send_request: check_version
+2021-02-18 10:42:52,591 DEBUG   Thread-4  :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2021-02-18 10:42:52,708 DEBUG   Thread-4  :2358 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 54248
+2021-02-18 10:42:52,753 DEBUG   SenderThread:2358 [sender.py:send():90] send: run
+2021-02-18 10:42:52,763 DEBUG   SenderThread:2358 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-18 10:42:52,791 DEBUG   SenderThread:2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-18 10:42:52,979 DEBUG   SenderThread:2358 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-18 10:42:52,990 INFO    SenderThread:2358 [dir_watcher.py:__init__():165] watching files in: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files
+2021-02-18 10:42:52,990 INFO    SenderThread:2358 [sender.py:_start_run_threads():487] run started: 39wqme1u with start time 1613641371
+2021-02-18 10:42:52,991 DEBUG   SenderThread:2358 [sender.py:send():90] send: summary
+2021-02-18 10:42:52,991 DEBUG   HandlerThread:2358 [handler.py:handle_request():55] handle_request: run_start
+2021-02-18 10:42:52,995 INFO    SenderThread:2358 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-18 10:42:52,997 DEBUG   HandlerThread:2358 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-18 10:42:53,014 DEBUG   HandlerThread:2358 [cmd.py:execute():718] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=None)
+2021-02-18 10:42:53,079 DEBUG   SenderThread:2358 [sender.py:send():90] send: files
+2021-02-18 10:42:53,079 INFO    SenderThread:2358 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2021-02-18 10:42:53,085 DEBUG   Thread-11 :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-18 10:42:53,088 DEBUG   HandlerThread:2358 [handler.py:handle_request():55] handle_request: status
+2021-02-18 10:42:53,088 DEBUG   SenderThread:2358 [sender.py:send():90] send: request
+2021-02-18 10:42:53,088 DEBUG   SenderThread:2358 [sender.py:send_request():99] send_request: status
+2021-02-18 10:42:53,091 DEBUG   SenderThread:2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-18 10:42:53,092 DEBUG   HandlerThread:2358 [handler.py:handle_request():55] handle_request: pause
+2021-02-18 10:42:53,092 INFO    HandlerThread:2358 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-18 10:42:53,105 DEBUG   HandlerThread:2358 [handler.py:handle_request():55] handle_request: resume
+2021-02-18 10:42:53,105 INFO    HandlerThread:2358 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-18 10:42:53,112 DEBUG   HandlerThread:2358 [handler.py:handle_request():55] handle_request: pause
+2021-02-18 10:42:53,112 INFO    HandlerThread:2358 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-18 10:42:53,217 DEBUG   HandlerThread:2358 [handler.py:handle_request():55] handle_request: resume
+2021-02-18 10:42:53,217 INFO    HandlerThread:2358 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-18 10:42:53,255 DEBUG   SenderThread:2358 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-18 10:42:53,258 DEBUG   SenderThread:2358 [sender.py:send():90] send: stats
+2021-02-18 10:42:53,258 DEBUG   SenderThread:2358 [sender.py:send():90] send: stats
+2021-02-18 10:42:53,258 DEBUG   Thread-11 :2358 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-18 10:42:53,269 DEBUG   Thread-11 :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-18 10:42:53,273 DEBUG   HandlerThread:2358 [handler.py:handle_request():55] handle_request: pause
+2021-02-18 10:42:53,273 INFO    HandlerThread:2358 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-18 10:42:53,324 DEBUG   HandlerThread:2358 [handler.py:handle_request():55] handle_request: resume
+2021-02-18 10:42:53,324 INFO    HandlerThread:2358 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-18 10:42:53,325 DEBUG   HandlerThread:2358 [handler.py:handle_request():55] handle_request: pause
+2021-02-18 10:42:53,325 INFO    HandlerThread:2358 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-18 10:42:53,427 DEBUG   HandlerThread:2358 [handler.py:handle_request():55] handle_request: resume
+2021-02-18 10:42:53,427 INFO    HandlerThread:2358 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-18 10:42:53,428 DEBUG   SenderThread:2358 [sender.py:send():90] send: stats
+2021-02-18 10:42:53,428 DEBUG   SenderThread:2358 [sender.py:send():90] send: stats
+2021-02-18 10:42:53,638 DEBUG   Thread-11 :2358 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_ddpg_pendulum-v0/39wqme1u/wandb-metadata.json?Expires=1613727773&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=DOwvttS509Tl%2BzLloDk75B201M9LkxlPpUqHoIrUhRSmsqNkKrqZkg7XswmFmCRlr3hSwWoR2UqDxDKlyGev6L%2BZNiI1KjSHKIve4lBZJOfTCssfGqmYge3GUUz950BvpyI%2FRy4eKMWykO84M3JMtX0btmd%2FiCcQDytuIWf0z5pjJ39xSfnSMdCVBtiBQu%2B4uWwLukUQA0i6AKjZgSqySuFpyfj%2FfCk9%2FUT5qNnsvHEYiUuX6IeAzd1sh5gAXN%2BNSwA1mA2Gzc9ljy65BAAq61JolWuQTP9ggRM2N3N5JFGlbA2nao7R9sQ%2FUGZXlflpxMz%2B4onjLZiYCWlDwIsV2g%3D%3D HTTP/1.1" 200 0
+2021-02-18 10:42:53,640 INFO    Thread-11 :2358 [upload_job.py:push():131] Uploaded file /var/folders/7n/jknlm6395y18hp3nghbc11880000gn/T/tmpiuykb_bnwandb/cybzw2dn-wandb-metadata.json
+2021-02-18 10:42:53,997 INFO    Thread-8  :2358 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/requirements.txt
+2021-02-18 10:42:53,998 INFO    Thread-8  :2358 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/output.log
+2021-02-18 10:42:53,999 INFO    Thread-8  :2358 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/wandb-metadata.json
+2021-02-18 10:42:54,731 WARNING MainThread:2358 [internal.py:wandb_internal():117] Internal process interrupt: 1
+2021-02-18 10:42:54,918 WARNING MainThread:2358 [internal.py:wandb_internal():117] Internal process interrupt: 2
+2021-02-18 10:42:54,918 ERROR   MainThread:2358 [internal.py:wandb_internal():120] Internal process interrupted.
+2021-02-18 10:42:54,919 INFO    HandlerThread:2358 [handler.py:finish():271] shutting down handler
+2021-02-18 10:42:54,919 INFO    SenderThread:2358 [sender.py:finish():642] shutting down sender
+2021-02-18 10:42:54,919 INFO    WriterThread:2358 [datastore.py:close():257] close: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/run-39wqme1u.wandb
+2021-02-18 10:42:54,919 INFO    SenderThread:2358 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-02-18 10:42:54,996 INFO    Thread-8  :2358 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/output.log
+2021-02-18 10:42:54,997 INFO    SenderThread:2358 [dir_watcher.py:finish():309] scan: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files
+2021-02-18 10:42:54,997 INFO    SenderThread:2358 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/requirements.txt requirements.txt
+2021-02-18 10:42:54,997 INFO    SenderThread:2358 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/output.log output.log
+2021-02-18 10:42:55,000 INFO    SenderThread:2358 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/config.yaml config.yaml
+2021-02-18 10:42:55,000 INFO    SenderThread:2358 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/wandb-summary.json wandb-summary.json
+2021-02-18 10:42:55,003 INFO    SenderThread:2358 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/wandb-metadata.json wandb-metadata.json
+2021-02-18 10:42:55,003 INFO    SenderThread:2358 [file_pusher.py:finish():169] shutting down file pusher
+2021-02-18 10:42:55,003 INFO    SenderThread:2358 [file_pusher.py:join():174] waiting for file pusher
+2021-02-18 10:42:55,005 DEBUG   Thread-16 :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-18 10:42:55,006 DEBUG   Thread-17 :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-18 10:42:55,009 DEBUG   Thread-18 :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-18 10:42:55,011 DEBUG   Thread-19 :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-18 10:42:55,176 DEBUG   Thread-18 :2358 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-18 10:42:55,180 DEBUG   Thread-19 :2358 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-18 10:42:55,181 DEBUG   Thread-16 :2358 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-18 10:42:55,186 DEBUG   Thread-17 :2358 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-18 10:42:55,187 DEBUG   Thread-18 :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-18 10:42:55,191 DEBUG   Thread-16 :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-18 10:42:55,194 DEBUG   Thread-19 :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-18 10:42:55,196 DEBUG   Thread-17 :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-18 10:42:55,516 DEBUG   Thread-16 :2358 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_ddpg_pendulum-v0/39wqme1u/requirements.txt?Expires=1613727775&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=hQaPpDrtDK7%2F7xlaWIwdnu9PQNyzV80v%2Fl41szwZpLbjW7Igc8RvF9gwZtv%2FZ7FJP53Xsw%2FY6VmOFhUwT0aY%2BYZauNR%2F%2BEpwxXy5DwFEPpZOkNWscURjYPlWz2pQyKK90q0GzWWc5tz9iO4Zwu6BqiS3c4ysv9HSBdM2VdQ6nlBjvCWNMQbsRcd0g%2F%2BnbuHiE5Ne4lV0aj2EXdh7TWayZLDR3kNzE2UHI2sE0c92EzNddMyHkuaxlCiVgsMU44hyYGSObA6vIpCqpgWpFL%2F5%2BERxRkdjGpJ8MzB1CHpqT3RjVg6%2FhQav644iRTRYw%2BDJZuBHZ3Dno9aD2Tklq3zE6Q%3D%3D HTTP/1.1" 200 0
+2021-02-18 10:42:55,519 INFO    Thread-16 :2358 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/requirements.txt
+2021-02-18 10:42:55,520 DEBUG   Thread-18 :2358 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_ddpg_pendulum-v0/39wqme1u/config.yaml?Expires=1613727775&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=bBY%2B0ot9ErRv2lAN0IALEx7LBRr8h423aBeCnT1FkneGgAzkDWN9zO9V6Vau6lPXto0hwwt5t2VPfWQFroJxr8n7sksJtWDG%2BVStbceryynRx7FywhTE%2Blu79xVh30PGCdVRMawsR9Zf6448qg1zXlIhhjDk7AU1xbssP5Kr7hb%2BHqdk49%2FBKV9IRBoio1RZT4qfeoy1X4nKbzTgPGcQ%2FwrGQub9FTp6ihDzaYCPrNBa6Hgs1Tegxhfoc3zXH87B9RO9EbXikDgjZ8wNmrhsLhyBPx8NL9O%2FGaq%2B%2FgvCig7%2BT%2Bcvmwbs6Q6qSrv7h4wfOklY8hzq5tPEtZO1ks1G8Q%3D%3D HTTP/1.1" 200 0
+2021-02-18 10:42:55,522 INFO    Thread-18 :2358 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/config.yaml
+2021-02-18 10:42:55,527 DEBUG   Thread-17 :2358 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_ddpg_pendulum-v0/39wqme1u/output.log?Expires=1613727775&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=FzSzLTwApzQH670B4bjbRnZaYih2rVrdGYD63PBhXVG11OGzjG8SrAXhnFXzu2LIX6RwzK0neQJg1cF7aWT3cvDRaW72bn6ToB7yFRyd5RZwtEvz9oFz79ota24Pg1Qnuqs9tWE52BD0RMRYvSkrmMfg%2B45tQtCP%2F1iq8cw4wSKHmQcI7C%2B2LFHqIuCaNAQtenbzOBp%2BzX%2BV8QMB29LsuuRo%2F6eCOYlkVGOSxsu0VyNua6CNqE1lwYgISd0jiDlO%2FDrbvdqXeVCd6krjYbfoaQ2vLE7AwL4lnUGu1E4eMfFVWZjlS5ZPaXVphsUZeF5ExKgIUWGcfY0gwMI5rJgqMw%3D%3D HTTP/1.1" 200 0
+2021-02-18 10:42:55,530 INFO    Thread-17 :2358 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/output.log
+2021-02-18 10:42:55,536 DEBUG   Thread-19 :2358 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_ddpg_pendulum-v0/39wqme1u/wandb-summary.json?Expires=1613727775&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=fSxSiUMWdxygy%2FLFZxePEj7mQc7eGaWRf02LG4FAAxNfiTsG%2FwXaWcjfmlzG60hNTh91UnZFCwcKnPN5zk4GKkMB9YQamuPbJZ7aUDX0BsjrmUZTu7AleuCn0lDXL9xeZbLyPkaowVxAbki8DXSGKRu0Nm3ZmqT1dUWqwvHsqfedhdB2%2B9%2FVC0cevU4%2BvQ%2Fn%2Fv4UUAlXrNj5DMJYltvqKs3aPL%2Fu7VzWckYxcxODQ3Mz8c6r83tWH9j40PkumXXD25qnYm2uoSjtKFIdIqMynXE%2FDXHAWMTA20z3igxc8sOx%2Bcznwq9WisTTb7HEimuW%2Btv2RHYOfTAGA3fw6x37sQ%3D%3D HTTP/1.1" 200 0
+2021-02-18 10:42:55,540 INFO    Thread-19 :2358 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210218_104251-39wqme1u/files/wandb-summary.json
+2021-02-18 10:42:56,009 DEBUG   Thread-5  :2358 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-18 10:42:56,201 DEBUG   Thread-5  :2358 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_pendulum-v0/39wqme1u/file_stream HTTP/1.1" 200 None
+2021-02-18 10:42:56,350 DEBUG   Thread-5  :2358 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_pendulum-v0/39wqme1u/file_stream HTTP/1.1" 200 None
+2021-02-18 10:42:56,354 INFO    MainThread:2358 [internal.py:handle_exit():138] Internal process exited

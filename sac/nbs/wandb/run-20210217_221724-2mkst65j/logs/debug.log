@@ -1,0 +1,60 @@
+2021-02-17 22:17:24,450 INFO    MainThread:10770 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-17 22:17:24,450 INFO    MainThread:10770 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn,fork,forkserver
+2021-02-17 22:17:24,451 INFO    MainThread:10770 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-17 22:17:24,451 INFO    MainThread:10770 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd7d475b6d0>
+2021-02-17 22:17:24,451 INFO    MainThread:10770 [wandb_init.py:_log_setup():303] Logging user logs to /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210217_221724-2mkst65j/logs/debug.log
+2021-02-17 22:17:24,451 INFO    MainThread:10770 [wandb_init.py:_log_setup():304] Logging internal logs to /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210217_221724-2mkst65j/logs/debug-internal.log
+2021-02-17 22:17:25,795 INFO    MainThread:10770 [wandb_run.py:_console_start():1237] atexit reg
+2021-02-17 22:17:25,795 INFO    MainThread:10770 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-02-17 22:17:25,796 INFO    MainThread:10770 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-02-17 22:17:25,796 INFO    MainThread:10770 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-02-17 22:17:25,799 INFO    MainThread:10770 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-17 22:17:25,804 INFO    MainThread:10770 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-17 22:17:25,810 INFO    MainThread:10770 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-17 22:17:25,826 INFO    MainThread:10770 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-17 22:17:26,289 INFO    MainThread:10770 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-17 22:17:39,628 INFO    MainThread:10770 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-17 22:17:39,629 INFO    MainThread:10770 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-17 22:17:42,494 INFO    MainThread:10770 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-17 22:17:42,497 INFO    MainThread:10770 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-17 22:19:05,997 INFO    MainThread:10770 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-17 22:19:05,999 INFO    MainThread:10770 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-17 22:19:06,688 INFO    MainThread:10770 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-17 22:19:06,691 INFO    MainThread:10770 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-17 22:19:10,731 INFO    MainThread:10770 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-17 22:19:11,428 INFO    MainThread:10770 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-17 22:19:23,996 INFO    MainThread:10770 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-17 22:19:24,121 INFO    MainThread:10770 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-17 22:19:29,303 INFO    MainThread:10770 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2021-02-17 22:19:29,307 INFO    MainThread:10770 [wandb_run.py:_restore():1179] restore
+2021-02-17 22:19:29,314 INFO    MainThread:10770 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "e5e863ca1fcf43d2a619d7959cd59b07"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 819
+      total_bytes: 819
+    }
+  }
+}
+
+2021-02-17 22:19:31,325 INFO    MainThread:10770 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "e940ebbea0da4fc4a4d5fc494c33eccc"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4080
+      total_bytes: 4080
+    }
+  }
+}
+
+2021-02-17 22:19:32,428 INFO    MainThread:10770 [wandb_run.py:_show_files():1536] logging synced files
+2021-02-17 22:19:32,432 INFO    MainThread:10770 [internal.py:handle_exit():138] Internal process exited

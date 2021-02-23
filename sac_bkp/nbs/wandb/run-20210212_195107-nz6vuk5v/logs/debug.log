@@ -1,0 +1,39 @@
+2021-02-12 19:51:07,149 INFO    MainThread:8995 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-12 19:51:07,149 INFO    MainThread:8995 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn,fork,forkserver
+2021-02-12 19:51:07,149 INFO    MainThread:8995 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-12 19:51:07,149 INFO    MainThread:8995 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7ff9ed05fd90>
+2021-02-12 19:51:07,150 INFO    MainThread:8995 [wandb_init.py:_log_setup():303] Logging user logs to /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/logs/debug.log
+2021-02-12 19:51:07,150 INFO    MainThread:8995 [wandb_init.py:_log_setup():304] Logging internal logs to /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/logs/debug-internal.log
+2021-02-12 19:51:08,476 INFO    MainThread:8995 [wandb_run.py:_console_start():1237] atexit reg
+2021-02-12 19:51:08,476 INFO    MainThread:8995 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-02-12 19:51:08,477 INFO    MainThread:8995 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-02-12 19:51:08,477 INFO    MainThread:8995 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-02-12 19:51:08,479 INFO    MainThread:8995 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:51:08,480 INFO    MainThread:8995 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:51:08,484 INFO    MainThread:8995 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:51:08,486 INFO    MainThread:8995 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:51:08,566 INFO    MainThread:8995 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:51:08,566 INFO    MainThread:8995 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:51:08,571 INFO    MainThread:8995 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:51:08,577 INFO    MainThread:8995 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:51:08,577 INFO    MainThread:8995 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:51:08,578 INFO    MainThread:8995 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:51:08,588 INFO    MainThread:8995 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:51:08,592 INFO    MainThread:8995 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:53:02,923 INFO    MainThread:8995 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:53:02,923 INFO    MainThread:8995 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:53:13,452 INFO    MainThread:8995 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2021-02-12 19:53:13,453 INFO    MainThread:8995 [wandb_run.py:_restore():1179] restore
+2021-02-12 19:53:13,456 INFO    MainThread:8995 [wandb_run.py:_restore():1179] restore
+2021-02-12 19:53:18,948 ERROR   MainThread:8995 [wandb_run.py:_atexit_cleanup():1225] Problem finishing run
+Traceback (most recent call last):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1215, in _atexit_cleanup
+    self._on_finish()
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1363, in _on_finish
+    self._backend.interface.publish_exit(self._exit_code)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 590, in publish_exit
+    self._publish(rec)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 439, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2021-02-12 19:53:18,957 INFO    MainThread:8995 [internal.py:handle_exit():138] Internal process exited

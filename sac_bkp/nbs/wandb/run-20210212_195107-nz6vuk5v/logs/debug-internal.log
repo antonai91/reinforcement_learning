@@ -1,0 +1,260 @@
+2021-02-12 19:51:07,974 INFO    MainThread:9003 [internal.py:wandb_internal():63] W&B internal server running at pid: 9003
+2021-02-12 19:51:07,975 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: check_version
+2021-02-12 19:51:07,975 INFO    WriterThread:9003 [datastore.py:open_for_write():76] open: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/run-nz6vuk5v.wandb
+2021-02-12 19:51:07,977 DEBUG   SenderThread:9003 [sender.py:send():90] send: header
+2021-02-12 19:51:07,977 DEBUG   SenderThread:9003 [sender.py:send():90] send: request
+2021-02-12 19:51:07,977 DEBUG   SenderThread:9003 [sender.py:send_request():99] send_request: check_version
+2021-02-12 19:51:07,981 DEBUG   Thread-4  :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2021-02-12 19:51:08,097 DEBUG   Thread-4  :9003 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 53965
+2021-02-12 19:51:08,141 DEBUG   SenderThread:9003 [sender.py:send():90] send: run
+2021-02-12 19:51:08,148 DEBUG   SenderThread:9003 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-12 19:51:08,179 DEBUG   SenderThread:9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:51:08,379 DEBUG   SenderThread:9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:51:08,390 INFO    SenderThread:9003 [dir_watcher.py:__init__():165] watching files in: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files
+2021-02-12 19:51:08,391 INFO    SenderThread:9003 [sender.py:_start_run_threads():487] run started: nz6vuk5v with start time 1613155867
+2021-02-12 19:51:08,391 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:08,391 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:08,392 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: run_start
+2021-02-12 19:51:08,398 DEBUG   HandlerThread:9003 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-12 19:51:08,414 DEBUG   HandlerThread:9003 [cmd.py:execute():718] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=None)
+2021-02-12 19:51:08,468 DEBUG   SenderThread:9003 [sender.py:send():90] send: files
+2021-02-12 19:51:08,468 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2021-02-12 19:51:08,473 DEBUG   Thread-11 :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:51:08,476 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: status
+2021-02-12 19:51:08,477 DEBUG   SenderThread:9003 [sender.py:send():90] send: request
+2021-02-12 19:51:08,477 DEBUG   SenderThread:9003 [sender.py:send_request():99] send_request: status
+2021-02-12 19:51:08,479 DEBUG   SenderThread:9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:51:08,481 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: pause
+2021-02-12 19:51:08,481 INFO    HandlerThread:9003 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-12 19:51:08,500 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: pause
+2021-02-12 19:51:08,501 INFO    HandlerThread:9003 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-12 19:51:08,501 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: resume
+2021-02-12 19:51:08,501 INFO    HandlerThread:9003 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-12 19:51:08,502 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: resume
+2021-02-12 19:51:08,503 INFO    HandlerThread:9003 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-12 19:51:08,566 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: pause
+2021-02-12 19:51:08,577 INFO    HandlerThread:9003 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-12 19:51:08,605 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: pause
+2021-02-12 19:51:08,605 INFO    HandlerThread:9003 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-12 19:51:08,605 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: resume
+2021-02-12 19:51:08,605 INFO    HandlerThread:9003 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-12 19:51:08,607 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: resume
+2021-02-12 19:51:08,607 INFO    HandlerThread:9003 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-12 19:51:08,607 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: pause
+2021-02-12 19:51:08,607 INFO    HandlerThread:9003 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-12 19:51:08,644 DEBUG   Thread-11 :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:51:08,649 DEBUG   Thread-11 :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-12 19:51:08,687 DEBUG   SenderThread:9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:51:08,689 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:08,713 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: pause
+2021-02-12 19:51:08,713 INFO    HandlerThread:9003 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-12 19:51:08,713 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: resume
+2021-02-12 19:51:08,713 INFO    HandlerThread:9003 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-12 19:51:08,714 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: resume
+2021-02-12 19:51:08,714 INFO    HandlerThread:9003 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-12 19:51:08,714 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:08,714 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:09,039 DEBUG   Thread-11 :9003 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/wandb-metadata.json?Expires=1613242268&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=cqe3CjymSsY2XofbUPzxc2rLA%2BDYIgT7haC7sABsrzF6S0yzy%2B0AY9Xmv1uMZOjMvsIQMHq0jKDTYDA1PdbhYuMvCY%2BSs4wgHbsC%2BEa6VEK5O5XL1uDl7HzdYc08XsE8hnw9y612dDF8YAvOMS4zzg5WGIldNVg6DazHy2XsnHCHVqXz0Mq0JyJe8YTbonednZ6az1Fksj8LRue6n80Yvlv70bPmRa5FDBhLbl8WUhDS9hMD4cwkHu3a93MW1RqZng93yk7olAWDkjtLGyTYNrhL%2F%2BFa6ynPGU%2BVnl6Rr6C6ixB4S23mNEI004baHGO6KHYnJ3KkmkrvTbsV4R9Lxw%3D%3D HTTP/1.1" 200 0
+2021-02-12 19:51:09,041 INFO    Thread-11 :9003 [upload_job.py:push():131] Uploaded file /var/folders/7n/jknlm6395y18hp3nghbc11880000gn/T/tmphgjzghimwandb/2q0m6tck-wandb-metadata.json
+2021-02-12 19:51:09,396 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/wandb-metadata.json
+2021-02-12 19:51:09,397 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/requirements.txt
+2021-02-12 19:51:09,397 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:10,646 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:10,646 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:10,647 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:10,650 DEBUG   Thread-5  :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:51:10,849 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:11,397 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:12,092 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:12,585 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:12,585 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:12,586 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:13,399 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:13,592 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:13,592 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:13,593 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:13,778 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:14,404 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:16,566 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:16,740 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:18,061 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:18,061 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:18,062 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:18,414 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:20,232 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:20,715 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:20,715 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:20,715 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:21,030 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:21,422 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:22,734 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:22,735 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:22,736 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:22,935 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:23,423 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:23,696 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: status
+2021-02-12 19:51:23,696 DEBUG   SenderThread:9003 [sender.py:send():90] send: request
+2021-02-12 19:51:23,697 DEBUG   SenderThread:9003 [sender.py:send_request():99] send_request: status
+2021-02-12 19:51:23,699 DEBUG   SenderThread:9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:51:23,856 DEBUG   SenderThread:9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:51:25,514 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:25,685 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:25,708 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:25,709 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:25,709 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:26,426 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:27,705 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:27,705 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:27,706 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:27,868 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:28,429 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:29,808 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:29,808 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:29,809 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:29,981 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:29,984 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:30,432 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:32,098 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:32,098 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:32,099 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:32,158 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:32,249 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:32,249 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:32,249 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:32,435 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:34,431 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:34,448 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:34,516 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:34,516 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:34,517 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:35,438 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:36,683 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:38,866 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: status
+2021-02-12 19:51:38,867 DEBUG   SenderThread:9003 [sender.py:send():90] send: request
+2021-02-12 19:51:38,867 DEBUG   SenderThread:9003 [sender.py:send_request():99] send_request: status
+2021-02-12 19:51:38,872 DEBUG   SenderThread:9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:51:39,025 DEBUG   SenderThread:9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:51:39,027 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:39,201 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:40,906 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:40,906 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:40,907 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:41,449 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:43,097 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:43,397 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:43,445 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:43,445 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:43,445 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:43,451 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:45,620 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:47,878 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:48,066 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:48,247 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:51:48,247 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:51:48,247 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:51:48,469 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:51:50,423 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:52,334 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:52,504 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:51:54,033 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: status
+2021-02-12 19:51:54,033 DEBUG   SenderThread:9003 [sender.py:send():90] send: request
+2021-02-12 19:51:54,033 DEBUG   SenderThread:9003 [sender.py:send_request():99] send_request: status
+2021-02-12 19:51:54,036 DEBUG   SenderThread:9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:51:54,210 DEBUG   SenderThread:9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:51:56,834 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:51:57,015 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:52:01,316 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:01,495 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:52:03,947 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:52:03,948 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:52:03,949 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:52:04,135 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:52:04,512 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:52:05,800 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:09,218 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: status
+2021-02-12 19:52:09,218 DEBUG   SenderThread:9003 [sender.py:send():90] send: request
+2021-02-12 19:52:09,218 DEBUG   SenderThread:9003 [sender.py:send_request():99] send_request: status
+2021-02-12 19:52:09,221 DEBUG   SenderThread:9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:52:09,377 DEBUG   SenderThread:9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:52:10,260 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:14,756 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:14,961 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:52:15,005 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:52:15,006 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:52:15,008 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:52:15,530 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:52:19,235 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:23,715 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:24,381 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: status
+2021-02-12 19:52:24,382 DEBUG   SenderThread:9003 [sender.py:send():90] send: request
+2021-02-12 19:52:24,382 DEBUG   SenderThread:9003 [sender.py:send_request():99] send_request: status
+2021-02-12 19:52:24,384 DEBUG   SenderThread:9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:52:24,544 DEBUG   SenderThread:9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:52:28,181 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:28,364 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:52:32,665 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:36,144 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:52:36,144 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:52:36,145 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:52:36,585 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:52:37,137 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:39,548 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: status
+2021-02-12 19:52:39,548 DEBUG   SenderThread:9003 [sender.py:send():90] send: request
+2021-02-12 19:52:39,548 DEBUG   SenderThread:9003 [sender.py:send_request():99] send_request: status
+2021-02-12 19:52:39,551 DEBUG   SenderThread:9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:52:39,706 DEBUG   SenderThread:9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:52:41,608 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:41,786 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:52:43,894 DEBUG   SenderThread:9003 [sender.py:send():90] send: history
+2021-02-12 19:52:43,894 DEBUG   SenderThread:9003 [sender.py:send():90] send: summary
+2021-02-12 19:52:43,894 INFO    SenderThread:9003 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-12 19:52:44,600 INFO    Thread-8  :9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:52:46,065 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:50,524 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:54,714 DEBUG   HandlerThread:9003 [handler.py:handle_request():55] handle_request: status
+2021-02-12 19:52:54,714 DEBUG   SenderThread:9003 [sender.py:send():90] send: request
+2021-02-12 19:52:54,714 DEBUG   SenderThread:9003 [sender.py:send_request():99] send_request: status
+2021-02-12 19:52:54,716 DEBUG   SenderThread:9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:52:54,883 DEBUG   SenderThread:9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:52:55,000 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:52:55,173 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:52:59,482 DEBUG   SenderThread:9003 [sender.py:send():90] send: stats
+2021-02-12 19:53:02,342 WARNING MainThread:9003 [internal.py:wandb_internal():117] Internal process interrupt: 1
+2021-02-12 19:53:02,533 WARNING MainThread:9003 [internal.py:wandb_internal():117] Internal process interrupt: 2
+2021-02-12 19:53:02,533 ERROR   MainThread:9003 [internal.py:wandb_internal():120] Internal process interrupted.
+2021-02-12 19:53:02,534 INFO    HandlerThread:9003 [handler.py:finish():271] shutting down handler
+2021-02-12 19:53:02,534 INFO    SenderThread:9003 [sender.py:finish():642] shutting down sender
+2021-02-12 19:53:02,534 INFO    WriterThread:9003 [datastore.py:close():257] close: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/run-nz6vuk5v.wandb
+2021-02-12 19:53:02,535 INFO    SenderThread:9003 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-02-12 19:53:02,633 INFO    SenderThread:9003 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:53:02,633 INFO    SenderThread:9003 [dir_watcher.py:finish():309] scan: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files
+2021-02-12 19:53:02,633 INFO    SenderThread:9003 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/requirements.txt requirements.txt
+2021-02-12 19:53:02,634 INFO    SenderThread:9003 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log output.log
+2021-02-12 19:53:02,634 INFO    SenderThread:9003 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/config.yaml config.yaml
+2021-02-12 19:53:02,637 INFO    SenderThread:9003 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/wandb-summary.json wandb-summary.json
+2021-02-12 19:53:02,641 INFO    SenderThread:9003 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/wandb-metadata.json wandb-metadata.json
+2021-02-12 19:53:02,642 INFO    SenderThread:9003 [file_pusher.py:finish():169] shutting down file pusher
+2021-02-12 19:53:02,642 INFO    SenderThread:9003 [file_pusher.py:join():174] waiting for file pusher
+2021-02-12 19:53:02,643 DEBUG   Thread-16 :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:53:02,645 DEBUG   Thread-17 :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:53:02,645 DEBUG   Thread-15 :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:53:02,647 DEBUG   Thread-18 :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-12 19:53:02,815 DEBUG   Thread-17 :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:53:02,819 DEBUG   Thread-18 :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:53:02,819 DEBUG   Thread-15 :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:53:02,823 DEBUG   Thread-16 :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-12 19:53:02,832 DEBUG   Thread-18 :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-12 19:53:02,833 DEBUG   Thread-17 :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-12 19:53:02,834 DEBUG   Thread-15 :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-12 19:53:02,835 DEBUG   Thread-16 :9003 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-12 19:53:03,219 DEBUG   Thread-18 :9003 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/wandb-summary.json?Expires=1613242382&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=HpzVrM3230gaBJ20Rt7o%2BCdsnTropE3QHQbc3JNQzadqyZNzipWtSc1oJhAYfJU7efpljqwU66OWevd5Y4xaNzcyfLyRzCO9CGJaaJQ4FEkBrPKM5DxE7HAc2VE4k5PfWdfHzjbL3jKAyvtqEq8NdnaBjx1ovS5bU03CObDfj6MxG%2FItajsCfQQAihnpvmUkWXlIY%2BCvEpkxFrf%2B2yIkms0VqAiolA8dIqDtvx3amvW9KrNoBTo043Y%2Fe84c5T4lj5OCsMLPaCrjMvbt%2BB6tK%2BShy24hqJ9SwJx4N6RBMIIMAzkSuqMt7Lt5M5%2FyIxWPEfEaooMJiLrq0G3FZX2HHw%3D%3D HTTP/1.1" 200 0
+2021-02-12 19:53:03,220 DEBUG   Thread-17 :9003 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/config.yaml?Expires=1613242382&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=bRIcNheYUgvsGy2jaaKY8RRt9Mq4f0S4f%2Bmso3fs3mlvx0gD6mZpZaLRSgJl1j5dvJDkpieElewIgyUvfzLKCUYzmBtVtU3OIUeRThgs6IGHg5d6G4hHaLX0fOuVAyD51Ll3IsqOQFG3nU1R2cbGO8yyg4SnDiMo6UPY7muz%2B6%2FGhDIft9EvgwjcbL5hNhIp061g5EffoPuKFRK9pNNi%2BYV90MwMYuzTbx5emrSyLw4fP0wBe1QJdPOTqXLM0GNYxe6FcFkJBNE7IZldnkR0SqUnFeqXfr%2FKTo40XokHjf3twwohlgBWLhEst8soco8%2B1I8ZIpe6OafXauUo%2FyGrGw%3D%3D HTTP/1.1" 200 0
+2021-02-12 19:53:03,220 DEBUG   Thread-15 :9003 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/requirements.txt?Expires=1613242382&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=JtkcUggK%2FrMsYRVCpMseN03XjMOkJO0PLIIDZWxCKohXxRjQGpSWYxjF12MEL0lXms1whuk6jfJxoDTMtBM635CfTB2TubyBF4BPH3upfXYuwYLyAqRV%2FROG7Kux0uJP7%2FR0%2B1tu8XpjjlIVOR1djfWmXfa%2BEBMpAM6WyCy2VzCbFApeHShYPc%2FZQ08wPXxaUE6c9DS66iLnCun2GORKgwHBK6M7G9iyDDR0YbrUVt8yjFxkdRk5i0aqxIGol22IEn6WWBGyjBcqCsJQ%2FPa7WedL9z1jL8eL%2F7pO6IrX%2FTB9WuPLJyu%2FxxNdfBCRO3swb9IjPi34nNFHTHngCqW6BQ%3D%3D HTTP/1.1" 200 0
+2021-02-12 19:53:03,221 DEBUG   Thread-16 :9003 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/output.log?Expires=1613242382&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=KyFAIUWHM0x3mFJOzhlPo0q9nOrPFbZUAyWR9lFmzSNC%2BSdZDiNFaxwI%2F0KiGtmi%2F4XSUXhIVEC3xnXMjr1C7jzj8eMlZpAx%2FnA5uifVV7J%2FdhnVx61ddgNjb1diRcVolVlYNlX9ViwP1S4k8dr9pA7%2BIEI0asDmvZh%2BtStrNkBcIbURRjPhU6KlNa0azrxXBJUNkXVEgB9W4ZM17p%2BMcI63qGrQIDwhvM2mzFEhBbIgWSWGgg%2FRUTYFiztDC87xcZdYVUe9xNMdeEK7Fyru44Pnx%2BxcqgzZ6gTTvSeQE9NG4VA%2BKDg0NULi9orT0If9Jqy309Vi8l8qtM1KU4lypw%3D%3D HTTP/1.1" 200 0
+2021-02-12 19:53:03,225 INFO    Thread-18 :9003 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/wandb-summary.json
+2021-02-12 19:53:03,229 INFO    Thread-17 :9003 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/config.yaml
+2021-02-12 19:53:03,232 INFO    Thread-15 :9003 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/requirements.txt
+2021-02-12 19:53:03,236 INFO    Thread-16 :9003 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_195107-nz6vuk5v/files/output.log
+2021-02-12 19:53:03,807 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:53:03,979 DEBUG   Thread-5  :9003 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_ddpg_lunarlandercontinuous-v2/nz6vuk5v/file_stream HTTP/1.1" 200 None
+2021-02-12 19:53:03,985 INFO    MainThread:9003 [internal.py:handle_exit():138] Internal process exited

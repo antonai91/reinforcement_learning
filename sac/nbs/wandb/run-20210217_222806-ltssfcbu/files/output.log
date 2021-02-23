@@ -1,0 +1,19 @@
+current_dir=/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/pybullet_envs/bullet
+urdf_root=/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/pybullet_data
+/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 0/250 [00:00<?, ?it/s]
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/logging/__init__.py", line 1084, in emit
+    stream.write(msg + self.terminator)
+OSError: [Errno 5] Input/output error
+Call stack:
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/ipykernel/parentpoller.py", line 37, in run
+    get_logger().warning("Parent appears to have exited, shutting down.")
+Message: 'Parent appears to have exited, shutting down.'
+Arguments: ()

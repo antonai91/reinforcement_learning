@@ -1,0 +1,27 @@
+2021-02-12 19:15:15,175 INFO    MainThread:8520 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-12 19:15:15,175 INFO    MainThread:8520 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn,fork,forkserver
+2021-02-12 19:15:15,175 INFO    MainThread:8520 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-12 19:15:15,175 INFO    MainThread:8520 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7ff522cc2550>
+2021-02-12 19:15:15,176 INFO    MainThread:8520 [wandb_init.py:_log_setup():303] Logging user logs to /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_191515-2lwv9vtz/logs/debug.log
+2021-02-12 19:15:15,176 INFO    MainThread:8520 [wandb_init.py:_log_setup():304] Logging internal logs to /Users/anton/Projects/reinforcement_learning/ddpg/nbs/wandb/run-20210212_191515-2lwv9vtz/logs/debug-internal.log
+2021-02-12 19:15:16,509 INFO    MainThread:8520 [wandb_run.py:_console_start():1237] atexit reg
+2021-02-12 19:15:16,510 INFO    MainThread:8520 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-02-12 19:15:16,510 INFO    MainThread:8520 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-02-12 19:15:16,511 INFO    MainThread:8520 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-02-12 19:15:16,514 INFO    MainThread:8520 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:15:16,515 INFO    MainThread:8520 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:15:16,522 INFO    MainThread:8520 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:15:16,523 INFO    MainThread:8520 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:15:16,675 INFO    MainThread:8520 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:15:16,675 INFO    MainThread:8520 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:15:16,684 INFO    MainThread:8520 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:15:16,692 INFO    MainThread:8520 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:15:16,693 INFO    MainThread:8520 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:15:16,693 INFO    MainThread:8520 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:15:16,703 INFO    MainThread:8520 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:15:16,709 INFO    MainThread:8520 [wandb_init.py:_resume_backend():229] resuming backend
+2021-02-12 19:39:43,140 INFO    MainThread:8520 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:39:43,141 INFO    MainThread:8520 [wandb_init.py:_pause_backend():224] pausing backend
+2021-02-12 19:39:44,758 INFO    MainThread:8520 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2021-02-12 19:39:44,761 INFO    MainThread:8520 [wandb_run.py:_restore():1179] restore
+2021-02-12 19:39:44,765 INFO    MainThread:8520 [wandb_run.py:_restore():1179] restore
