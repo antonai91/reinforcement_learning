@@ -56,6 +56,8 @@ class Actor(tf.keras.Model):
         self.hidden_1 = hidden_1
         self.actions_dim = actions_dim
         self.upper_bound = upper_bound
+        self.log_std_min = log_std_min
+        self.log_std_max = log_std_max
         self.noise = noise
         
         self.net_name = name
@@ -63,18 +65,20 @@ class Actor(tf.keras.Model):
         self.dense_0 = Dense(self.hidden_0, activation='relu')
         self.dense_1 = Dense(self.hidden_1, activation='relu')
         self.mean = Dense(self.actions_dim, activation=None)
-        self.std = Dense(self.actions_dim, activation=None)
+        self.log_std = Dense(self.actions_dim, activation=None)
 
     def call(self, state):
         policy = self.dense_0(state)
         policy = self.dense_1(policy)
         mean = self.mean(policy)
-        std = self.std(policy)
+        log_std = self.log_std(policy)
+        log_std = tf.clip_by_value(log_std, self.log_std_min, self.log_std_max)
 
-        return mean, std
+        return mean, log_std
     
     def evaluate(self, state, reparameterization=False):
-        mean, std = self.call(state)
+        mean, log_std = self.call(state)
+        std = tf.exp(log_std)
         normal_mean_std = tfp.distributions.Normal(mean, std)
         
         if reparameterization:

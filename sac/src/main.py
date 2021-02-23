@@ -22,7 +22,7 @@ config = dict(
 )
 
 wandb.init(
-  project=f"tensorflow2_ddpg_{ENV_NAME.lower()}",
+  project=f"tensorflow2_sac_{ENV_NAME.lower()}",
   tags=["DDPG", "FCL", "RL"],
   config=config,
 )
@@ -51,38 +51,23 @@ for _ in tqdm(range(MAX_GAMES)):
     done = False
     score = 0
     while not done:
-        action = agent.get_action(states, evaluation)
+        action = agent.get_action(states)
         new_states, reward, done, info = env.step(action)
         score += reward
         agent.add_to_replay_buffer(states, action, reward, new_states, done)
         agent.learn()
         states = new_states
-        
-    agent.replay_buffer.update_n_games()
     
     scores.append(score)
-    
+    agent.replay_buffer.update_n_games()
 
     wandb.log({'Game number': agent.replay_buffer.n_games, '# Episodes': agent.replay_buffer.buffer_counter, 
                "Average reward": round(np.mean(scores[-10:]), 2), \
                       "Time taken": round(time.time() - start_time, 2)})
 
-    if (_ + 1) % EVALUATION_FREQUENCY == 0:
-        evaluation = True
-        states = env.reset()
-        done = False
-        score = 0
-        while not done:
-            action = agent.get_action(states, evaluation)
-            new_states, reward, done, info = env.step(action)
-            score += reward
-            states = new_states
-        wandb.log({'Game number': agent.replay_buffer.n_games, 
-                   '# Episodes': agent.replay_buffer.buffer_counter, 
-                   'Evaluation score': score})
-        evaluation = False
-     
+"""
     if (_ + 1) % SAVE_FREQUENCY == 0:
         print("saving...")
         agent.save()
         print("saved")
+"""

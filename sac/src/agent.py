@@ -52,30 +52,28 @@ class Agent:
     
     def add_to_replay_buffer(self, state, action, reward, new_state, done):
         self.replay_buffer.add_record(state, action, reward, new_state, done)
-    """
+
     def save(self):
         date_now = time.strftime("%Y%m%d%H%M")
         if not os.path.isdir(f"{self.path_save}/save_agent_{date_now}"):
             os.makedirs(f"{self.path_save}/save_agent_{date_now}")
         self.actor.save_weights(f"{self.path_save}/save_agent_{date_now}/{self.actor.net_name}.h5")
-        self.target_actor.save_weights(f"{self.path_save}/save_agent_{date_now}/{self.target_actor.net_name}.h5")
-        self.critic.save_weights(f"{self.path_save}/save_agent_{date_now}/{self.critic.net_name}.h5")
-        self.target_critic.save_weights(f"{self.path_save}/save_agent_{date_now}/{self.target_critic.net_name}.h5")
-        
-        np.save(f"{self.path_save}/save_agent_{date_now}/noise.npy", self.noise)
+        self.critic_0.save_weights(f"{self.path_save}/save_agent_{date_now}/{self.critic_0.net_name}.h5")
+        self.critic_1.save_weights(f"{self.path_save}/save_agent_{date_now}/{self.critic_1.net_name}.h5")
+        self.value_critic.save_weights(f"{self.path_save}/save_agent_{date_now}/{self.value_critic.net_name}.h5")
+        self.target_value_critic.save_weights(f"{self.path_save}/save_agent_{date_now}/{self.target_value_critic.net_name}.h5")
         
         self.replay_buffer.save(f"{self.path_save}/save_agent_{date_now}")
 
     def load(self):
         self.actor.load_weights(f"{self.path_load}/{self.actor.net_name}.h5")
-        self.target_actor.load_weights(f"{self.path_load}/{self.target_actor.net_name}.h5")
-        self.critic.load_weights(f"{self.path_load}/{self.critic.net_name}.h5")
-        self.target_critic.load_weights(f"{self.path_load}/{self.target_critic.net_name}.h5")
-        
-        self.noise = np.load(f"{self.path_load}/noise.npy")
+        self.critic_0.load_weights(f"{self.path_load}/{self.critic_0.net_name}.h5")
+        self.critic_1.load_weights(f"{self.path_load}/{self.critic_1.net_name}.h5")
+        self.value_critic.load_weights(f"{self.path_load}/{self.value_critic.net_name}.h5")
+        self.target_value_critic.load_weights(f"{self.path_load}/{self.target_value_critic.net_name}.h5")
         
         self.replay_buffer.load(f"{self.path_load}")
-    """
+
     def get_action(self, observation):
         state = tf.convert_to_tensor([observation], dtype=tf.float32)
 

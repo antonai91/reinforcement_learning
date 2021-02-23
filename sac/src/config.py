@@ -6,8 +6,8 @@ import os
 #******************************
 
 #ENV_NAME = 'BipedalWalkerHardcore-v3'
-#ENV_NAME = 'LunarLanderContinuous-v2'
-ENV_NAME = 'Pendulum-v0'
+ENV_NAME = 'LunarLanderContinuous-v2'
+#ENV_NAME = 'Pendulum-v0'
 
 
 PATH_SAVE = "../model/"
