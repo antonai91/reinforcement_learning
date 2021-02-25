@@ -1,60 +1,0 @@
-loading weights
-945736
-3000
-[1.07478544 0.93044417]
-  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:00<01:10,  3.52it/s]  1%|          | 2/250 [00:00<01:33,  2.65it/s]  1%|          | 3/250 [00:01<01:28,  2.81it/s]  2%|▏         | 4/250 [00:02<02:38,  1.56it/s]  2%|▏         | 5/250 [00:02<02:08,  1.91it/s]  2%|▏         | 6/250 [00:02<01:52,  2.16it/s]  3%|▎         | 7/250 [00:03<01:43,  2.36it/s]  3%|▎         | 8/250 [00:03<01:55,  2.09it/s]  4%|▎         | 9/250 [00:04<01:52,  2.13it/s]  4%|▍         | 10/250 [00:04<01:39,  2.41it/s]  4%|▍         | 11/250 [00:04<01:37,  2.45it/s]  5%|▍         | 12/250 [00:05<01:34,  2.53it/s]  5%|▌         | 13/250 [00:05<01:34,  2.50it/s]  6%|▌         | 14/250 [00:06<01:32,  2.54it/s]  6%|▌         | 15/250 [00:06<01:47,  2.18it/s]  6%|▋         | 16/250 [00:06<01:38,  2.38it/s]  7%|▋         | 17/250 [00:07<01:40,  2.32it/s]  7%|▋         | 18/250 [00:07<01:30,  2.55it/s]  8%|▊         | 19/250 [00:08<02:01,  1.91it/s]  8%|▊         | 20/250 [00:08<01:45,  2.19it/s]  8%|▊         | 21/250 [00:10<03:21,  1.13it/s]  9%|▉         | 22/250 [00:11<02:55,  1.30it/s]  9%|▉         | 23/250 [00:11<02:31,  1.50it/s] 10%|▉         | 24/250 [00:12<02:18,  1.63it/s] 10%|█         | 25/250 [00:12<02:03,  1.82it/s] 10%|█         | 26/250 [00:12<01:54,  1.95it/s] 11%|█         | 27/250 [00:13<01:50,  2.02it/s] 11%|█         | 28/250 [00:14<02:09,  1.72it/s] 12%|█▏        | 29/250 [00:14<01:55,  1.91it/s] 12%|█▏        | 29/250 [00:14<01:51,  1.98it/s]
-ERROR:root:Internal Python error in the inspect module.
-Below is the traceback from this internal error.
-
-Traceback (most recent call last):
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 3418, in run_code
-    exec(code_obj, self.user_global_ns, self.user_ns)
-  File "<ipython-input-7-98afe0ee478a>", line 7, in <module>
-    action = agent.get_action(states, evaluation)
-  File "../src/agent.py", line 96, in get_action
-    actions = self.actor(state)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1012, in __call__
-    outputs = call_fn(inputs, *args, **kwargs)
-  File "../src/networks.py", line 48, in call
-    policy = self.dense_1(x)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1012, in __call__
-    outputs = call_fn(inputs, *args, **kwargs)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/keras/layers/core.py", line 1207, in call
-    return core_ops.dense(
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/keras/layers/ops/core.py", line 53, in dense
-    outputs = gen_math_ops.mat_mul(inputs, kernel)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/ops/gen_math_ops.py", line 5527, in mat_mul
-    _result = pywrap_tfe.TFE_Py_FastPathExecute(
-KeyboardInterrupt
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 2045, in showtraceback
-    stb = value._render_traceback_()
-AttributeError: 'KeyboardInterrupt' object has no attribute '_render_traceback_'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 1170, in get_records
-    return _fixed_getinnerframes(etb, number_of_lines_of_context, tb_offset)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 316, in wrapped
-    return f(*args, **kwargs)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 350, in _fixed_getinnerframes
-    records = fix_frame_records_filenames(inspect.getinnerframes(etb, context))
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 1503, in getinnerframes
-    frameinfo = (tb.tb_frame,) + getframeinfo(tb, context)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 1461, in getframeinfo
-    filename = getsourcefile(frame) or getfile(frame)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 708, in getsourcefile
-    if getattr(getmodule(object, filename), '__loader__', None) is not None:
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 754, in getmodule
-    os.path.realpath(f)] = module.__name__
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 392, in realpath
-    return abspath(path)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 381, in abspath
-    return normpath(path)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 366, in normpath
-    path = sep.join(comps)
-KeyboardInterrupt

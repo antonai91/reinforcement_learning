@@ -5,9 +5,9 @@ import os
 #******** Enviroment **********
 #******************************
 
-#ENV_NAME = 'BipedalWalkerHardcore-v3'
-ENV_NAME = 'LunarLanderContinuous-v2'
-#ENV_NAME = 'Pendulum-v0'
+#ENV_NAME = 'LunarLanderContinuous-v2'
+#ENV_NAME = 'InvertedPendulumBulletEnv-v0'
+ENV_NAME = 'AntBulletEnv-v0'
 
 
 PATH_SAVE = "../model/"
@@ -41,8 +41,8 @@ NOISE = 1e-6
 #******************************
 
 GAMMA = 0.99
-ACTOR_LR = 0.001
-CRITIC_LR = 0.002
+ACTOR_LR = 0.0005
+CRITIC_LR = 0.0005
 #ACTOR_LR = 0.01
 #CRITIC_LR = 0.005
 
@@ -58,6 +58,5 @@ DT=1e-1
 #********** Main **************
 #******************************
 
-MAX_GAMES = 250
-EVALUATION_FREQUENCY = 100
+MAX_GAMES = 100000
 SAVE_FREQUENCY = 200

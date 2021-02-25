@@ -1,58 +1,0 @@
-  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:00<00:50,  4.92it/s]  1%|          | 2/250 [00:01<04:26,  1.08s/it]  1%|          | 3/250 [00:04<07:19,  1.78s/it]  2%|▏         | 4/250 [00:05<06:46,  1.65s/it]  2%|▏         | 5/250 [00:12<13:19,  3.26s/it]  2%|▏         | 6/250 [00:13<10:54,  2.68s/it]  3%|▎         | 7/250 [00:15<10:00,  2.47s/it]  3%|▎         | 8/250 [00:17<09:06,  2.26s/it]  4%|▎         | 9/250 [00:19<09:00,  2.24s/it]  4%|▍         | 10/250 [00:23<10:34,  2.64s/it]  4%|▍         | 11/250 [00:25<10:07,  2.54s/it]  5%|▍         | 12/250 [00:27<09:15,  2.34s/it]  5%|▌         | 13/250 [00:30<10:06,  2.56s/it]  6%|▌         | 14/250 [00:32<09:33,  2.43s/it]  6%|▌         | 15/250 [00:34<09:27,  2.42s/it]  6%|▋         | 16/250 [00:44<17:42,  4.54s/it]  7%|▋         | 17/250 [00:46<14:45,  3.80s/it]  7%|▋         | 18/250 [00:59<25:04,  6.49s/it]  8%|▊         | 19/250 [01:07<27:02,  7.02s/it]  8%|▊         | 20/250 [01:11<23:32,  6.14s/it]  8%|▊         | 21/250 [01:18<23:46,  6.23s/it]  9%|▉         | 22/250 [01:24<23:35,  6.21s/it]  9%|▉         | 23/250 [01:31<24:09,  6.39s/it] 10%|▉         | 24/250 [01:37<24:40,  6.55s/it] 10%|█         | 25/250 [01:48<29:12,  7.79s/it] 10%|█         | 26/250 [01:54<27:02,  7.25s/it] 11%|█         | 27/250 [02:09<34:56,  9.40s/it] 11%|█         | 28/250 [02:21<37:41, 10.18s/it] 12%|█▏        | 29/250 [02:32<39:08, 10.63s/it] 12%|█▏        | 30/250 [02:37<32:25,  8.84s/it] 12%|█▏        | 31/250 [02:44<30:23,  8.33s/it] 13%|█▎        | 32/250 [02:50<27:29,  7.57s/it] 13%|█▎        | 33/250 [03:02<32:51,  9.08s/it] 14%|█▎        | 34/250 [03:05<25:40,  7.13s/it] 14%|█▍        | 35/250 [03:08<20:43,  5.78s/it] 14%|█▍        | 36/250 [03:13<20:21,  5.71s/it] 15%|█▍        | 37/250 [03:21<22:35,  6.36s/it] 15%|█▌        | 38/250 [03:34<28:55,  8.19s/it] 16%|█▌        | 39/250 [03:37<23:51,  6.78s/it] 16%|█▌        | 40/250 [03:45<25:13,  7.21s/it] 16%|█▋        | 41/250 [03:57<29:55,  8.59s/it] 17%|█▋        | 42/250 [04:05<28:54,  8.34s/it] 17%|█▋        | 43/250 [04:11<26:26,  7.66s/it] 18%|█▊        | 44/250 [04:14<21:25,  6.24s/it] 18%|█▊        | 45/250 [04:24<25:11,  7.37s/it] 18%|█▊        | 46/250 [04:30<24:13,  7.12s/it] 19%|█▉        | 47/250 [04:40<26:37,  7.87s/it] 19%|█▉        | 48/250 [04:44<22:35,  6.71s/it] 20%|█▉        | 49/250 [04:49<20:59,  6.27s/it] 20%|██        | 50/250 [04:55<20:44,  6.22s/it] 20%|██        | 51/250 [05:02<20:37,  6.22s/it] 21%|██        | 52/250 [05:14<26:15,  7.96s/it] 21%|██        | 53/250 [05:31<35:31, 10.82s/it] 22%|██▏       | 54/250 [05:39<32:50, 10.05s/it] 22%|██▏       | 55/250 [05:46<29:41,  9.14s/it] 22%|██▏       | 56/250 [06:01<35:06, 10.86s/it] 23%|██▎       | 57/250 [06:13<35:53, 11.16s/it] 23%|██▎       | 58/250 [06:17<28:37,  8.94s/it] 24%|██▎       | 59/250 [06:21<24:00,  7.54s/it] 24%|██▍       | 60/250 [06:31<26:26,  8.35s/it] 24%|██▍       | 61/250 [06:46<31:56, 10.14s/it] 25%|██▍       | 62/250 [06:57<33:04, 10.56s/it] 25%|██▌       | 63/250 [07:04<29:03,  9.33s/it] 26%|██▌       | 64/250 [07:18<33:51, 10.92s/it] 26%|██▌       | 65/250 [07:21<25:48,  8.37s/it] 26%|██▋       | 66/250 [07:31<27:00,  8.81s/it] 27%|██▋       | 67/250 [07:53<39:29, 12.95s/it] 27%|██▋       | 68/250 [07:55<29:21,  9.68s/it] 28%|██▊       | 69/250 [07:58<22:42,  7.53s/it] 28%|██▊       | 70/250 [08:03<20:51,  6.95s/it] 28%|██▊       | 71/250 [08:11<21:43,  7.28s/it] 29%|██▉       | 72/250 [08:32<33:44, 11.38s/it] 29%|██▉       | 73/250 [08:43<32:37, 11.06s/it] 30%|██▉       | 74/250 [08:51<30:14, 10.31s/it] 30%|███       | 75/250 [09:00<29:06,  9.98s/it] 30%|███       | 76/250 [09:05<24:37,  8.49s/it] 31%|███       | 77/250 [09:12<22:48,  7.91s/it] 31%|███       | 78/250 [09:21<24:02,  8.39s/it] 32%|███▏      | 79/250 [09:26<20:13,  7.10s/it] 32%|███▏      | 80/250 [09:41<27:13,  9.61s/it] 32%|███▏      | 81/250 [10:03<37:21, 13.27s/it] 33%|███▎      | 82/250 [10:08<30:36, 10.93s/it] 33%|███▎      | 83/250 [10:26<36:13, 13.02s/it] 34%|███▎      | 84/250 [10:30<28:02, 10.13s/it] 34%|███▍      | 85/250 [10:33<22:25,  8.16s/it] 34%|███▍      | 86/250 [10:40<21:21,  7.82s/it] 35%|███▍      | 87/250 [11:04<33:54, 12.48s/it] 35%|███▌      | 88/250 [11:28<43:43, 16.19s/it] 36%|███▌      | 89/250 [11:47<45:36, 17.00s/it] 36%|███▌      | 90/250 [11:51<34:58, 13.12s/it] 36%|███▋      | 91/250 [12:12<40:42, 15.36s/it] 37%|███▋      | 92/250 [12:19<33:48, 12.84s/it] 37%|███▋      | 93/250 [12:31<32:55, 12.58s/it] 38%|███▊      | 94/250 [12:38<28:42, 11.04s/it] 38%|███▊      | 95/250 [13:00<36:48, 14.25s/it] 38%|███▊      | 96/250 [13:23<43:02, 16.77s/it] 39%|███▉      | 97/250 [13:44<46:36, 18.28s/it] 39%|███▉      | 98/250 [13:47<34:30, 13.62s/it] 40%|███▉      | 99/250 [14:09<40:35, 16.13s/it] 40%|████      | 100/250 [14:35<47:39, 19.06s/it] 40%|████      | 101/250 [15:02<53:17, 21.46s/it] 41%|████      | 102/250 [15:26<54:40, 22.17s/it] 41%|████      | 103/250 [15:36<45:29, 18.57s/it] 42%|████▏     | 104/250 [15:40<34:04, 14.01s/it] 42%|████▏     | 105/250 [15:43<26:24, 10.93s/it] 42%|████▏     | 106/250 [15:50<23:19,  9.72s/it] 43%|████▎     | 107/250 [15:55<19:36,  8.23s/it] 43%|████▎     | 108/250 [16:01<17:41,  7.48s/it] 44%|████▎     | 109/250 [16:13<21:00,  8.94s/it] 44%|████▍     | 110/250 [16:25<22:41,  9.73s/it] 44%|████▍     | 111/250 [16:47<31:40, 13.67s/it] 45%|████▍     | 112/250 [17:10<37:47, 16.43s/it] 45%|████▌     | 113/250 [17:17<30:38, 13.42s/it] 46%|████▌     | 114/250 [17:40<37:16, 16.44s/it] 46%|████▌     | 115/250 [17:52<33:48, 15.03s/it] 46%|████▋     | 116/250 [18:14<38:06, 17.06s/it] 47%|████▋     | 117/250 [18:18<29:23, 13.26s/it] 47%|████▋     | 118/250 [18:42<35:56, 16.34s/it] 48%|████▊     | 119/250 [18:49<29:43, 13.61s/it] 48%|████▊     | 120/250 [19:12<35:49, 16.54s/it] 48%|████▊     | 121/250 [19:19<29:01, 13.50s/it] 49%|████▉     | 122/250 [19:27<25:22, 11.90s/it] 49%|████▉     | 123/250 [19:32<21:00,  9.93s/it] 50%|████▉     | 124/250 [19:36<17:15,  8.22s/it] 50%|█████     | 125/250 [19:44<16:25,  7.89s/it] 50%|█████     | 126/250 [19:50<15:19,  7.42s/it] 51%|█████     | 127/250 [19:58<15:34,  7.60s/it] 51%|█████     | 128/250 [20:00<12:25,  6.11s/it] 52%|█████▏    | 129/250 [20:25<23:34, 11.69s/it] 52%|█████▏    | 130/250 [20:31<19:34,  9.79s/it] 52%|█████▏    | 131/250 [20:36<16:41,  8.42s/it] 53%|█████▎    | 132/250 [20:42<15:21,  7.81s/it] 53%|█████▎    | 133/250 [20:55<18:16,  9.37s/it] 54%|█████▎    | 134/250 [21:06<18:52,  9.76s/it] 54%|█████▍    | 135/250 [21:17<19:23, 10.12s/it] 54%|█████▍    | 136/250 [21:42<27:44, 14.60s/it] 55%|█████▍    | 137/250 [22:06<33:00, 17.53s/it] 55%|█████▌    | 138/250 [22:31<36:36, 19.61s/it] 56%|█████▌    | 139/250 [22:43<32:00, 17.31s/it] 56%|█████▌    | 140/250 [23:07<35:22, 19.30s/it] 56%|█████▋    | 141/250 [23:11<26:44, 14.72s/it] 57%|█████▋    | 142/250 [23:34<31:07, 17.30s/it] 57%|█████▋    | 143/250 [23:58<34:29, 19.34s/it] 58%|█████▊    | 144/250 [24:16<33:42, 19.08s/it] 58%|█████▊    | 145/250 [24:22<26:11, 14.96s/it] 58%|█████▊    | 146/250 [24:44<29:48, 17.20s/it] 59%|█████▉    | 147/250 [24:47<22:10, 12.92s/it] 59%|█████▉    | 148/250 [24:55<19:22, 11.40s/it] 60%|█████▉    | 149/250 [25:02<16:44,  9.95s/it] 60%|██████    | 150/250 [25:12<16:56, 10.17s/it] 60%|██████    | 150/250 [25:20<16:53, 10.14s/it]
-ERROR:root:Internal Python error in the inspect module.
-Below is the traceback from this internal error.
-
-Traceback (most recent call last):
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 3418, in run_code
-    exec(code_obj, self.user_global_ns, self.user_ns)
-  File "<ipython-input-7-58a3a5369f86>", line 11, in <module>
-    agent.learn()
-  File "../src/agent.py", line 136, in learn
-    self.actor.optimizer.apply_gradients(zip(
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/keras/optimizer_v2/optimizer_v2.py", line 631, in apply_gradients
-    return distribute_ctx.get_replica_context().merge_call(
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2941, in merge_call
-    return self._merge_call(merge_fn, args, kwargs)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2948, in _merge_call
-    return merge_fn(self._strategy, *args, **kwargs)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 572, in wrapper
-    return func(*args, **kwargs)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/keras/optimizer_v2/optimizer_v2.py", line 682, in _distributed_apply
-    update_ops.extend(distribution.extended.update(
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 1796, in __exit__
-    if ctx.device_spec is not new_device_spec:
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 845, in device_spec
-    return self._thread_local_data.device_spec
-KeyboardInterrupt
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 2045, in showtraceback
-    stb = value._render_traceback_()
-AttributeError: 'KeyboardInterrupt' object has no attribute '_render_traceback_'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 1170, in get_records
-    return _fixed_getinnerframes(etb, number_of_lines_of_context, tb_offset)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 316, in wrapped
-    return f(*args, **kwargs)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 350, in _fixed_getinnerframes
-    records = fix_frame_records_filenames(inspect.getinnerframes(etb, context))
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 1503, in getinnerframes
-    frameinfo = (tb.tb_frame,) + getframeinfo(tb, context)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 1461, in getframeinfo
-    filename = getsourcefile(frame) or getfile(frame)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 708, in getsourcefile
-    if getattr(getmodule(object, filename), '__loader__', None) is not None:
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 751, in getmodule
-    f = getabsfile(module)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 720, in getabsfile
-    _filename = getsourcefile(object) or getfile(object)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 705, in getsourcefile
-    if os.path.exists(filename):
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/genericpath.py", line 19, in exists
-    os.stat(path)
-KeyboardInterrupt

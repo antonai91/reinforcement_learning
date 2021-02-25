@@ -3,6 +3,7 @@
 import sys
 sys.path.append("../src")
 import gym
+import pybullet_envs
 import tensorflow as tf
 import numpy as np
 from tqdm import tqdm
@@ -16,14 +17,14 @@ config = dict(
   learning_rate_actor = ACTOR_LR,
   learning_rate_critic = ACTOR_LR,
   batch_size = BATCH_SIZE,
-  architecture = "DDPG",
-  infra = "Ubuntu",
+  architecture = "SAC",
+  infra = "Colab",
   env = ENV_NAME
 )
 
 wandb.init(
   project=f"tensorflow2_sac_{ENV_NAME.lower()}",
-  tags=["DDPG", "FCL", "RL"],
+  tags=["SAC", "FCL", "RL"],
   config=config,
 )
 
@@ -37,13 +38,13 @@ if PATH_LOAD is not None:
     print("loading weights")
     observation = env.reset()
     action = agent.actor(observation[None, :])
-    agent.target_actor(observation[None, :])
-    agent.critic(observation[None, :], action)
-    agent.target_critic(observation[None, :], action)
+    agent.critic_0(observation[None, :])
+    agent.critic_1(observation[None, :])
+    agent.critic_value(observation[None, :], action)
+    agent.critic_target_value(observation[None, :], action)
     agent.load()
     print(agent.replay_buffer.buffer_counter)
     print(agent.replay_buffer.n_games)
-    print(agent.noise)
 
 for _ in tqdm(range(MAX_GAMES)):
     start_time = time.time()
@@ -64,10 +65,8 @@ for _ in tqdm(range(MAX_GAMES)):
     wandb.log({'Game number': agent.replay_buffer.n_games, '# Episodes': agent.replay_buffer.buffer_counter, 
                "Average reward": round(np.mean(scores[-10:]), 2), \
                       "Time taken": round(time.time() - start_time, 2)})
-
-"""
+    
     if (_ + 1) % SAVE_FREQUENCY == 0:
         print("saving...")
         agent.save()
         print("saved")
-"""

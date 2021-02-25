@@ -1,60 +1,0 @@
-loading weights
-945736
-3000
-[1.07478544 0.93044417]
-  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:08<35:30,  8.56s/it]  1%|          | 2/250 [00:12<24:48,  6.00s/it]  1%|          | 3/250 [00:20<28:13,  6.85s/it]  2%|▏         | 4/250 [00:28<30:06,  7.34s/it]  2%|▏         | 5/250 [00:40<36:48,  9.01s/it]  2%|▏         | 6/250 [00:48<35:20,  8.69s/it]  3%|▎         | 7/250 [00:57<35:05,  8.67s/it]  3%|▎         | 8/250 [01:34<1:12:03, 17.87s/it]  4%|▎         | 9/250 [01:44<1:01:21, 15.28s/it]  4%|▍         | 10/250 [01:53<53:03, 13.26s/it]   4%|▍         | 10/250 [02:04<49:43, 12.43s/it]
-ERROR:root:Internal Python error in the inspect module.
-Below is the traceback from this internal error.
-
-Traceback (most recent call last):
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 3418, in run_code
-    exec(code_obj, self.user_global_ns, self.user_ns)
-  File "<ipython-input-7-a6e55c8cb51f>", line 11, in <module>
-    agent.learn()
-  File "../src/agent.py", line 117, in learn
-    target_actions = self.target_actor(new_states)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1012, in __call__
-    outputs = call_fn(inputs, *args, **kwargs)
-  File "../src/networks.py", line 48, in call
-    policy = self.dense_1(x)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1012, in __call__
-    outputs = call_fn(inputs, *args, **kwargs)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/keras/layers/core.py", line 1207, in call
-    return core_ops.dense(
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/keras/layers/ops/core.py", line 53, in dense
-    outputs = gen_math_ops.mat_mul(inputs, kernel)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/ops/gen_math_ops.py", line 5527, in mat_mul
-    _result = pywrap_tfe.TFE_Py_FastPathExecute(
-KeyboardInterrupt
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 2045, in showtraceback
-    stb = value._render_traceback_()
-AttributeError: 'KeyboardInterrupt' object has no attribute '_render_traceback_'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 1170, in get_records
-    return _fixed_getinnerframes(etb, number_of_lines_of_context, tb_offset)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 316, in wrapped
-    return f(*args, **kwargs)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 350, in _fixed_getinnerframes
-    records = fix_frame_records_filenames(inspect.getinnerframes(etb, context))
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 1503, in getinnerframes
-    frameinfo = (tb.tb_frame,) + getframeinfo(tb, context)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 1461, in getframeinfo
-    filename = getsourcefile(frame) or getfile(frame)
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 708, in getsourcefile
-    if getattr(getmodule(object, filename), '__loader__', None) is not None:
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 754, in getmodule
-    os.path.realpath(f)] = module.__name__
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 391, in realpath
-    path, ok = _joinrealpath(filename[:0], filename, {})
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 425, in _joinrealpath
-    if not islink(newpath):
-  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 167, in islink
-    st = os.lstat(path)
-KeyboardInterrupt
