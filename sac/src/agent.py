@@ -54,8 +54,8 @@ class Agent:
         self.actor.save_weights(f"{self.path_save}/save_agent_{ENV_NAME.lower()}_{date_now}/{self.actor.net_name}.h5")
         self.critic_0.save_weights(f"{self.path_save}/save_agent_{ENV_NAME.lower()}_{date_now}/{self.critic_0.net_name}.h5")
         self.critic_1.save_weights(f"{self.path_save}/save_agent_{ENV_NAME.lower()}_{date_now}/{self.critic_1.net_name}.h5")
-        self.value_critic.save_weights(f"{self.path_save}/save_agent_{ENV_NAME.lower()}_{date_now}/{self.value_critic.net_name}.h5")
-        self.target_value_critic.save_weights(f"{self.path_save}/save_agent_{ENV_NAME.lower()}_{date_now}/{self.target_value_critic.net_name}.h5")
+        self.critic_value.save_weights(f"{self.path_save}/save_agent_{ENV_NAME.lower()}_{date_now}/{self.critic_value.net_name}.h5")
+        self.critic_target_value.save_weights(f"{self.path_save}/save_agent_{ENV_NAME.lower()}_{date_now}/{self.critic_target_value.net_name}.h5")
         
         self.replay_buffer.save(f"{self.path_save}/save_agent_{ENV_NAME.lower()}_{date_now}")
 
@@ -63,8 +63,8 @@ class Agent:
         self.actor.load_weights(f"{self.path_load}/{self.actor.net_name}.h5")
         self.critic_0.load_weights(f"{self.path_load}/{self.critic_0.net_name}.h5")
         self.critic_1.load_weights(f"{self.path_load}/{self.critic_1.net_name}.h5")
-        self.value_critic.load_weights(f"{self.path_load}/{self.value_critic.net_name}.h5")
-        self.target_value_critic.load_weights(f"{self.path_load}/{self.target_value_critic.net_name}.h5")
+        self.critic_value.load_weights(f"{self.path_load}/{self.critic_value.net_name}.h5")
+        self.critic_target_value.load_weights(f"{self.path_load}/{self.critic_target_value.net_name}.h5")
         
         self.replay_buffer.load(f"{self.path_load}")
 
