@@ -1,0 +1,52 @@
+  0%|          | 0/100000 [00:00<?, ?it/s]  0%|          | 1/100000 [00:01<34:12:51,  1.23s/it]  0%|          | 2/100000 [00:04<75:08:16,  2.71s/it]  0%|          | 3/100000 [00:08<81:16:40,  2.93s/it]  0%|          | 4/100000 [00:15<127:08:31,  4.58s/it]  0%|          | 5/100000 [00:23<161:27:02,  5.81s/it]  0%|          | 5/100000 [00:28<156:18:48,  5.63s/it]
+ERROR:root:Internal Python error in the inspect module.
+Below is the traceback from this internal error.
+
+Traceback (most recent call last):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 3418, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-7-8f485f7f2afa>", line 11, in <module>
+    agent.learn()
+  File "../src/agent.py", line 115, in learn
+    actor_gradient = tape.gradient(actor_loss, self.actor.trainable_variables)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1080, in gradient
+    flat_grad = imperative_grad.imperative_grad(
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/eager/imperative_grad.py", line 71, in imperative_grad
+    return pywrap_tfe.TFE_Py_TapeGradient(
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 161, in _gradient_function
+    with ops.name_scope(gradient_name_scope):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 6427, in name_scope
+    if not context.executing_eagerly():
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 2045, in showtraceback
+    stb = value._render_traceback_()
+AttributeError: 'KeyboardInterrupt' object has no attribute '_render_traceback_'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 1170, in get_records
+    return _fixed_getinnerframes(etb, number_of_lines_of_context, tb_offset)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 316, in wrapped
+    return f(*args, **kwargs)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 350, in _fixed_getinnerframes
+    records = fix_frame_records_filenames(inspect.getinnerframes(etb, context))
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 1503, in getinnerframes
+    frameinfo = (tb.tb_frame,) + getframeinfo(tb, context)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 1461, in getframeinfo
+    filename = getsourcefile(frame) or getfile(frame)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 708, in getsourcefile
+    if getattr(getmodule(object, filename), '__loader__', None) is not None:
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 754, in getmodule
+    os.path.realpath(f)] = module.__name__
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 391, in realpath
+    path, ok = _joinrealpath(filename[:0], filename, {})
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 425, in _joinrealpath
+    if not islink(newpath):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 167, in islink
+    st = os.lstat(path)
+KeyboardInterrupt

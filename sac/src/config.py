@@ -6,8 +6,9 @@ import os
 #******************************
 
 #ENV_NAME = 'LunarLanderContinuous-v2'
+ENV_NAME = 'HumanoidBulletEnv-v0'
 #ENV_NAME = 'InvertedPendulumBulletEnv-v0'
-ENV_NAME = 'AntBulletEnv-v0'
+#ENV_NAME = 'AntBulletEnv-v0'
 
 
 PATH_SAVE = "../model/"
@@ -32,9 +33,9 @@ ACTOR_HIDDEN_1 = 256
 CRITIC_HIDDEN_0 = 512
 CRITIC_HIDDEN_1 = 256
 
-LOG_STD_MIN = -20
-LOG_STD_MAX = 2
-NOISE = 1e-6
+LOG_STD_MIN = -20 # exp(-10) = 4.540e-05
+LOG_STD_MAX = 2 # exp(2) = 7.389
+EPSILON = 1e-6
 
 #******************************
 #********** Agent *************

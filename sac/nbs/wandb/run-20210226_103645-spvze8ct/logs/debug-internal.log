@@ -1,0 +1,848 @@
+2021-02-26 10:36:46,371 INFO    MainThread:3046 [internal.py:wandb_internal():63] W&B internal server running at pid: 3046
+2021-02-26 10:36:46,373 INFO    WriterThread:3046 [datastore.py:open_for_write():76] open: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/run-spvze8ct.wandb
+2021-02-26 10:36:46,373 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: check_version
+2021-02-26 10:36:46,374 DEBUG   SenderThread:3046 [sender.py:send():90] send: header
+2021-02-26 10:36:46,374 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:36:46,374 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: check_version
+2021-02-26 10:36:46,377 DEBUG   Thread-4  :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2021-02-26 10:36:46,497 DEBUG   Thread-4  :3046 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 54531
+2021-02-26 10:36:46,540 DEBUG   SenderThread:3046 [sender.py:send():90] send: run
+2021-02-26 10:36:46,545 DEBUG   SenderThread:3046 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-26 10:36:46,566 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:36:46,773 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:36:46,786 INFO    SenderThread:3046 [dir_watcher.py:__init__():165] watching files in: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files
+2021-02-26 10:36:46,786 INFO    SenderThread:3046 [sender.py:_start_run_threads():487] run started: spvze8ct with start time 1614332205
+2021-02-26 10:36:46,786 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:46,787 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: run_start
+2021-02-26 10:36:46,790 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:46,792 DEBUG   HandlerThread:3046 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-26 10:36:46,809 DEBUG   HandlerThread:3046 [cmd.py:execute():718] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/Users/anton/Projects/reinforcement_learning, universal_newlines=False, shell=None, istream=None)
+2021-02-26 10:36:46,860 DEBUG   SenderThread:3046 [sender.py:send():90] send: files
+2021-02-26 10:36:46,860 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2021-02-26 10:36:46,865 DEBUG   Thread-11 :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:36:46,868 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:36:46,868 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:36:46,868 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:36:46,870 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:36:46,872 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: pause
+2021-02-26 10:36:46,872 INFO    HandlerThread:3046 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-26 10:36:46,893 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: pause
+2021-02-26 10:36:46,893 INFO    HandlerThread:3046 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-26 10:36:46,893 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: resume
+2021-02-26 10:36:46,893 INFO    HandlerThread:3046 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-26 10:36:46,895 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: resume
+2021-02-26 10:36:46,895 INFO    HandlerThread:3046 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-26 10:36:47,032 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:36:47,034 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:36:47,041 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: pause
+2021-02-26 10:36:47,041 INFO    HandlerThread:3046 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-26 10:36:47,047 DEBUG   Thread-11 :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:36:47,055 DEBUG   Thread-11 :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-26 10:36:47,098 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: pause
+2021-02-26 10:36:47,098 INFO    HandlerThread:3046 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-26 10:36:47,098 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: resume
+2021-02-26 10:36:47,098 INFO    HandlerThread:3046 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-26 10:36:47,099 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: resume
+2021-02-26 10:36:47,099 INFO    HandlerThread:3046 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-26 10:36:47,099 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: pause
+2021-02-26 10:36:47,100 INFO    HandlerThread:3046 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-26 10:36:47,205 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: pause
+2021-02-26 10:36:47,205 INFO    HandlerThread:3046 [handler.py:handle_request_pause():226] stopping system metrics thread
+2021-02-26 10:36:47,205 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: resume
+2021-02-26 10:36:47,205 INFO    HandlerThread:3046 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-26 10:36:47,206 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: resume
+2021-02-26 10:36:47,206 INFO    HandlerThread:3046 [handler.py:handle_request_resume():221] starting system metrics thread
+2021-02-26 10:36:47,206 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:36:47,207 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:36:47,248 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:47,248 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:47,249 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:47,362 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:47,367 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:47,367 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:47,448 DEBUG   Thread-11 :3046 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/wandb-metadata.json?Expires=1614418607&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=VxEGJreXxbfanRJP%2FETLf1oH%2Fy7%2BAxQjzEstQSX5kbH%2FqsNBp3%2FKsQl%2BZN%2Fss%2Fg6JpEkpnqw9Z4NEtcuodNEQTjanUAdkQN9%2FvJBMr7BxFD1GI4oF22yWnaTEUBN7Ijaxl28rrQJQZJFdV8KMwvOghBlOcGnBCErCWfbaHSuuMKGZRS4y%2FVu37O74XDNVOZt9pAsAMmdeWA54wkn9weairSIVZ9Q9uYGpWD%2FptHHxME3xbTcl9Szc4OqkAEJnRuVqGb46Bg3khz0wji2uZjZZgybg%2Fnj30I5%2BJrabb2i6YZ03yaq1kjSWnFgGmF%2FyL66TDjiZaIChZtLQt9NCFBz%2BQ%3D%3D HTTP/1.1" 200 0
+2021-02-26 10:36:47,450 INFO    Thread-11 :3046 [upload_job.py:push():131] Uploaded file /var/folders/7n/jknlm6395y18hp3nghbc11880000gn/T/tmp2y6058wgwandb/27dlhrcl-wandb-metadata.json
+2021-02-26 10:36:47,479 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:47,480 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:47,480 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:47,585 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:47,585 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:47,586 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:47,707 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:47,707 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:47,707 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:47,789 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:36:47,789 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/wandb-metadata.json
+2021-02-26 10:36:47,789 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_created():213] file/dir created: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/requirements.txt
+2021-02-26 10:36:48,637 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:48,637 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:48,638 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:48,790 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:36:49,412 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:49,412 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:49,413 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:49,415 DEBUG   Thread-5  :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:36:49,603 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:36:49,792 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:36:50,335 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:50,335 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:50,336 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:50,574 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:36:50,794 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:36:51,018 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:51,018 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:51,019 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:51,797 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:36:51,914 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:51,914 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:51,915 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:52,087 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:36:52,800 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:36:52,829 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:52,830 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:52,830 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:53,650 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:53,650 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:53,651 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:53,807 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:36:54,758 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:54,758 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:54,759 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:54,806 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:36:54,920 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:36:55,060 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:36:55,684 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:55,684 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:55,684 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:55,808 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:36:56,669 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:56,670 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:56,670 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:56,808 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:36:57,850 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:57,851 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:57,852 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:58,024 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:36:58,810 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:36:58,854 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:36:58,854 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:36:58,855 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:36:59,543 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:36:59,813 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:00,404 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:00,404 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:00,406 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:00,573 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:00,816 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:01,918 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:01,918 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:01,919 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:02,041 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:37:02,041 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:37:02,042 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:37:02,046 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:37:02,200 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:37:02,813 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:02,813 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:02,814 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:02,818 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:02,976 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:04,027 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:04,718 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:04,718 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:04,719 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:04,826 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:05,610 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:05,610 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:05,611 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:05,783 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:05,827 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:07,874 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:07,875 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:07,875 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:07,933 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:08,508 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:08,830 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:10,433 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:10,433 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:10,435 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:10,594 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:10,834 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:12,068 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:12,068 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:12,069 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:12,843 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:12,998 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:13,164 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:13,430 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:13,430 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:13,431 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:13,847 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:15,104 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:15,105 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:15,106 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:15,270 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:15,857 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:16,134 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:16,134 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:16,135 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:16,859 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:17,205 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:37:17,205 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:37:17,205 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:37:17,209 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:37:17,372 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:37:17,391 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:17,391 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:17,392 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:17,490 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:17,563 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:17,862 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:18,269 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:18,269 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:18,270 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:18,866 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:19,402 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:19,402 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:19,403 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:19,576 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:19,867 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:21,248 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:21,248 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:21,249 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:21,874 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:21,998 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:22,383 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:22,589 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:22,589 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:22,590 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:22,875 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:24,748 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:25,975 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:25,975 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:25,976 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:26,491 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:26,891 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:27,988 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:27,989 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:27,990 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:28,156 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:28,897 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:30,007 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:30,007 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:30,008 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:30,243 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:30,904 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:30,983 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:31,925 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:31,925 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:31,926 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:32,376 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:37:32,376 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:37:32,376 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:37:32,379 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:37:32,533 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:37:32,910 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:33,519 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:33,519 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:33,520 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:33,684 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:33,914 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:34,535 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:34,536 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:34,536 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:34,920 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:35,478 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:35,606 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:35,606 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:35,607 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:35,795 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:35,920 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:36,522 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:36,523 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:36,523 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:36,923 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:38,594 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:38,594 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:38,595 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:38,696 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:38,926 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:39,968 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:39,997 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:39,997 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:39,997 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:40,894 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:40,895 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:40,896 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:40,929 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:41,055 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:42,061 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:42,061 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:42,061 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:42,933 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:44,216 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:44,217 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:44,217 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:44,223 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:44,457 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:44,943 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:46,646 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:46,646 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:46,647 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:46,946 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:47,541 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:37:47,542 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:37:47,542 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:37:47,546 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:37:47,707 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:37:48,410 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:48,410 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:48,412 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:48,950 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:48,951 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:50,356 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:50,356 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:50,357 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:50,956 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:52,711 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:52,711 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:52,711 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:52,962 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:53,460 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:54,478 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:54,478 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:54,479 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:54,651 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:37:54,968 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:56,800 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:56,801 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:56,801 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:56,971 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:37:57,952 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:37:59,851 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:37:59,852 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:37:59,852 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:37:59,984 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:01,410 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:01,410 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:01,411 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:01,989 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:02,178 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:02,178 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:02,178 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:02,431 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:02,724 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:38:02,724 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:38:02,724 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:38:02,728 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:38:02,881 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:38:02,989 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:04,046 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:04,046 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:04,047 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:04,996 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:05,447 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:05,448 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:05,448 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:05,616 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:38:05,999 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:06,896 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:08,440 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:08,441 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:08,441 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:09,009 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:10,244 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:10,244 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:10,245 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:11,011 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:11,216 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:11,217 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:11,217 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:11,398 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:12,015 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:13,050 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:13,050 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:13,051 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:14,018 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:15,890 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:16,056 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:38:17,889 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:38:17,889 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:38:17,889 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:38:17,892 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:38:18,044 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:38:18,570 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:18,570 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:18,570 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:19,040 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:20,398 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:20,453 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:20,454 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:20,454 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:21,044 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:21,951 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:21,951 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:21,951 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:22,048 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:24,264 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:24,264 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:24,265 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:24,895 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:25,056 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:26,275 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:26,275 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:26,277 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:26,440 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:38:27,063 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:27,779 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:27,779 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:27,779 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:28,068 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:28,672 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:28,672 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:28,673 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:29,070 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:29,387 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:30,467 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:30,468 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:30,468 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:31,075 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:31,399 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:31,400 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:31,400 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:32,075 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:33,049 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:38:33,049 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:38:33,049 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:38:33,052 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:38:33,210 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:38:33,885 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:34,033 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:34,033 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:34,034 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:34,083 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:36,181 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:36,181 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:36,181 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:37,090 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:38,364 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:38,532 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:38:38,567 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:38,568 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:38,568 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:39,092 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:41,131 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:41,132 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:41,132 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:42,098 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:42,643 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:42,643 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:42,643 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:42,851 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:43,100 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:44,183 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:44,183 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:44,184 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:45,106 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:46,051 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:46,051 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:46,052 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:46,110 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:47,365 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:47,864 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:47,864 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:47,864 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:48,113 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:48,214 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:38:48,214 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:38:48,214 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:38:48,217 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:38:48,378 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:38:48,726 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:48,726 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:48,727 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:48,897 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:38:49,114 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:49,982 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:49,982 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:49,983 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:50,115 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:50,919 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:50,919 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:50,919 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:51,118 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:51,865 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:52,888 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:52,889 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:52,889 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:53,121 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:55,143 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:55,143 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:55,143 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:56,131 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:38:56,352 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:38:57,922 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:38:57,923 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:38:57,923 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:38:58,141 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:00,305 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:00,305 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:00,307 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:00,482 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:39:00,853 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:01,150 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:02,269 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:02,269 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:02,269 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:03,157 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:03,382 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:39:03,382 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:39:03,382 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:39:03,386 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:39:03,550 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:39:05,366 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:05,733 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:05,733 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:05,734 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:06,168 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:07,974 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:07,975 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:07,975 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:08,171 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:09,859 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:10,221 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:10,222 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:10,222 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:11,178 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:13,082 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:13,083 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:13,083 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:13,183 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:13,251 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:39:14,361 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:15,743 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:15,743 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:15,744 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:16,192 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:18,563 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:39:18,564 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:39:18,564 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:39:18,569 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:39:18,746 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:39:18,749 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:18,749 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:18,750 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:18,859 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:19,199 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:20,965 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:20,966 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:20,966 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:21,206 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:23,352 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:23,516 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:39:24,264 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:24,265 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:24,265 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:25,212 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:27,079 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:27,079 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:27,080 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:27,213 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:27,845 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:29,895 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:29,895 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:29,896 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:30,223 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:31,596 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:31,596 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:31,597 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:32,228 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:32,333 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:33,754 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:39:33,755 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:39:33,755 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:39:33,760 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:39:33,918 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:39:34,482 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:34,482 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:34,484 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:34,666 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:39:35,237 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:35,544 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:35,544 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:35,544 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:36,241 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:36,854 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:37,711 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:37,711 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:37,712 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:38,247 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:39,894 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:39,894 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:39,894 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:40,251 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:41,359 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:41,623 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:41,624 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:41,624 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:42,258 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:43,862 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:43,863 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:43,863 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:44,264 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:45,884 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:46,058 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:39:47,206 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:47,206 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:47,207 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:47,276 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:48,926 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:39:48,926 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:39:48,926 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:39:48,930 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:39:49,091 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:39:49,215 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:49,215 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:49,216 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:49,283 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:50,416 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:51,298 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:51,298 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:51,299 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:52,285 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:52,763 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:52,763 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:52,763 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:53,291 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:53,913 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:53,913 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:53,913 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:54,294 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:54,905 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:55,679 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:55,679 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:55,680 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:56,300 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:58,055 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:58,055 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:58,057 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:39:58,303 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:39:58,420 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:39:59,403 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:39:59,822 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:39:59,822 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:39:59,823 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:00,309 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:02,579 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:02,580 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:02,580 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:03,316 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:03,879 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:04,096 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:40:04,096 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:40:04,096 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:40:04,099 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:40:04,256 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:40:04,440 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:04,440 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:04,441 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:05,322 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:06,545 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:06,545 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:06,546 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:07,323 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:08,373 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:08,532 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:40:08,891 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:08,891 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:08,891 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:09,330 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:11,300 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:11,300 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:11,300 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:11,331 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:12,864 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:13,074 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:13,074 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:13,075 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:13,340 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:14,746 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:14,746 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:14,747 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:15,344 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:16,508 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:16,508 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:16,509 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:17,351 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:17,367 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:18,318 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:18,319 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:18,319 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:18,352 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:19,259 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:40:19,260 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:40:19,260 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:40:19,262 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:40:19,418 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:40:20,453 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:20,453 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:20,454 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:20,706 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:40:21,363 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:21,833 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:22,530 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:22,531 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:22,531 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:23,365 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:24,590 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:24,590 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:24,590 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:25,368 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:26,311 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:26,442 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:26,442 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:26,443 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:27,374 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:30,657 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:30,657 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:30,658 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:30,787 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:30,843 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:40:31,388 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:32,417 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:32,417 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:32,418 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:33,395 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:34,050 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:34,050 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:34,050 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:34,396 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:34,424 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:40:34,424 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:40:34,424 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:40:34,429 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:40:34,592 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:40:35,273 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:36,347 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:36,347 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:36,348 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:36,399 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:38,012 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:38,012 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:38,012 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:38,409 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:39,789 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:40,481 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:40,481 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:40,482 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:41,412 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:42,684 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:42,684 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:42,685 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:42,850 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:40:43,418 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:44,256 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:44,619 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:44,619 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:44,621 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:45,422 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:46,861 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:46,861 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:46,862 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:47,426 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:48,705 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:48,706 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:48,706 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:48,735 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:49,435 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:49,598 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:40:49,599 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:40:49,599 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:40:49,601 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:40:49,764 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:40:49,919 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:49,919 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:49,920 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:50,440 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:52,029 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:52,030 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:52,031 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:52,444 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:53,201 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:53,378 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:40:53,611 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:53,611 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:53,612 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:54,448 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:55,406 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:55,406 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:55,407 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:55,449 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:57,116 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:57,116 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:57,116 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:57,452 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:40:57,681 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:40:59,332 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:40:59,332 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:40:59,333 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:40:59,458 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:41:01,903 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:41:01,904 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:41:01,904 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:41:02,169 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:41:02,467 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:41:04,768 DEBUG   HandlerThread:3046 [handler.py:handle_request():55] handle_request: status
+2021-02-26 10:41:04,768 DEBUG   SenderThread:3046 [sender.py:send():90] send: request
+2021-02-26 10:41:04,768 DEBUG   SenderThread:3046 [sender.py:send_request():99] send_request: status
+2021-02-26 10:41:04,772 DEBUG   SenderThread:3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:41:04,928 DEBUG   SenderThread:3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:41:05,377 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:41:05,377 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:41:05,378 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:41:05,477 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:41:05,546 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:41:06,676 DEBUG   SenderThread:3046 [sender.py:send():90] send: stats
+2021-02-26 10:41:07,659 DEBUG   SenderThread:3046 [sender.py:send():90] send: history
+2021-02-26 10:41:07,659 DEBUG   SenderThread:3046 [sender.py:send():90] send: summary
+2021-02-26 10:41:07,660 INFO    SenderThread:3046 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-26 10:41:08,485 INFO    Thread-8  :3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:41:09,147 WARNING MainThread:3046 [internal.py:wandb_internal():117] Internal process interrupt: 1
+2021-02-26 10:41:09,295 WARNING MainThread:3046 [internal.py:wandb_internal():117] Internal process interrupt: 2
+2021-02-26 10:41:09,295 ERROR   MainThread:3046 [internal.py:wandb_internal():120] Internal process interrupted.
+2021-02-26 10:41:09,296 INFO    HandlerThread:3046 [handler.py:finish():271] shutting down handler
+2021-02-26 10:41:09,297 INFO    WriterThread:3046 [datastore.py:close():257] close: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/run-spvze8ct.wandb
+2021-02-26 10:41:09,297 INFO    SenderThread:3046 [sender.py:finish():642] shutting down sender
+2021-02-26 10:41:09,297 INFO    SenderThread:3046 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-02-26 10:41:09,490 INFO    SenderThread:3046 [dir_watcher.py:_on_file_modified():226] file/dir modified: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:41:09,490 INFO    SenderThread:3046 [dir_watcher.py:finish():309] scan: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files
+2021-02-26 10:41:09,490 INFO    SenderThread:3046 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/requirements.txt requirements.txt
+2021-02-26 10:41:09,491 INFO    SenderThread:3046 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log output.log
+2021-02-26 10:41:09,494 INFO    SenderThread:3046 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/config.yaml config.yaml
+2021-02-26 10:41:09,494 INFO    SenderThread:3046 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/wandb-summary.json wandb-summary.json
+2021-02-26 10:41:09,499 INFO    SenderThread:3046 [dir_watcher.py:finish():315] scan save: /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/wandb-metadata.json wandb-metadata.json
+2021-02-26 10:41:09,499 INFO    SenderThread:3046 [file_pusher.py:finish():169] shutting down file pusher
+2021-02-26 10:41:09,499 INFO    SenderThread:3046 [file_pusher.py:join():174] waiting for file pusher
+2021-02-26 10:41:09,499 DEBUG   Thread-15 :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:41:09,500 DEBUG   Thread-16 :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:41:09,503 DEBUG   Thread-17 :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:41:09,504 DEBUG   Thread-18 :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-26 10:41:09,678 DEBUG   Thread-15 :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:41:09,679 DEBUG   Thread-16 :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:41:09,684 DEBUG   Thread-18 :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:41:09,696 DEBUG   Thread-15 :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-26 10:41:09,696 DEBUG   Thread-18 :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-26 10:41:09,696 DEBUG   Thread-17 :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-26 10:41:09,698 DEBUG   Thread-16 :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-26 10:41:09,703 DEBUG   Thread-17 :3046 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-26 10:41:10,204 DEBUG   Thread-17 :3046 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/config.yaml?Expires=1614418869&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=HoNo27qp9S30EiLeIY2WUeDnnb4ZuWiMohz%2Fg4TCXLlv%2ByGWdLYJ%2BJK6tSE%2BHudLpsO%2FbhNJfUcnT7ZbBZrdrFLGYvurMEtyjfJhpDdlTvBMYNv6IGQF3UStuZxaN07KzQMl7iyMpZunsgcxMdFtJOtXwpWJyj00V4F%2B7q4vDBpkcGyXvOdZimcdc5LO35HiKMhyCDXEx4IotujdXtUhvAnG%2FWMTbOONdZTmms%2FYaoc1j3omksNgry%2F%2BbRdaT4thy6XbwETwzDCUmmJlHayycxplPkOFSPBGl73%2Fb8%2FSrYoCGcVyoNNbFhv9x0jWmrID1vWbeSGpLI8ysl4DNrgYyg%3D%3D HTTP/1.1" 200 0
+2021-02-26 10:41:10,205 DEBUG   Thread-15 :3046 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/requirements.txt?Expires=1614418869&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=hedgPZd1a5fgvHbI24e8Owfr3isxyUJaSxS2lDLo26mPmFpFOMm7LBA5zARt1NHsdlkzSPBsBzNm1yzfKAuIDK1J%2F6pKaocL3FjdrvGmi%2BEyLROHV0yDA3WDEtnpyVI2ib62%2BrSVsF971DcB9TWqVZ%2FfqUtHboiT9FkjA9UsyGFgu74gakwpI6Bp4bfX7nXeQiShQ8lA0NIugmO8HoL8Pluogj3Wl7Qrjv5vPrSfGNSW5nihkHRbcTSER2P7gI51O7CI8agfl65jxygvx3MQJSgPoVy%2BOUe8T58lp2R0zbgazONg5oG7iWi29DkIiXzgORRWRMz7mX5BQoxLlxLtDA%3D%3D HTTP/1.1" 200 0
+2021-02-26 10:41:10,205 DEBUG   Thread-16 :3046 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/output.log?Expires=1614418869&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=wFTgGTQPOOVs6JdwbqQkUcBRXYrz2NvGgQMAPftHUzwgv41J6UouoUzuoUmGf8sqkJOcuVQx6DXLAd8iRl48Bu66S2urOjzfDe3VSPSOqde8%2FkoY8uS26LbaNLqlpv9mU3Nv5Uz4dFMsp78kTiZEcV8ennWXdtfCy6YL6ry82QeFQBSpPNCchOlaio1jjGv8cHck18A1AjmhWt3c9bZEpvIbWE5xJfsPa3Ljj3Xgrk3qHjKhcNY884axFyMoJ4G5VnCiCbny6JKQC6MEBpiJHG2i4%2FFQQ3q4vd%2BOG3rd58SKTzxE4iQ1MNIJTlXkFfmReAvg2Ho3GIKtD6kCNF3jzA%3D%3D HTTP/1.1" 200 0
+2021-02-26 10:41:10,206 DEBUG   Thread-18 :3046 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/wandb-summary.json?Expires=1614418869&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=jui%2F27IxNoz4Ja8uvnDE3FwZ0XaCGdwNjBw35OrJCY4OtQJ%2FAQ%2BDsxbU8gSH%2BKyNnju3E82RRPDtbX5LruzzWxfTKHDiBfcohw8HpUNvgx%2B2plJuUp%2B7slcuf6XL7kdtIkLP5ZumAvWKbogz3Fvy47Sd3%2FulcE91nszCY%2FDHGXGvqAhcfijVXEDyjeLMPmOCptC38%2Fwbzo%2Fn3nWo%2FPXaqSpRGLXNws53j7FmdPUhItKYc6gc6DjIUmWNmA73dpgCBUVXsI8RWwpFkkop6TlSbHsFIGc35lViB5IrsNrVFsNmQcHyrdj0fqFBN675uIdcF6bfpwcQ3AsbSUq4lATVlA%3D%3D HTTP/1.1" 200 0
+2021-02-26 10:41:10,210 INFO    Thread-17 :3046 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/config.yaml
+2021-02-26 10:41:10,213 INFO    Thread-15 :3046 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/requirements.txt
+2021-02-26 10:41:10,217 INFO    Thread-16 :3046 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/output.log
+2021-02-26 10:41:10,220 INFO    Thread-18 :3046 [upload_job.py:push():131] Uploaded file /Users/anton/Projects/reinforcement_learning/sac/nbs/wandb/run-20210226_103645-spvze8ct/files/wandb-summary.json
+2021-02-26 10:41:10,689 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:41:11,024 DEBUG   Thread-5  :3046 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/anton-ai/tensorflow2_sac_humanoidbulletenv-v0/spvze8ct/file_stream HTTP/1.1" 200 None
+2021-02-26 10:41:11,033 INFO    MainThread:3046 [internal.py:handle_exit():138] Internal process exited

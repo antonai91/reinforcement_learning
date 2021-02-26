@@ -1,0 +1,28 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.12
+    framework: tensorflow
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.8.5
+architecture:
+  desc: null
+  value: SAC
+batch_size:
+  desc: null
+  value: 64
+env:
+  desc: null
+  value: HumanoidPyBulletEnv-v0
+infra:
+  desc: null
+  value: Colab
+learning_rate_actor:
+  desc: null
+  value: 0.0005
+learning_rate_critic:
+  desc: null
+  value: 0.0005

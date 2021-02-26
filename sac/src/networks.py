@@ -45,42 +45,47 @@ class CriticValue(tf.keras.Model):
         return value
 
 class Actor(tf.keras.Model):
-    def __init__(self, name, upper_bound, actions_dim, hidden_0=CRITIC_HIDDEN_0, hidden_1=CRITIC_HIDDEN_1, noise=NOISE):
+    def __init__(self, name, upper_bound, actions_dim, hidden_0=CRITIC_HIDDEN_0, hidden_1=CRITIC_HIDDEN_1, epsilon=EPSILON, log_std_min=LOG_STD_MIN, log_std_max=LOG_STD_MAX):
         super(Actor, self).__init__()
         self.hidden_0 = hidden_0
         self.hidden_1 = hidden_1
         self.actions_dim = actions_dim
         self.net_name = name
         self.upper_bound = upper_bound
-        self.noise = noise
+        self.epsilon = epsilon
+        self.log_std_min = log_std_min
+        self.log_std_max = log_std_max
 
         self.dense_0 = Dense(self.hidden_0, activation='relu')
         self.dense_1 = Dense(self.hidden_1, activation='relu')
         self.mean = Dense(self.actions_dim, activation=None)
-        self.std = Dense(self.actions_dim, activation=None)
+        self.log_std = Dense(self.actions_dim, activation=None)
 
     def call(self, state):
         policy = self.dense_0(state)
         policy = self.dense_1(policy)
 
         mean = self.mean(policy)
-        std = self.std(policy)
+        log_std = self.log_std(policy)
 
-        std = tf.clip_by_value(std, self.noise, 1)
+        log_std = tf.clip_by_value(log_std, self.log_std_min, self.log_std_max)
 
-        return mean, std
+        return mean, log_std
 
     def get_action_log_probs(self, state, reparameterization_trick=True):
-        mean, std = self.call(state)
+        mean, log_std = self.call(state)
+        std = tf.exp(log_std)
         normal_distr = tfp.distributions.Normal(mean, std)
+        # Reparameterization trick
+        z = tf.random.normal(shape=mean.shape, mean=0., stddev=1.)
 
         if reparameterization_trick:
-            actions = normal_distr.sample()
+            actions = mean + std * z
         else:
             actions = normal_distr.sample()
 
         action = tf.math.tanh(actions) * self.upper_bound
-        log_probs = normal_distr.log_prob(actions) - tf.math.log(1-tf.math.pow(action,2)+self.noise)
+        log_probs = normal_distr.log_prob(actions) - tf.math.log(1 - tf.math.pow(action,2) + self.epsilon)
         log_probs = tf.math.reduce_sum(log_probs, axis=1, keepdims=True)
 
         return action, log_probs
