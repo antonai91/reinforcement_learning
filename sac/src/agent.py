@@ -10,7 +10,7 @@ from replay_buffer import *
 from networks import *
 
 class Agent:
-    def __init__(self, env, actor_lr=ACTOR_LR, critic_lr=CRITIC_LR, gamma=GAMMA, tau=TAU, reward_scale=REWARD_SCALE):
+    def __init__(self, env, path_save=PATH_SAVE, path_load=PATH_LOAD, actor_lr=ACTOR_LR, critic_lr=CRITIC_LR, gamma=GAMMA, tau=TAU, reward_scale=REWARD_SCALE):
         self.gamma = gamma
         self.tau = tau
         self.replay_buffer = ReplayBuffer(env)
@@ -19,6 +19,8 @@ class Agent:
         self.lower_bound = env.action_space.low[0]
         self.actor_lr = actor_lr
         self.critic_lr = critic_lr
+        self.path_save = path_save
+        self.path_load = path_load
 
         self.actor = Actor(actions_dim=self.actions_dim, name='actor', upper_bound=env.action_space.high)
         self.critic_0 = Critic(name='critic_0')
