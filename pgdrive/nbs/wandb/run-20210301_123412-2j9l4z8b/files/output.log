@@ -1,0 +1,56 @@
+  0%|          | 0/100000 [00:00<?, ?it/s]  0%|          | 1/100000 [00:50<1390:42:36, 50.07s/it]  0%|          | 2/100000 [02:47<2487:43:58, 89.56s/it]  0%|          | 3/100000 [05:27<3388:44:28, 122.00s/it]  0%|          | 4/100000 [06:47<2927:12:03, 105.38s/it]  0%|          | 5/100000 [12:22<5226:39:44, 188.17s/it]  0%|          | 6/100000 [16:51<5988:04:42, 215.58s/it]  0%|          | 6/100000 [17:42<4917:14:11, 177.03s/it]
+ERROR:root:Internal Python error in the inspect module.
+Below is the traceback from this internal error.
+
+Traceback (most recent call last):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 3418, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-2-8f485f7f2afa>", line 11, in <module>
+    agent.learn()
+  File "../src/agent.py", line 108, in learn
+    new_policy_actions, log_probs = self.actor.get_action_log_probs(states, reparameterization_trick=True)
+  File "../src/networks.py", line 88, in get_action_log_probs
+    log_probs = normal_distr.log_prob(actions) - tf.math.log(1 - tf.math.pow(action,2) + self.epsilon)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow_probability/python/distributions/distribution.py", line 866, in log_prob
+    return self._call_log_prob(value, name, **kwargs)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow_probability/python/distributions/distribution.py", line 848, in _call_log_prob
+    return self._log_prob(value, **kwargs)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow_probability/python/distributions/normal.py", line 192, in _log_prob
+    return self._log_unnormalized_prob(x) - self._log_normalization()
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow_probability/python/distributions/normal.py", line 207, in _log_unnormalized_prob
+    return -0.5 * tf.square(self._z(x))
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/tensorflow/python/ops/gen_math_ops.py", line 10153, in square
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 2045, in showtraceback
+    stb = value._render_traceback_()
+AttributeError: 'KeyboardInterrupt' object has no attribute '_render_traceback_'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 1170, in get_records
+    return _fixed_getinnerframes(etb, number_of_lines_of_context, tb_offset)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 316, in wrapped
+    return f(*args, **kwargs)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/site-packages/IPython/core/ultratb.py", line 350, in _fixed_getinnerframes
+    records = fix_frame_records_filenames(inspect.getinnerframes(etb, context))
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 1503, in getinnerframes
+    frameinfo = (tb.tb_frame,) + getframeinfo(tb, context)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 1461, in getframeinfo
+    filename = getsourcefile(frame) or getfile(frame)
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 708, in getsourcefile
+    if getattr(getmodule(object, filename), '__loader__', None) is not None:
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/inspect.py", line 754, in getmodule
+    os.path.realpath(f)] = module.__name__
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 391, in realpath
+    path, ok = _joinrealpath(filename[:0], filename, {})
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 425, in _joinrealpath
+    if not islink(newpath):
+  File "/Users/anton/.conda/envs/reinforcement_learning/lib/python3.8/posixpath.py", line 167, in islink
+    st = os.lstat(path)
+KeyboardInterrupt
