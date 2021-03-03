@@ -69,6 +69,7 @@ class ReplayBuffer():
         np.save(folder_name + '/states.npy', self.states)
         np.save(folder_name + '/actions.npy', self.actions)
         np.save(folder_name + '/rewards.npy', self.rewards)
+        np.save(folder_name + '/next_states.npy', self.next_states)
         np.save(folder_name + '/dones.npy', self.dones)
         
         dict_info = {"buffer_counter": self.buffer_counter, "n_games": self.n_games}
@@ -80,9 +81,10 @@ class ReplayBuffer():
         """
         Load the replay buffer
         """
-        self.actions = np.load(folder_name + '/states.npy')
+        self.states = np.load(folder_name + '/states.npy')
         self.actions = np.load(folder_name + '/actions.npy')
         self.rewards = np.load(folder_name + '/rewards.npy')
+        self.next_states = np.load(folder_name + '/next_states.npy')
         self.dones = np.load(folder_name + '/dones.npy')
         
         with open(folder_name + '/dict_info.json', 'r') as f:
