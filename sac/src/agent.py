@@ -68,7 +68,7 @@ class Agent:
         self.critic_value.load_weights(f"{self.path_load}/{self.critic_value.net_name}.h5")
         self.critic_target_value.load_weights(f"{self.path_load}/{self.critic_target_value.net_name}.h5")
         
-        #self.replay_buffer.load(f"{self.path_load}")
+        self.replay_buffer.load(f"{self.path_load}")
 
     def get_action(self, observation):
         state = tf.convert_to_tensor([observation])
