@@ -41,8 +41,6 @@ class Agent:
         self.target_actor.set_weights(actor_weights)
         self.target_critic.set_weights(critic_weights)
         
-        self.noise = np.random.uniform(size=self.n_actions)
-        
     def update_target_networks(self, tau):
         actor_weights = self.actor.weights
         target_actor_weights = self.target_actor.weights
@@ -60,8 +58,9 @@ class Agent:
         self.target_critic.set_weights(target_critic_weights)
         
     def get_actions(self, actor_states):
+        noise = tf.random.uniform(shape=[self.n_actions])
         actions = self.actor(actor_states)
-        actions = actions + self.noise
+        actions = actions + noise
 
         return actions.numpy()[0]
     
