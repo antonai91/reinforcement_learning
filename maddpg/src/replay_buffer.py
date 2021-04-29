@@ -4,7 +4,6 @@ import os
 import sys
 sys.path.append("../src")
 from config import *
-from make_env import *
 
 class ReplayBuffer():
     def __init__(self, env, buffer_capacity=BUFFER_CAPACITY, batch_size=BATCH_SIZE, min_size_buffer=MIN_SIZE_BUFFER):
@@ -72,10 +71,10 @@ class ReplayBuffer():
         done = self.dones[batch_index]
             
         actors_state = [self.list_actors_states[index][batch_index] for index in range(self.n_agents)]
-        actors_new_state = [self.list_actors_next_states[index][batch_index] for index in range(self.n_agents)]
+        actors_next_state = [self.list_actors_next_states[index][batch_index] for index in range(self.n_agents)]
         actors_action = [self.list_actors_actions[index][batch_index] for index in range(self.n_agents)]
 
-        return state, reward, next_state, done, actors_state, actors_new_state, actors_action
+        return state, reward, next_state, done, actors_state, actors_next_state, actors_action
     
     def save(self, folder_path):
         """
